@@ -27,6 +27,7 @@ import os
 import sys
 import time
 
+from io import StringIO
 import pandas as pd
 import undetected_chromedriver as uc
 from selenium.webdriver.support.ui import WebDriverWait
@@ -72,14 +73,14 @@ def fetch_table(driver, url, table_keyword, wait_seconds=60):
     target = None
     for t in tables:
         tid = t.get_attribute("id") or ""
-        if table_keyword in tid:
+        if table_keyword in tid and "squads" not in tid:
             target = t
             break
     if target is None:
-        raise RuntimeError(f"No table with id containing '{table_keyword}' found at {url}")
+        raise RuntimeError(f"No player-level table with id containing '{table_keyword}' (excluding squads) found at {url}")
 
     html = target.get_attribute("outerHTML")
-    df = pd.read_html(html)[0]
+    df = pd.read_html(StringIO(html))[0]
 
     # FBref player tables have a multi-row header — flatten it
     if isinstance(df.columns, pd.MultiIndex):
