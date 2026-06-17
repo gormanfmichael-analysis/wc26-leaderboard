@@ -1,5 +1,6 @@
 selenium>=4.18
 undetected-chromedriver>=3.5
+setuptools
 pandas
 numpy
 streamlit
