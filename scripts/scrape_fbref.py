@@ -47,13 +47,13 @@ OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 
 def make_driver():
     opts = uc.ChromeOptions()
-    opts.add_argument("--headless=new")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-dev-shm-usage")
+    opts.add_argument("--disable-gpu")
     return uc.Chrome(options=opts)
 
 
-def fetch_table(driver, url, table_keyword, wait_seconds=25):
+def fetch_table(driver, url, table_keyword, wait_seconds=60):
     """Load a FBref stats page and return the player stats table as a DataFrame.
 
     FBref renders most tables server-side but wraps some in HTML comments

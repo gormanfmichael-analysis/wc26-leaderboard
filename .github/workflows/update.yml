@@ -23,8 +23,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Install Xvfb
+        run: sudo apt-get install -y xvfb
+
       - name: Scrape FBref (Shooting + Misc)
-        run: python scripts/scrape_fbref.py
+        run: xvfb-run --auto-servernum python scripts/scrape_fbref.py
 
       - name: Compute leaderboard
         run: python scripts/compute_leaderboard.py
