@@ -28,8 +28,7 @@ import sys
 import time
 
 import pandas as pd
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+import undetected_chromedriver as uc
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -47,18 +46,11 @@ OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 
 
 def make_driver():
-    opts = Options()
+    opts = uc.ChromeOptions()
     opts.add_argument("--headless=new")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-dev-shm-usage")
-    opts.add_argument("--disable-blink-features=AutomationControlled")
-    opts.add_argument(
-        "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
-    )
-    # Selenium 4.6+ resolves the driver automatically (Selenium Manager) —
-    # no webdriver-manager dependency needed.
-    return webdriver.Chrome(options=opts)
+    return uc.Chrome(options=opts)
 
 
 def fetch_table(driver, url, table_keyword, wait_seconds=25):
