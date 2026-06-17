@@ -1,0 +1,38 @@
+name: Update WC26 Leaderboard
+
+on:
+  schedule:
+    # Every 6 hours during the tournament. Adjust/disable after it ends
+    # (World Cup 2026 runs June 11 - July 19, 2026).
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}  # allows manual trigger from the Actions tab
+
+jobs:
+  scrape-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Set up Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Scrape FBref (Shooting + Misc)
+        run: python scripts/scrape_fbref.py
+
+      - name: Compute leaderboard
+        run: python scripts/compute_leaderboard.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "wc26-leaderboard-bot"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --quiet --cached || git commit -m "Auto-update leaderboard data [skip ci]"
+          git push
