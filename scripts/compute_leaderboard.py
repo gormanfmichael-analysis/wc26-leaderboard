@@ -4,8 +4,8 @@ WC26 Leaderboard — Composite Attacker Index (CAI)
 
 Reads data/api_football_raw.csv and computes:
 
-    CAI = z(SoT%) + z(G/Sh) + z(Goals/90) + z(Aerial_Won%)
-          + z(Pass_completion%) + z(Dribble_success%)
+    CAI = z(SoT%) + z(Goals/90) + z(Aerial_Won%)
+          + z(Prog_pass_completion%) + z(Dribble_success%)
           + z(Recoveries/90) + z(Key_passes/90) + z(AT_actions/90)
 
 NaN z-scores (players missing data for an optional metric) → 0 (neutral).
@@ -39,7 +39,7 @@ def main():
         "minutes", "appearances",
         "shots_total", "shots_on", "goals_total", "fouls_committed",
         "duels_total", "duels_won",
-        "pass_total", "pass_accurate", "key_passes",
+        "pass_total", "pass_accurate", "prog_pass_total", "prog_pass_accurate", "key_passes",
         "takeons_total", "takeons_won",
         "ball_recoveries", "at_actions",
     ]
@@ -54,17 +54,13 @@ def main():
     df = df[df["appearances"] >= MIN_APPEARANCES].copy()
     print(f"After appearances >= {MIN_APPEARANCES}: {len(df)}")
 
-    df = df[df["shots_total"] > 0].copy()
-    print(f"After shots_total > 0: {len(df)}")
-
     if len(df) < 2:
         sys.exit(f"Only {len(df)} qualifying players — cannot z-score. Check raw data.")
 
     df["90s"] = df["minutes"].clip(lower=1) / 90
 
     # ── Shot-based ───────────────────────────────────────────────────────────
-    df["SoT%"]      = df["shots_on"] / df["shots_total"] * 100
-    df["G/Sh"]      = df["goals_total"] / df["shots_total"]
+    df["SoT%"]      = np.where(df["shots_total"] > 0, df["shots_on"] / df["shots_total"] * 100, np.nan)
     df["goals_p90"] = df["goals_total"] / df["90s"]
 
     # ── Aerial ───────────────────────────────────────────────────────────────
@@ -75,9 +71,9 @@ def main():
     )
 
     # ── Passing ──────────────────────────────────────────────────────────────
-    df["pass_completion_pct"] = np.where(
-        df["pass_total"] > 0,
-        df["pass_accurate"] / df["pass_total"] * 100,
+    df["prog_pass_completion_pct"] = np.where(
+        df["prog_pass_total"] > 0,
+        df["prog_pass_accurate"] / df["prog_pass_total"] * 100,
         np.nan,
     )
     df["key_passes_p90"] = df["key_passes"] / df["90s"]
@@ -93,28 +89,26 @@ def main():
     df["recoveries_p90"] = df["ball_recoveries"] / df["90s"]
     df["at_actions_p90"] = df["at_actions"] / df["90s"]
 
-    df = df.dropna(subset=["SoT%", "G/Sh"]).copy()
+    df = df.dropna(subset=["goals_p90"]).copy()
     print(f"After dropna on required metrics: {len(df)}")
     if len(df) < 2:
         sys.exit(f"Only {len(df)} players after dropna — cannot z-score. Check raw data.")
 
     # ── Z-scores (NaN → 0 for optional metrics) ──────────────────────────────
-    df["z_sot_pct"]         = zscore(df["SoT%"])
-    df["z_g_per_sh"]        = zscore(df["G/Sh"])
-    df["z_goals_p90"]       = zscore(df["goals_p90"])
-    df["z_aerial_won"]      = zscore(df["Aerial_Won%"]).fillna(0)
-    df["z_pass_completion"] = zscore(df["pass_completion_pct"]).fillna(0)
-    df["z_key_passes_p90"]  = zscore(df["key_passes_p90"]).fillna(0)
-    df["z_dribble_success"] = zscore(df["dribble_success_pct"]).fillna(0)
-    df["z_recoveries_p90"]  = zscore(df["recoveries_p90"]).fillna(0)
-    df["z_at_actions_p90"]  = zscore(df["at_actions_p90"]).fillna(0)
+    df["z_sot_pct"]              = zscore(df["SoT%"]).fillna(0)
+    df["z_goals_p90"]            = zscore(df["goals_p90"])
+    df["z_aerial_won"]           = zscore(df["Aerial_Won%"]).fillna(0)
+    df["z_prog_pass_completion"] = zscore(df["prog_pass_completion_pct"]).fillna(0)
+    df["z_key_passes_p90"]       = zscore(df["key_passes_p90"]).fillna(0)
+    df["z_dribble_success"]      = zscore(df["dribble_success_pct"]).fillna(0)
+    df["z_recoveries_p90"]       = zscore(df["recoveries_p90"]).fillna(0)
+    df["z_at_actions_p90"]       = zscore(df["at_actions_p90"]).fillna(0)
 
     df["CAI"] = (
         df["z_sot_pct"]
-        + df["z_g_per_sh"]
         + df["z_goals_p90"]
         + df["z_aerial_won"]
-        + df["z_pass_completion"]
+        + df["z_prog_pass_completion"]
         + df["z_dribble_success"]
         + df["z_recoveries_p90"]
         + df["z_key_passes_p90"]
@@ -128,7 +122,8 @@ def main():
     df.to_csv(out_path, index=False)
     print(f"Saved {len(df)} players → {out_path}")
     print(
-        df[["rank", "Player", "Squad", "CAI", "SoT%", "G/Sh", "Aerial_Won%", "fouls_p90"]]
+        df[["rank", "Player", "Squad", "CAI", "SoT%", "goals_p90", "Aerial_Won%",
+            "prog_pass_completion_pct", "recoveries_p90", "at_actions_p90"]]
         .head(10)
         .round(3)
         .to_string(index=False)

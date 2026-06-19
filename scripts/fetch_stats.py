@@ -128,6 +128,22 @@ def aggregate_to_players(events: pd.DataFrame) -> pd.DataFrame:
         .groupby("_key").size().rename("pass_accurate")
     )
 
+    # Progressive passes: forward movement >= 10 x-units (Opta standard).
+    # Uses endX direct column; falls back to qual_PassEndX qualifier.
+    _end_x_col = next((c for c in ("endX", "qual_PassEndX") if c in df.columns), None)
+    if _end_x_col:
+        _end_x   = pd.to_numeric(df[_end_x_col], errors="coerce")
+        _start_x = pd.to_numeric(df["x"], errors="coerce")
+        _prog    = (df["event"] == "Pass") & ((_end_x - _start_x) >= 10)
+        prog_pass_total    = df[_prog].groupby("_key").size().rename("prog_pass_total")
+        prog_pass_accurate = (
+            df[_prog & (df["outcome"] == "Successful")]
+            .groupby("_key").size().rename("prog_pass_accurate")
+        )
+    else:
+        prog_pass_total    = pd.Series(dtype=int, name="prog_pass_total")
+        prog_pass_accurate = pd.Series(dtype=int, name="prog_pass_accurate")
+
     # Key passes: qual_KeyPass qualifier present and truthy on a Pass event.
     # Note: goal assists typically carry qual_IntentionalGoalAssist instead,
     # so key_passes counts shot-creating passes excluding direct goal assists.
@@ -168,7 +184,9 @@ def aggregate_to_players(events: pd.DataFrame) -> pd.DataFrame:
         .join(shots_total).join(shots_on).join(goals_total)
         .join(fouls_committed)
         .join(duels_total).join(duels_won)
-        .join(pass_total).join(pass_accurate).join(key_passes)
+        .join(pass_total).join(pass_accurate)
+        .join(prog_pass_total).join(prog_pass_accurate)
+        .join(key_passes)
         .join(takeons_total).join(takeons_won)
         .join(ball_recoveries)
         .join(at_actions)
@@ -178,7 +196,7 @@ def aggregate_to_players(events: pd.DataFrame) -> pd.DataFrame:
         "minutes", "appearances",
         "shots_total", "shots_on", "goals_total", "fouls_committed",
         "duels_total", "duels_won",
-        "pass_total", "pass_accurate", "key_passes",
+        "pass_total", "pass_accurate", "prog_pass_total", "prog_pass_accurate", "key_passes",
         "takeons_total", "takeons_won",
         "ball_recoveries", "at_actions",
     ]
