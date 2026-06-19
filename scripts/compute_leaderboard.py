@@ -7,7 +7,6 @@ Reads data/api_football_raw.csv and computes:
     CAI = z(SoT%) + z(G/Sh) + z(Goals/90) + z(Aerial_Won%)
           + z(Pass_completion%) + z(Dribble_success%)
           + z(Recoveries/90) + z(Key_passes/90) + z(AT_actions/90)
-          − z(Fouls/90)
 
 NaN z-scores (players missing data for an optional metric) → 0 (neutral).
 Position-agnostic: defenders can rank via AT_actions, Aerial_Won%, etc.
@@ -75,9 +74,6 @@ def main():
         np.nan,
     )
 
-    # ── Discipline ───────────────────────────────────────────────────────────
-    df["fouls_p90"] = df["fouls_committed"] / df["90s"]
-
     # ── Passing ──────────────────────────────────────────────────────────────
     df["pass_completion_pct"] = np.where(
         df["pass_total"] > 0,
@@ -97,7 +93,7 @@ def main():
     df["recoveries_p90"] = df["ball_recoveries"] / df["90s"]
     df["at_actions_p90"] = df["at_actions"] / df["90s"]
 
-    df = df.dropna(subset=["SoT%", "G/Sh", "fouls_p90"]).copy()
+    df = df.dropna(subset=["SoT%", "G/Sh"]).copy()
     print(f"After dropna on required metrics: {len(df)}")
     if len(df) < 2:
         sys.exit(f"Only {len(df)} players after dropna — cannot z-score. Check raw data.")
@@ -107,7 +103,6 @@ def main():
     df["z_g_per_sh"]        = zscore(df["G/Sh"])
     df["z_goals_p90"]       = zscore(df["goals_p90"])
     df["z_aerial_won"]      = zscore(df["Aerial_Won%"]).fillna(0)
-    df["z_fouls_p90"]       = zscore(df["fouls_p90"])
     df["z_pass_completion"] = zscore(df["pass_completion_pct"]).fillna(0)
     df["z_key_passes_p90"]  = zscore(df["key_passes_p90"]).fillna(0)
     df["z_dribble_success"] = zscore(df["dribble_success_pct"]).fillna(0)
@@ -124,7 +119,6 @@ def main():
         + df["z_recoveries_p90"]
         + df["z_key_passes_p90"]
         + df["z_at_actions_p90"]
-        - df["z_fouls_p90"]
     )
 
     df = df.sort_values("CAI", ascending=False).reset_index(drop=True)
