@@ -36,17 +36,20 @@ st.caption(f"Data last updated: {pd.Timestamp(mtime, unit='s')}")
 with st.expander("How the Complete Attacker Index (CAI) is calculated"):
     st.markdown(
         """
-        **CAI = z(SoT%) + z(Goals/90) + z(Aerial Won%) + z(Prog Pass%) + z(Dribble%) + z(Recoveries/90) + z(AT Actions/90)**
+        **CAI = 3×z(Goals/90) + 2.5×z(Dribble%) + 2×z(SoT%\*) + 1.5×z(Recoveries/90) + 1×z(AT Actions/90) + 0.5×z(Aerial Won%)**
 
-        - **SoT%** — shot accuracy (shots on target / shots taken)
-        - **Goals/90** — scoring volume per 90 minutes
-        - **Aerial Won%** — aerial duel win rate
-        - **Prog Pass%** — completion rate on passes advancing the ball ≥10 yards toward goal
-        - **Dribble%** — take-on success rate
-        - **Recoveries/90** — ball recoveries per 90 minutes
-        - **AT Actions/90** — tackles won + interceptions in the attacking third per 90 minutes
+        | Weight | Metric | What it measures |
+        |--------|--------|-----------------|
+        | 3.0× | **Goals/90** | Scoring volume per 90 minutes |
+        | 2.5× | **Dribble%** | Take-on success rate |
+        | 2.0× | **SoT%\*** | Shot accuracy — shots on target / shots taken |
+        | 1.5× | **Recoveries/90** | Ball recoveries per 90 minutes |
+        | 1.0× | **AT Actions/90** | Tackles won + interceptions in the attacking third per 90 min |
+        | 0.5× | **Aerial Won%** | Aerial duel win rate |
 
-        All components are z-scored before summing so no single metric dominates. Players missing data for an optional metric receive a neutral score (0). Position-agnostic — all outfield players qualify regardless of position.
+        *\* SoT% is credibility-adjusted: players with few shots are shrunk toward the population mean so a single lucky shot doesn't dominate the ranking.*
+
+        All components are z-scored before weighting. Players missing data for an optional metric (e.g. no aerial duels) receive a neutral score (0). Position-agnostic — all outfield players qualify.
         """
     )
 
@@ -55,17 +58,16 @@ col1, col2 = st.columns([2, 1])
 with col1:
     st.subheader("Leaderboard")
     _col_map = {
-        "rank":                    "rank",
-        "Player":                  "Player",
-        "Squad":                   "Squad",
-        "CAI":                     "CAI",
-        "SoT%":                    "SoT%",
-        "goals_p90":               "Goals/90",
-        "Aerial_Won%":             "Aerial Won%",
-        "prog_pass_completion_pct":"Prog Pass%",
-        "dribble_success_pct":     "Dribble%",
-        "recoveries_p90":          "Recoveries/90",
-        "at_actions_p90":          "AT Actions/90",
+        "rank":               "rank",
+        "Player":             "Player",
+        "Squad":              "Squad",
+        "CAI":                "CAI",
+        "goals_p90":          "Goals/90",
+        "dribble_success_pct":"Dribble%",
+        "SoT%":               "SoT%",
+        "recoveries_p90":     "Recoveries/90",
+        "at_actions_p90":     "AT Actions/90",
+        "Aerial_Won%":        "Aerial Won%",
     }
     _avail = {k: v for k, v in _col_map.items() if k in df.columns}
     st.dataframe(
