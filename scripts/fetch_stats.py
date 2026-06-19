@@ -12,7 +12,6 @@ Optionally set GITHUB_TOKEN to raise the GitHub API rate limit from
     python scripts/fetch_stats.py
 """
 import os
-import sys
 from io import StringIO
 
 import pandas as pd
@@ -25,6 +24,10 @@ RAW_BASE_URL = f"https://raw.githubusercontent.com/{EVENTS_REPO}/main/{EVENTS_PA
 
 OUT_DIR  = os.path.join(os.path.dirname(__file__), "..", "data")
 OUT_FILE = os.path.join(OUT_DIR, "api_football_raw.csv")
+
+# Event names that identify a shot (used as fallback if isShot flag is missing/NaN)
+SHOT_EVENTS     = {"MissedShots", "SavedShot", "BlockedShot", "Goal", "AttemptSaved"}
+ON_TARGET_EVENTS = {"SavedShot", "Goal", "AttemptSaved"}
 
 
 def _headers(token: str | None) -> dict:
@@ -44,85 +47,94 @@ def fetch_match_events(filename: str, token: str | None) -> pd.DataFrame:
     url = f"{RAW_BASE_URL}/{filename}"
     resp = requests.get(url, headers=_headers(token), timeout=30)
     resp.raise_for_status()
-    return pd.read_csv(StringIO(resp.text))
-
-
-def normalize_bools(df: pd.DataFrame, cols: list[str]) -> pd.DataFrame:
-    """Coerce boolean columns that may arrive as True/False strings or 0/1."""
-    for col in cols:
-        if col in df.columns:
-            df[col] = df[col].map(
-                lambda v: str(v).strip().lower() in ("true", "1", "yes")
-            )
+    df = pd.read_csv(StringIO(resp.text))
+    # Tag each row with its source filename — reliable match identifier
+    # regardless of whether match_id is populated in the data
+    df["_match_file"] = filename
     return df
+
+
+def coerce_bool(series: pd.Series) -> pd.Series:
+    """Convert a bool-ish column (True/False strings, 1/0, or NaN) to bool."""
+    return series.map(lambda v: str(v).strip().lower() in ("true", "1", "yes"))
 
 
 def aggregate_to_players(events: pd.DataFrame) -> pd.DataFrame:
     df = events.copy()
-    df = normalize_bools(df, ["isShot", "isGoal"])
 
-    # Drop non-player rows (FormationSet, Start, End have no meaningful player)
-    df = df[df["player"].notna() & df["playerId"].notna()]
+    # Normalize boolean flags
+    for col in ("isShot", "isGoal"):
+        if col in df.columns:
+            df[col] = coerce_bool(df[col])
+        else:
+            df[col] = False
 
-    # Minutes played: sum of (max_minute + 1) per player per match.
-    # Approximates time on pitch; understimates for late subs, solid for starters.
+    # Drop events with no player name (FormationSet, Start, End, etc.)
+    df = df[df["player"].notna() & (df["player"] != "")].copy()
+
+    # Use "Name|Team" as the groupby key. This avoids depending on playerId
+    # or match_id, which are WhoScored numeric IDs that may be NaN in the CSV.
+    df["_key"] = df["player"].str.strip() + "|" + df["team"].fillna("").str.strip()
+
+    # Minutes played: sum of (last_event_minute + 1) per player per match file.
+    # Approximates time on pitch; floored at 1 to avoid division-by-zero in fouls/90.
     minutes = (
-        df.groupby(["playerId", "match_id"])["minute"]
+        df.groupby(["_key", "_match_file"])["minute"]
         .max()
         .add(1)
-        .groupby(level="playerId")
+        .groupby(level="_key")
         .sum()
         .rename("minutes")
     )
 
     appearances = (
-        df.groupby("playerId")["match_id"]
+        df.groupby("_key")["_match_file"]
         .nunique()
         .rename("appearances")
     )
 
-    # Player name and team — mode per playerId handles minor spelling variants
     names = (
-        df.groupby("playerId")["player"]
+        df.groupby("_key")["player"]
         .agg(lambda s: s.mode().iloc[0])
         .rename("Player")
     )
     teams = (
-        df.groupby("playerId")["team"]
+        df.groupby("_key")["team"]
         .agg(lambda s: s.mode().iloc[0])
         .rename("Squad")
     )
 
-    shots       = df[df["isShot"]]
-    shots_total = shots.groupby("playerId").size().rename("shots_total")
-    shots_on    = (
-        shots[shots["isGoal"] | (shots["event"] == "SavedShot")]
-        .groupby("playerId")
-        .size()
-        .rename("shots_on")
-    )
-    goals_total = df[df["isGoal"]].groupby("playerId").size().rename("goals_total")
+    # Shots: accept either isShot flag OR known shot event names
+    is_shot = df["isShot"] | df["event"].isin(SHOT_EVENTS)
+    shots_df = df[is_shot]
+    shots_total = shots_df.groupby("_key").size().rename("shots_total")
 
-    # Fouls committed: event=Foul, outcome=Unsuccessful (the player who fouled)
+    # Shots on target: accepted by keeper or scored
+    is_on_target = is_shot & (df["isGoal"] | df["event"].isin(ON_TARGET_EVENTS))
+    shots_on = df[is_on_target].groupby("_key").size().rename("shots_on")
+
+    # Goals: isGoal flag OR event name "Goal"
+    goals_total = (
+        df[df["isGoal"] | (df["event"] == "Goal")]
+        .groupby("_key").size().rename("goals_total")
+    )
+
+    # Fouls committed: Foul event where the player is the one who fouled
     fouls_committed = (
         df[(df["event"] == "Foul") & (df["outcome"] == "Unsuccessful")]
-        .groupby("playerId")
-        .size()
-        .rename("fouls_committed")
+        .groupby("_key").size().rename("fouls_committed")
     )
 
-    # Aerial duels: event=Aerial — WhoScored records both sides of each contest
-    aerials    = df[df["event"] == "Aerial"]
-    duels_total = aerials.groupby("playerId").size().rename("duels_total")
-    duels_won   = (
+    # Aerial duels: WhoScored records both sides of each contest as separate rows
+    aerials = df[df["event"] == "Aerial"]
+    duels_total = aerials.groupby("_key").size().rename("duels_total")
+    duels_won = (
         aerials[aerials["outcome"] == "Successful"]
-        .groupby("playerId")
-        .size()
-        .rename("duels_won")
+        .groupby("_key").size().rename("duels_won")
     )
 
     stats = (
-        pd.DataFrame({"player_id": df["playerId"].unique()})
+        pd.DataFrame({"player_id": df["_key"].unique()})
         .set_index("player_id")
         .join(names)
         .join(teams)
@@ -162,6 +174,10 @@ def main():
     print(f"Total events loaded: {len(events):,}")
 
     stats = aggregate_to_players(events)
+    print(f"Total players found: {len(stats)}")
+    print(f"Players with shots: {(stats['shots_total'] > 0).sum()}")
+    print(f"Players with >= 1 appearance: {(stats['appearances'] >= 1).sum()}")
+
     stats.to_csv(OUT_FILE, index=False)
     print(f"Saved {len(stats)} players → {OUT_FILE}")
 
