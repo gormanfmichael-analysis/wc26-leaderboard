@@ -54,20 +54,22 @@ col1, col2 = st.columns([2, 1])
 
 with col1:
     st.subheader("Leaderboard")
+    _col_map = {
+        "rank":                    "rank",
+        "Player":                  "Player",
+        "Squad":                   "Squad",
+        "CAI":                     "CAI",
+        "SoT%":                    "SoT%",
+        "goals_p90":               "Goals/90",
+        "Aerial_Won%":             "Aerial Won%",
+        "prog_pass_completion_pct":"Prog Pass%",
+        "dribble_success_pct":     "Dribble%",
+        "recoveries_p90":          "Recoveries/90",
+        "at_actions_p90":          "AT Actions/90",
+    }
+    _avail = {k: v for k, v in _col_map.items() if k in df.columns}
     st.dataframe(
-        df[["rank", "Player", "Squad", "CAI",
-            "SoT%", "goals_p90", "Aerial_Won%",
-            "prog_pass_completion_pct", "dribble_success_pct",
-            "recoveries_p90", "at_actions_p90"]]
-        .rename(columns={
-            "goals_p90":               "Goals/90",
-            "Aerial_Won%":             "Aerial Won%",
-            "prog_pass_completion_pct":"Prog Pass%",
-            "dribble_success_pct":     "Dribble%",
-            "recoveries_p90":          "Recoveries/90",
-            "at_actions_p90":          "AT Actions/90",
-        })
-        .round(1),
+        df[list(_avail.keys())].rename(columns=_avail).round(1),
         use_container_width=True,
         hide_index=True,
     )
