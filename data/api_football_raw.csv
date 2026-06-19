@@ -1,754 +1,754 @@
-player_id,Player,Squad,minutes,appearances,shots_total,shots_on,goals_total,fouls_committed,duels_total,duels_won
-Lautaro Martínez|Argentina,Lautaro Martínez,Argentina,55,1,1,1,0,2,1,0
-Alexis Mac Allister|Argentina,Alexis Mac Allister,Argentina,95,1,2,1,0,2,1,0
-Rodrigo De Paul|Argentina,Rodrigo De Paul,Argentina,94,1,0,0,0,0,0,0
-Lisandro Martínez|Argentina,Lisandro Martínez,Argentina,94,1,0,0,0,0,0,0
-Enzo Fernández|Argentina,Enzo Fernández,Argentina,94,1,0,0,0,1,0,0
-Cristian Romero|Argentina,Cristian Romero,Argentina,80,1,0,0,0,2,1,1
-Facundo Medina|Argentina,Facundo Medina,Argentina,93,1,0,0,0,2,0,0
-Rafik Belghali|Algeria,Rafik Belghali,Algeria,95,1,0,0,0,2,2,2
-Anis Hadj Moussa|Algeria,Anis Hadj Moussa,Algeria,64,1,1,1,0,0,0,0
-Nabil Bentaleb|Algeria,Nabil Bentaleb,Algeria,82,1,0,0,0,0,0,0
-Aïssa Mandi|Algeria,Aïssa Mandi,Algeria,95,1,0,0,0,0,3,1
-Ramy Bensebaini|Algeria,Ramy Bensebaini,Algeria,95,1,0,0,0,0,0,0
-Luca Zidane|Algeria,Luca Zidane,Algeria,89,1,0,0,0,0,0,0
-Emiliano Martínez|Argentina,Emiliano Martínez,Argentina,95,1,0,0,0,0,0,0
-Gonzalo Montiel|Argentina,Gonzalo Montiel,Argentina,48,1,0,0,0,1,0,0
-Lionel Messi|Argentina,Lionel Messi,Argentina,80,1,6,4,3,1,0,0
-Rayan Aït-Nouri|Algeria,Rayan Aït-Nouri,Algeria,96,1,0,0,0,1,0,0
-Farès Chaïbi|Algeria,Farès Chaïbi,Algeria,95,1,3,0,0,1,0,0
-Ibrahim Maza|Algeria,Ibrahim Maza,Algeria,81,1,1,1,0,0,1,1
-Thiago Almada|Argentina,Thiago Almada,Argentina,55,1,1,0,0,0,2,1
-Hicham Boudaoui|Algeria,Hicham Boudaoui,Algeria,64,1,0,0,0,2,0,0
-Amine Gouiri|Algeria,Amine Gouiri,Algeria,64,1,0,0,0,1,1,0
-Nahuel Molina|Argentina,Nahuel Molina,Argentina,96,1,0,0,0,0,0,0
-Nico González|Argentina,Nico González,Argentina,93,1,0,0,0,0,1,1
-Julián Alvarez|Argentina,Julián Alvarez,Argentina,95,1,0,0,0,1,2,0
-Houssem Aouar|Algeria,Houssem Aouar,Algeria,93,1,1,0,0,0,0,0
-Mohammed Amoura|Algeria,Mohammed Amoura,Algeria,96,1,0,0,0,1,0,0
-Riyad Mahrez|Algeria,Riyad Mahrez,Algeria,91,1,1,1,0,0,0,0
-Nico Paz|Argentina,Nico Paz,Argentina,95,1,0,0,0,1,0,0
-Nicolás Otamendi|Argentina,Nicolás Otamendi,Argentina,96,1,0,0,0,0,0,0
-Adil Boulbina|Algeria,Adil Boulbina,Algeria,95,1,0,0,0,0,0,0
-Ramiz Zerrouki|Algeria,Ramiz Zerrouki,Algeria,95,1,0,0,0,0,1,1
-Mohamed Touré|Australia,Mohamed Touré,Australia,74,1,1,0,0,2,2,0
-Harry Souttar|Australia,Harry Souttar,Australia,95,1,1,1,0,1,4,3
-Abdülkerim Bardakci|Turkiye,Abdülkerim Bardakci,Turkiye,96,1,1,1,0,0,10,4
-Connor Metcalfe|Australia,Connor Metcalfe,Australia,96,1,1,1,1,0,6,2
-Aiden O'Neill|Australia,Aiden O'Neill,Australia,94,1,0,0,0,1,0,0
-Ferdi Kadioglu|Turkiye,Ferdi Kadioglu,Turkiye,96,1,1,0,0,0,3,2
-Jacob Italiano|Australia,Jacob Italiano,Australia,74,1,1,0,0,0,1,0
-Orkun Kökçü|Turkiye,Orkun Kökçü,Turkiye,62,1,1,0,0,0,0,0
-Hakan Çalhanoglu|Turkiye,Hakan Çalhanoglu,Turkiye,95,1,5,4,0,1,1,0
-Arda Güler|Turkiye,Arda Güler,Turkiye,95,1,8,4,0,0,2,1
-Merih Demiral|Turkiye,Merih Demiral,Turkiye,95,1,1,0,0,0,7,5
-Ismail Yüksek|Turkiye,Ismail Yüksek,Turkiye,81,1,3,2,0,1,2,2
-Ugurcan Çakir|Turkiye,Ugurcan Çakir,Turkiye,88,1,0,0,0,0,0,0
-Baris Alper Yilmaz|Turkiye,Baris Alper Yilmaz,Turkiye,48,1,0,0,0,0,0,0
-Alessandro Circati|Australia,Alessandro Circati,Australia,93,1,1,0,0,1,2,1
-Paul Okon-Engstler|Australia,Paul Okon-Engstler,Australia,84,1,0,0,0,1,2,1
-Nestory Irankunda|Australia,Nestory Irankunda,Australia,61,1,2,2,1,1,2,0
-Zeki Çelik|Turkiye,Zeki Çelik,Turkiye,81,1,1,1,0,1,3,2
-Patrick Beach|Australia,Patrick Beach,Australia,96,1,0,0,0,0,0,0
-Cameron Burgess|Australia,Cameron Burgess,Australia,92,1,0,0,0,0,2,2
-Jordan Bos|Australia,Jordan Bos,Australia,84,1,2,1,0,0,2,0
-Kerem Aktürkoglu|Turkiye,Kerem Aktürkoglu,Turkiye,85,1,3,2,0,0,2,0
-Kenan Yildiz|Turkiye,Kenan Yildiz,Turkiye,96,1,6,6,0,0,1,1
-Nishan Velupillay|Australia,Nishan Velupillay,Australia,90,1,0,0,0,0,1,0
-Yunus Akgün|Turkiye,Yunus Akgün,Turkiye,96,1,0,0,0,1,0,0
-Tete Yengi|Australia,Tete Yengi,Australia,96,1,0,0,0,3,4,4
-Jason Geria|Australia,Jason Geria,Australia,95,1,0,0,0,0,2,1
-Salih Özcan|Turkiye,Salih Özcan,Turkiye,96,1,0,0,0,0,0,0
-Mert Müldür|Turkiye,Mert Müldür,Turkiye,96,1,0,0,0,0,0,0
-Aziz Behich|Australia,Aziz Behich,Australia,95,1,0,0,0,1,1,0
-Jackson Irvine|Australia,Jackson Irvine,Australia,96,1,0,0,0,1,1,1
-Deniz Gül|Turkiye,Deniz Gül,Turkiye,91,1,0,0,0,0,1,0
-Sasa Kalajdzic|Austria,Sasa Kalajdzic,Austria,49,1,2,0,0,1,3,1
-Xaver Schlager|Austria,Xaver Schlager,Austria,59,1,0,0,0,2,2,2
-Marcel Sabitzer|Austria,Marcel Sabitzer,Austria,99,1,1,1,0,0,1,0
-David Alaba|Austria,David Alaba,Austria,59,1,1,0,0,0,3,2
-Philipp Lienhart|Austria,Philipp Lienhart,Austria,99,1,0,0,0,0,2,2
-Abdallah Nasib|Jordan,Abdallah Nasib,Jordan,81,1,0,0,0,1,1,0
-Nizar Al Rashdan|Jordan,Nizar Al Rashdan,Jordan,98,1,0,0,0,3,1,1
-Nicolas Seiwald|Austria,Nicolas Seiwald,Austria,97,1,0,0,0,1,2,1
-Alexander Schlager|Austria,Alexander Schlager,Austria,99,1,0,0,0,0,1,1
-Stefan Posch|Austria,Stefan Posch,Austria,99,1,2,0,0,3,4,4
-Mohammad Abu Al Nadi|Jordan,Mohammad Abu Al Nadi,Jordan,72,1,0,0,0,0,1,0
-Mohannad Abu Taha|Jordan,Mohannad Abu Taha,Jordan,98,1,0,0,0,1,1,1
-Yazeed Abulaila|Jordan,Yazeed Abulaila,Jordan,102,1,0,0,0,0,1,1
-Konrad Laimer|Austria,Konrad Laimer,Austria,99,1,1,0,0,3,1,0
-Mousa Al Tamari|Jordan,Mousa Al Tamari,Jordan,88,1,4,2,0,1,3,0
-Odeh Fakhoury|Jordan,Odeh Fakhoury,Jordan,89,1,1,1,0,0,6,0
-Ehsan Haddad|Jordan,Ehsan Haddad,Jordan,81,1,1,0,0,0,1,1
-Phillipp Mwene|Austria,Phillipp Mwene,Austria,59,1,0,0,0,1,1,1
-Noor Al Rawabdeh|Jordan,Noor Al Rawabdeh,Jordan,97,1,0,0,0,0,1,0
-Ali Olwan|Jordan,Ali Olwan,Jordan,103,1,4,3,1,0,4,1
-Romano Schmid|Austria,Romano Schmid,Austria,83,1,1,1,1,0,1,0
-Yazan Al Arab|Jordan,Yazan Al Arab,Jordan,92,1,1,1,1,0,3,3
-Marko Arnautovic|Austria,Marko Arnautovic,Austria,102,1,2,2,1,0,2,1
-Paul Wanner|Austria,Paul Wanner,Austria,99,1,0,0,0,0,0,0
-Kevin Danso|Austria,Kevin Danso,Austria,99,1,0,0,0,0,0,0
-Carney Chukwuemeka|Austria,Carney Chukwuemeka,Austria,99,1,1,1,0,1,2,1
-Saleem Obaid|Jordan,Saleem Obaid,Jordan,99,1,0,0,0,1,0,0
-Saed Al Rosan|Jordan,Saed Al Rosan,Jordan,98,1,0,0,0,0,1,1
-Mahmoud Al Mardi|Jordan,Mahmoud Al Mardi,Jordan,97,1,0,0,0,0,1,0
-Patrick Wimmer|Austria,Patrick Wimmer,Austria,99,1,0,0,0,0,0,0
-Mohammad Al Daoud|Jordan,Mohammad Al Daoud,Jordan,98,1,0,0,0,0,0,0
-Ali Azaizeh|Jordan,Ali Azaizeh,Jordan,93,1,1,0,0,0,0,0
-Leandro Trossard|Belgium,Leandro Trossard,Belgium,93,1,3,3,0,0,0,0
-Kevin De Bruyne|Belgium,Kevin De Bruyne,Belgium,86,1,4,2,0,0,2,2
-Brandon Mechele|Belgium,Brandon Mechele,Belgium,95,1,2,1,0,2,1,1
-Thomas Meunier|Belgium,Thomas Meunier,Belgium,93,1,1,1,0,5,6,1
-Amadou Onana|Belgium,Amadou Onana,Belgium,56,1,0,0,0,1,1,1
-Ahmed Fatouh|Egypt,Ahmed Fatouh,Egypt,88,1,0,0,0,2,0,0
-Emam Ashour|Egypt,Emam Ashour,Egypt,71,1,2,1,1,0,4,3
-Hamdi Fathy|Egypt,Hamdi Fathy,Egypt,89,1,0,0,0,2,3,1
-Yasser Ibrahim|Egypt,Yasser Ibrahim,Egypt,92,1,0,0,0,0,1,0
-Marwan Attia|Egypt,Marwan Attia,Egypt,93,1,1,1,0,3,3,0
-Mohamed Hany|Egypt,Mohamed Hany,Egypt,93,1,3,3,1,1,1,0
-Timothy Castagne|Belgium,Timothy Castagne,Belgium,56,1,0,0,0,1,3,2
-Youri Tielemans|Belgium,Youri Tielemans,Belgium,95,1,2,0,0,1,1,1
-Jérémy Doku|Belgium,Jérémy Doku,Belgium,86,1,1,0,0,1,0,0
-Mohanad Lasheen|Egypt,Mohanad Lasheen,Egypt,93,1,0,0,0,2,2,0
-Mostafa Zico|Egypt,Mostafa Zico,Egypt,76,1,2,2,0,0,1,0
-Nathan Ngoy|Belgium,Nathan Ngoy,Belgium,95,1,0,0,0,2,2,1
-Thibaut Courtois|Belgium,Thibaut Courtois,Belgium,95,1,0,0,0,0,0,0
-Charles De Ketelaere|Belgium,Charles De Ketelaere,Belgium,66,1,0,0,0,0,4,4
-Mostafa Shobeir|Egypt,Mostafa Shobeir,Egypt,95,1,0,0,0,0,0,0
-Mohamed Salah|Egypt,Mohamed Salah,Egypt,76,1,1,1,0,2,2,1
-Omar Marmoush|Egypt,Omar Marmoush,Egypt,90,1,5,3,0,2,2,1
-Nicolas Raskin|Belgium,Nicolas Raskin,Belgium,92,1,0,0,0,0,2,1
-Maxim De Cuyper|Belgium,Maxim De Cuyper,Belgium,93,1,0,0,0,2,0,0
-Romelu Lukaku|Belgium,Romelu Lukaku,Belgium,93,1,2,1,0,0,0,0
-Ramy Rabia|Egypt,Ramy Rabia,Egypt,95,1,0,0,0,0,0,0
-Zizo|Egypt,Zizo,Egypt,93,1,1,1,0,1,0,0
-Hamza Abdelkarim|Egypt,Hamza Abdelkarim,Egypt,89,1,0,0,0,0,3,2
-Matias Fernandez-Pardo|Belgium,Matias Fernandez-Pardo,Belgium,93,1,0,0,0,0,0,0
-Hans Vanaken|Belgium,Hans Vanaken,Belgium,93,1,0,0,0,0,1,0
-Karim Hafez|Egypt,Karim Hafez,Egypt,95,1,0,0,0,0,1,1
-Ibrahim Adel|Egypt,Ibrahim Adel,Egypt,95,1,0,0,0,0,0,0
-Azzedine Ounahi|Morocco,Azzedine Ounahi,Morocco,65,1,0,0,0,0,0,0
-Roger Ibañez|Brazil,Roger Ibañez,Brazil,48,1,0,0,0,2,0,0
-Marquinhos|Brazil,Marquinhos,Brazil,98,1,2,1,0,0,3,3
-Issa Diop|Morocco,Issa Diop,Morocco,99,1,0,0,0,0,1,1
-Ayyoub Bouaddi|Morocco,Ayyoub Bouaddi,Morocco,100,1,0,0,0,1,1,0
-Lucas Paquetá|Brazil,Lucas Paquetá,Brazil,61,1,2,2,0,2,2,1
-Raphinha|Brazil,Raphinha,Brazil,93,1,2,2,0,0,1,1
-Noussair Mazraoui|Morocco,Noussair Mazraoui,Morocco,80,1,0,0,0,2,1,0
-Bilal El Khannouss|Morocco,Bilal El Khannouss,Morocco,80,1,1,1,0,2,1,0
-Bruno Guimarães|Brazil,Bruno Guimarães,Brazil,80,1,1,0,0,1,2,1
-Casemiro|Brazil,Casemiro,Brazil,48,1,0,0,0,1,1,1
-Alisson Becker|Brazil,Alisson Becker,Brazil,99,1,0,0,0,0,0,0
-Gabriel Magalhães|Brazil,Gabriel Magalhães,Brazil,100,1,0,0,0,1,1,1
-Neil El Aynaoui|Morocco,Neil El Aynaoui,Morocco,99,1,3,1,0,4,4,1
-Douglas Santos|Brazil,Douglas Santos,Brazil,99,1,0,0,0,1,0,0
-Brahim Díaz|Morocco,Brahim Díaz,Morocco,65,1,3,3,0,0,0,0
-Chadi Riad|Morocco,Chadi Riad,Morocco,98,1,0,0,0,0,0,0
-Ismael Saibari|Morocco,Ismael Saibari,Morocco,89,1,3,3,1,2,3,1
-Achraf Hakimi|Morocco,Achraf Hakimi,Morocco,100,1,3,0,0,3,2,0
-Igor Thiago|Brazil,Igor Thiago,Brazil,62,1,2,1,0,2,1,1
-Yassine Bounou|Morocco,Yassine Bounou,Morocco,101,1,0,0,0,0,1,1
-Vinícius Júnior|Brazil,Vinícius Júnior,Brazil,100,1,1,1,1,3,1,0
-Danilo|Brazil,Danilo,Brazil,98,1,0,0,0,0,2,1
-Fabinho|Brazil,Fabinho,Brazil,97,1,0,0,0,3,0,0
-Matheus Cunha|Brazil,Matheus Cunha,Brazil,96,1,0,0,0,0,0,0
-Luiz Henrique|Brazil,Luiz Henrique,Brazil,99,1,0,0,0,0,1,1
-Samir El Mourabet|Morocco,Samir El Mourabet,Morocco,99,1,0,0,0,0,0,0
-Chemsdine Talbi|Morocco,Chemsdine Talbi,Morocco,100,1,0,0,0,0,0,0
-Anass Salah-Eddine|Morocco,Anass Salah-Eddine,Morocco,100,1,0,0,0,0,0,0
-Ayoube Amaimouni-Echghouyab|Morocco,Ayoube Amaimouni-Echghouyab,Morocco,100,1,1,1,0,0,0,0
-Danilo Santos|Brazil,Danilo Santos,Brazil,99,1,2,1,0,0,0,0
-Soufiane Rahimi|Morocco,Soufiane Rahimi,Morocco,98,1,0,0,0,0,1,0
-Stephen Eustaquio|Canada,Stephen Eustaquio,Canada,91,1,1,0,0,2,1,0
-Ismaël Koné|Canada,Ismaël Koné,Canada,95,1,1,1,0,1,6,1
-Liam Millar|Canada,Liam Millar,Canada,61,1,0,0,0,1,5,2
-Richie Laryea|Canada,Richie Laryea,Canada,96,1,1,1,0,0,3,1
-Tani Oluwaseyi|Canada,Tani Oluwaseyi,Canada,76,1,2,1,0,0,13,5
-Nikola Katic|Bosnia and Herzegovina,Nikola Katic,Bosnia and Herzegovina,96,1,0,0,0,2,15,10
-Luc De Fougerolles|Canada,Luc De Fougerolles,Canada,96,1,0,0,0,2,13,4
-Tarik Muharemovic|Bosnia and Herzegovina,Tarik Muharemovic,Bosnia and Herzegovina,96,1,1,0,0,1,7,6
-Tajon Buchanan|Canada,Tajon Buchanan,Canada,61,1,0,0,0,0,2,0
-Amar Dedic|Bosnia and Herzegovina,Amar Dedic,Bosnia and Herzegovina,93,1,0,0,0,1,3,3
-Ermedin Demirovic|Bosnia and Herzegovina,Ermedin Demirovic,Bosnia and Herzegovina,94,1,1,1,0,4,11,7
-Maxime Crépeau|Canada,Maxime Crépeau,Canada,96,1,0,0,0,0,1,1
-Sead Kolasinac|Bosnia and Herzegovina,Sead Kolasinac,Bosnia and Herzegovina,84,1,0,0,0,3,2,1
-Jovo Lukic|Bosnia and Herzegovina,Jovo Lukic,Bosnia and Herzegovina,62,1,3,2,1,1,9,9
-Alistair Johnston|Canada,Alistair Johnston,Canada,96,1,1,1,0,2,1,1
-Ivan Basic|Bosnia and Herzegovina,Ivan Basic,Bosnia and Herzegovina,62,1,0,0,0,2,2,1
-Amar Memic|Bosnia and Herzegovina,Amar Memic,Bosnia and Herzegovina,74,1,1,0,0,1,2,1
-Esmir Bajraktarevic|Bosnia and Herzegovina,Esmir Bajraktarevic,Bosnia and Herzegovina,74,1,0,0,0,1,3,1
-Jonathan David|Canada,Jonathan David,Canada,61,1,3,2,0,0,1,0
-Derek Cornelius|Canada,Derek Cornelius,Canada,96,1,1,0,0,0,11,4
-Nikola Vasilj|Bosnia and Herzegovina,Nikola Vasilj,Bosnia and Herzegovina,95,1,0,0,0,0,0,0
-Benjamin Tahirovic|Bosnia and Herzegovina,Benjamin Tahirovic,Bosnia and Herzegovina,89,1,1,0,0,0,2,1
-Jacob Shaffelburg|Canada,Jacob Shaffelburg,Canada,96,1,0,0,0,0,1,0
-Promise David|Canada,Promise David,Canada,93,1,1,0,0,2,3,1
-Ali Ahmed|Canada,Ali Ahmed,Canada,96,1,0,0,0,0,1,0
-Samed Bazdar|Bosnia and Herzegovina,Samed Bazdar,Bosnia and Herzegovina,94,1,0,0,0,1,6,1
-Armin Gigovic|Bosnia and Herzegovina,Armin Gigovic,Bosnia and Herzegovina,96,1,0,0,0,0,1,1
-Ivan Sunjic|Bosnia and Herzegovina,Ivan Sunjic,Bosnia and Herzegovina,94,1,0,0,0,2,1,1
-Kerim Alajbegovic|Bosnia and Herzegovina,Kerim Alajbegovic,Bosnia and Herzegovina,92,1,0,0,0,1,0,0
-Cyle Larin|Canada,Cyle Larin,Canada,96,1,2,2,1,0,2,1
-Dzenis Burnic|Bosnia and Herzegovina,Dzenis Burnic,Bosnia and Herzegovina,91,1,1,1,0,0,0,0
-Jonathan Osorio|Canada,Jonathan Osorio,Canada,96,1,0,0,0,0,0,0
-Declan Rice|England,Declan Rice,England,72,1,1,1,0,1,1,1
-Jordan Pickford|England,Jordan Pickford,England,97,1,0,0,0,0,0,0
-Luka Vuskovic|Croatia,Luka Vuskovic,Croatia,66,1,0,0,0,1,0,0
-Martin Baturina|Croatia,Martin Baturina,Croatia,78,1,1,1,1,0,4,2
-Harry Kane|England,Harry Kane,England,96,1,7,4,2,2,4,2
-Josko Gvardiol|Croatia,Josko Gvardiol,Croatia,96,1,1,1,0,0,1,1
-Ivan Perisic|Croatia,Ivan Perisic,Croatia,96,1,0,0,0,2,6,4
-Ezri Konsa|England,Ezri Konsa,England,90,1,2,1,0,1,5,1
-John Stones|England,John Stones,England,87,1,0,0,0,1,3,2
-Dominik Livakovic|Croatia,Dominik Livakovic,Croatia,96,1,0,0,0,0,1,1
-Josip Sutalo|Croatia,Josip Sutalo,Croatia,95,1,1,0,0,0,4,4
-Petar Musa|Croatia,Petar Musa,Croatia,66,1,1,1,1,1,9,3
-Elliot Anderson|England,Elliot Anderson,England,96,1,1,1,0,3,4,2
-Nico O'Reilly|England,Nico O'Reilly,England,96,1,2,1,0,1,2,1
-Josip Stanisic|Croatia,Josip Stanisic,Croatia,93,1,0,0,0,0,1,0
-Noni Madueke|England,Noni Madueke,England,72,1,1,1,0,0,1,0
-Luka Modric|Croatia,Luka Modric,Croatia,58,1,0,0,0,1,0,0
-Petar Sucic|Croatia,Petar Sucic,Croatia,95,1,1,0,0,2,0,0
-Reece James|England,Reece James,England,94,1,1,1,0,1,5,2
-Jude Bellingham|England,Jude Bellingham,England,80,1,3,2,1,0,1,0
-Mario Pasalic|Croatia,Mario Pasalic,Croatia,78,1,1,0,0,1,0,0
-Anthony Gordon|England,Anthony Gordon,England,72,1,2,2,0,0,0,0
-Mateo Kovacic|Croatia,Mateo Kovacic,Croatia,95,1,1,1,0,1,0,0
-Igor Matanovic|Croatia,Igor Matanovic,Croatia,95,1,1,1,0,2,2,1
-Marco Pasalic|Croatia,Marco Pasalic,Croatia,96,1,1,1,0,0,0,0
-Morgan Rogers|England,Morgan Rogers,England,96,1,0,0,0,0,1,1
-Bukayo Saka|England,Bukayo Saka,England,95,1,0,0,0,0,0,0
-Marcus Rashford|England,Marcus Rashford,England,95,1,1,1,1,0,1,0
-Andrej Kramaric|Croatia,Andrej Kramaric,Croatia,96,1,1,1,0,0,0,0
-Nikola Vlasic|Croatia,Nikola Vlasic,Croatia,96,1,0,0,0,1,0,0
-Djed Spence|England,Djed Spence,England,94,1,1,1,0,0,0,0
-Marc Guéhi|England,Marc Guéhi,England,92,1,0,0,0,0,0,0
-Aurélien Tchouaméni|France,Aurélien Tchouaméni,France,100,1,0,0,0,0,3,3
-Krépin Diatta|Senegal,Krépin Diatta,Senegal,98,1,0,0,0,0,2,1
-Lamine Camara|Senegal,Lamine Camara,Senegal,76,1,0,0,0,2,1,0
-Théo Hernández|France,Théo Hernández,France,96,1,1,1,0,0,2,2
-Kalidou Koulibaly|Senegal,Kalidou Koulibaly,Senegal,98,1,0,0,0,0,0,0
-Jules Koundé|France,Jules Koundé,France,100,1,0,0,0,1,5,1
-Michael Olise|France,Michael Olise,France,100,1,2,2,0,0,0,0
-Sadio Mané|Senegal,Sadio Mané,Senegal,95,1,1,1,0,0,3,1
-Nicolas Jackson|Senegal,Nicolas Jackson,Senegal,83,1,1,0,0,2,5,1
-El Hadji Malick Diouf|Senegal,El Hadji Malick Diouf,Senegal,97,1,0,0,0,1,4,4
-Moussa Niakhaté|Senegal,Moussa Niakhaté,Senegal,98,1,0,0,0,0,0,0
-Pape Gueye|Senegal,Pape Gueye,Senegal,83,1,0,0,0,1,0,0
-Idrissa Gueye|Senegal,Idrissa Gueye,Senegal,88,1,0,0,0,1,0,0
-Mike Maignan|France,Mike Maignan,France,100,1,0,0,0,0,0,0
-William Saliba|France,William Saliba,France,98,1,0,0,0,0,1,1
-Dayot Upamecano|France,Dayot Upamecano,France,100,1,0,0,0,1,4,1
-Ousmane Dembélé|France,Ousmane Dembélé,France,80,1,1,1,0,0,0,0
-Adrien Rabiot|France,Adrien Rabiot,France,95,1,0,0,0,1,2,2
-Kylian Mbappé|France,Kylian Mbappé,France,98,1,4,4,2,2,0,0
-Édouard Mendy|Senegal,Édouard Mendy,Senegal,90,1,0,0,0,0,0,0
-Désiré Doué|France,Désiré Doué,France,87,1,2,1,0,0,2,1
-Ismaïla Sarr|Senegal,Ismaïla Sarr,Senegal,75,1,3,1,0,0,2,0
-Ibrahim Mbaye|Senegal,Ibrahim Mbaye,Senegal,100,1,1,1,1,0,1,0
-Habib Diarra|Senegal,Habib Diarra,Senegal,98,1,0,0,0,2,0,0
-Bradley Barcola|France,Bradley Barcola,France,96,1,1,1,1,0,1,1
-Iliman Ndiaye|Senegal,Iliman Ndiaye,Senegal,100,1,0,0,0,0,0,0
-Bamba Dieng|Senegal,Bamba Dieng,Senegal,99,1,0,0,0,0,1,0
-Rayan Cherki|France,Rayan Cherki,France,100,1,0,0,0,0,0,0
-Pathé Ciss|Senegal,Pathé Ciss,Senegal,98,1,0,0,0,0,1,1
-Jürgen Locadia|Curacao,Jürgen Locadia,Curacao,65,1,0,0,0,1,2,0
-Leandro Bacuna|Curacao,Leandro Bacuna,Curacao,94,1,2,0,0,1,3,2
-Deveron Fonville|Curacao,Deveron Fonville,Curacao,92,1,0,0,0,1,0,0
-Armando Obispo|Curacao,Armando Obispo,Curacao,94,1,0,0,0,0,2,1
-Eloy Room|Curacao,Eloy Room,Curacao,91,1,0,0,0,0,0,0
-Nico Schlotterbeck|Germany,Nico Schlotterbeck,Germany,94,1,2,2,1,2,4,4
-Kai Havertz|Germany,Kai Havertz,Germany,95,1,4,4,2,1,4,1
-Jamal Musiala|Germany,Jamal Musiala,Germany,64,1,3,3,1,2,0,0
-Joshua Kimmich|Germany,Joshua Kimmich,Germany,83,1,0,0,0,0,0,0
-Juninho Bacuna|Curacao,Juninho Bacuna,Curacao,94,1,1,0,0,2,2,0
-Tahith Chong|Curacao,Tahith Chong,Curacao,83,1,1,0,0,1,0,0
-Aleksandar Pavlovic|Germany,Aleksandar Pavlovic,Germany,94,1,3,2,0,6,0,0
-Riechedly Bazoer|Curacao,Riechedly Bazoer,Curacao,94,1,0,0,0,2,0,0
-Florian Wirtz|Germany,Florian Wirtz,Germany,94,1,3,2,0,0,0,0
-Felix Nmecha|Germany,Felix Nmecha,Germany,73,1,4,3,1,1,2,2
-Nathaniel Brown|Germany,Nathaniel Brown,Germany,73,1,2,2,1,2,0,0
-Leroy Sané|Germany,Leroy Sané,Germany,93,1,3,0,0,1,1,0
-Sontje Hansen|Curacao,Sontje Hansen,Curacao,47,1,1,1,0,0,0,0
-Sherel Floranus|Curacao,Sherel Floranus,Curacao,94,1,0,0,0,1,0,0
-Livano Comenencia|Curacao,Livano Comenencia,Curacao,96,1,2,1,1,1,1,1
-Jonathan Tah|Germany,Jonathan Tah,Germany,73,1,0,0,0,2,0,0
-Manuel Neuer|Germany,Manuel Neuer,Germany,92,1,0,0,0,0,0,0
-Jeremy Antonisse|Curacao,Jeremy Antonisse,Curacao,95,1,0,0,0,0,0,0
-Deniz Undav|Germany,Deniz Undav,Germany,94,1,1,1,1,1,0,0
-Jearl Margaritha|Curacao,Jearl Margaritha,Curacao,92,1,1,0,0,0,1,0
-Antonio Rüdiger|Germany,Antonio Rüdiger,Germany,92,1,0,0,0,0,1,1
-Leon Goretzka|Germany,Leon Goretzka,Germany,95,1,0,0,0,0,1,1
-David Raum|Germany,David Raum,Germany,95,1,1,1,0,0,0,0
-Gervane Kastaneer|Curacao,Gervane Kastaneer,Curacao,91,1,0,0,0,1,2,0
-Waldemar Anton|Germany,Waldemar Anton,Germany,96,1,0,0,0,0,0,0
-Kamaldeen Sulemana|Ghana,Kamaldeen Sulemana,Ghana,58,1,0,0,0,1,1,0
-Gideon Mensah|Ghana,Gideon Mensah,Ghana,94,1,0,0,0,0,4,2
-Jerome Opoku|Ghana,Jerome Opoku,Ghana,93,1,0,0,0,0,2,1
-Jordan Ayew|Ghana,Jordan Ayew,Ghana,87,1,0,0,0,2,10,8
-Andrés Andrade|Panama,Andrés Andrade,Panama,102,1,0,0,0,2,7,4
-Jiovany Ramos|Panama,Jiovany Ramos,Panama,101,1,2,0,0,1,1,1
-Orlando Mosquera|Panama,Orlando Mosquera,Panama,99,1,0,0,0,0,1,1
-José Córdoba|Panama,José Córdoba,Panama,98,1,0,0,0,1,2,0
-Amir Murillo|Panama,Amir Murillo,Panama,102,1,0,0,0,0,5,3
-Antoine Semenyo|Ghana,Antoine Semenyo,Ghana,98,1,2,1,0,2,2,2
-Elisha Owusu|Ghana,Elisha Owusu,Ghana,78,1,0,0,0,0,0,0
-Marvin Senaya|Ghana,Marvin Senaya,Ghana,93,1,0,0,0,1,0,0
-César Blackman|Panama,César Blackman,Panama,90,1,2,2,0,1,2,1
-Cecilio Waterman|Panama,Cecilio Waterman,Panama,63,1,1,1,0,0,1,0
-Lawrence Ati Zigi|Ghana,Lawrence Ati Zigi,Ghana,47,1,0,0,0,0,0,0
-Caleb Yirenkyi|Ghana,Caleb Yirenkyi,Ghana,99,1,2,1,1,1,3,0
-Carlos Harvey|Panama,Carlos Harvey,Panama,101,1,1,0,0,5,6,0
-Cristian Martínez|Panama,Cristian Martínez,Panama,63,1,1,0,0,1,2,1
-José Luis Rodríguez|Panama,José Luis Rodríguez,Panama,74,1,0,0,0,0,1,0
-Jonas Adjetey|Ghana,Jonas Adjetey,Ghana,93,1,2,1,0,0,3,3
-Yoel Bárcenas|Panama,Yoel Bárcenas,Panama,99,1,2,1,0,0,3,2
-Ernest Nuamah|Ghana,Ernest Nuamah,Ghana,58,1,0,0,0,0,4,1
-Benjamin Asare|Ghana,Benjamin Asare,Ghana,101,1,0,0,0,0,1,1
-Brandon Thomas-Asante|Ghana,Brandon Thomas-Asante,Ghana,101,1,1,1,0,0,1,1
-Abdul Fatawu|Ghana,Abdul Fatawu,Ghana,93,1,1,0,0,0,0,0
-José Fajardo|Panama,José Fajardo,Panama,86,1,0,0,0,0,1,0
-Azarías Londoño|Panama,Azarías Londoño,Panama,102,1,0,0,0,0,1,0
-Ismael Díaz|Panama,Ismael Díaz,Panama,99,1,2,2,0,0,0,0
-Kwasi Sibo|Ghana,Kwasi Sibo,Ghana,101,1,0,0,0,0,1,1
-Prince Adu|Ghana,Prince Adu,Ghana,101,1,0,0,0,2,1,0
-Aníbal Godoy|Panama,Aníbal Godoy,Panama,102,1,0,0,0,0,0,0
-Lawrence Shankland|Scotland,Lawrence Shankland,Scotland,83,1,2,1,0,4,6,5
-Lewis Ferguson|Scotland,Lewis Ferguson,Scotland,91,1,0,0,0,1,4,3
-Martin Expérience|Haiti,Martin Expérience,Haiti,97,1,1,0,0,2,0,0
-Aaron Hickey|Scotland,Aaron Hickey,Scotland,75,1,0,0,0,2,1,1
-Ben Gannon-Doak|Scotland,Ben Gannon-Doak,Scotland,75,1,2,1,0,0,0,0
-Grant Hanley|Scotland,Grant Hanley,Scotland,98,1,0,0,0,1,6,2
-Jack Hendry|Scotland,Jack Hendry,Scotland,92,1,0,0,0,0,1,1
-Hannes Delcroix|Haiti,Hannes Delcroix,Haiti,97,1,0,0,0,0,6,1
-Johny Placide|Haiti,Johny Placide,Haiti,98,1,0,0,0,0,0,0
-Jean-Ricner Bellegarde|Haiti,Jean-Ricner Bellegarde,Haiti,97,1,3,1,0,1,1,1
-Scott McTominay|Scotland,Scott McTominay,Scotland,98,1,2,0,0,1,1,1
-Andy Robertson|Scotland,Andy Robertson,Scotland,94,1,0,0,0,2,2,0
-Ché Adams|Scotland,Ché Adams,Scotland,75,1,1,1,0,4,6,3
-Ricardo Adé|Haiti,Ricardo Adé,Haiti,92,1,1,0,0,1,5,2
-Frantzdy Pierrot|Haiti,Frantzdy Pierrot,Haiti,98,1,3,2,0,4,9,4
-John McGinn|Scotland,John McGinn,Scotland,83,1,2,1,1,0,1,1
-Danley Jean Jacques|Haiti,Danley Jean Jacques,Haiti,92,1,0,0,0,3,1,1
-Carlens Arcus|Haiti,Carlens Arcus,Haiti,98,1,0,0,0,3,3,0
-Louicius Deedson|Haiti,Louicius Deedson,Haiti,61,1,1,0,0,2,0,0
-Angus Gunn|Scotland,Angus Gunn,Scotland,97,1,0,0,0,0,0,0
-Wilson Isidor|Haiti,Wilson Isidor,Haiti,76,1,2,1,0,3,6,3
-Ruben Providence|Haiti,Ruben Providence,Haiti,85,1,3,2,0,2,0,0
-Josué Casimir|Haiti,Josué Casimir,Haiti,97,1,1,0,0,1,0,0
-Ryan Christie|Scotland,Ryan Christie,Scotland,98,1,0,0,0,1,0,0
-Lyndon Dykes|Scotland,Lyndon Dykes,Scotland,97,1,0,0,0,2,3,2
-Nathan Patterson|Scotland,Nathan Patterson,Scotland,98,1,0,0,0,1,1,1
-Lenny Joseph|Haiti,Lenny Joseph,Haiti,94,1,0,0,0,1,1,0
-Findlay Curtis|Scotland,Findlay Curtis,Scotland,97,1,0,0,0,1,0,0
-Kenny McLean|Scotland,Kenny McLean,Scotland,98,1,0,0,0,1,0,0
-Yassin Fortuné|Haiti,Yassin Fortuné,Haiti,98,1,0,0,0,0,0,0
-Chris Wood|New Zealand,Chris Wood,New Zealand,93,1,4,3,0,0,4,2
-Joe Bell|New Zealand,Joe Bell,New Zealand,93,1,0,0,0,1,4,2
-Tim Payne|New Zealand,Tim Payne,New Zealand,78,1,0,0,0,1,3,1
-Sarpreet Singh|New Zealand,Sarpreet Singh,New Zealand,92,1,3,2,0,1,1,0
-Callum McCowatt|New Zealand,Callum McCowatt,New Zealand,68,1,2,1,0,0,3,2
-Milad Mohammadi|Iran,Milad Mohammadi,Iran,95,1,0,0,0,0,1,0
-Finn Surman|New Zealand,Finn Surman,New Zealand,91,1,1,0,0,0,1,1
-Mohammad Mohebbi|Iran,Mohammad Mohebbi,Iran,94,1,2,2,1,0,3,3
-Mehdi Taremi|Iran,Mehdi Taremi,Iran,80,1,2,0,0,0,4,4
-Ramin Rezaeian|Iran,Ramin Rezaeian,Iran,95,1,1,1,1,0,2,1
-Arya Yousefi|Iran,Arya Yousefi,Iran,51,1,1,1,0,0,0,0
-Saeid Ezatolahi|Iran,Saeid Ezatolahi,Iran,94,1,2,1,0,2,7,3
-Alireza Beiranvand|Iran,Alireza Beiranvand,Iran,93,1,0,0,0,0,0,0
-Ali Nemati|Iran,Ali Nemati,Iran,95,1,1,0,0,1,3,2
-Michael Boxall|New Zealand,Michael Boxall,New Zealand,94,1,0,0,0,0,5,2
-Marko Stamenic|New Zealand,Marko Stamenic,New Zealand,92,1,1,1,0,2,6,2
-Shahriyar Moghanloo|Iran,Shahriyar Moghanloo,Iran,53,1,3,1,0,1,11,6
-Saman Ghoddos|Iran,Saman Ghoddos,Iran,65,1,2,0,0,0,1,1
-Elijah Just|New Zealand,Elijah Just,New Zealand,95,1,2,2,2,1,3,1
-Max Crocombe|New Zealand,Max Crocombe,New Zealand,92,1,0,0,0,0,0,0
-Shoja Khalilzadeh|Iran,Shoja Khalilzadeh,Iran,95,1,0,0,0,2,2,2
-Liberato Cacace|New Zealand,Liberato Cacace,New Zealand,68,1,1,1,0,0,1,0
-Mehdi Ghayedi|Iran,Mehdi Ghayedi,Iran,95,1,1,1,0,2,3,1
-Ali Alipour|Iran,Ali Alipour,Iran,95,1,1,1,0,1,1,0
-Ehsan Hajisafi|Iran,Ehsan Hajisafi,Iran,95,1,1,1,0,1,1,1
-Ryan Thomas|New Zealand,Ryan Thomas,New Zealand,95,1,0,0,0,2,3,1
-Ben Old|New Zealand,Ben Old,New Zealand,91,1,0,0,0,0,1,0
-Callan Elliot|New Zealand,Callan Elliot,New Zealand,94,1,0,0,0,0,3,1
-Amirhossein Hosseinzadeh|Iran,Amirhossein Hosseinzadeh,Iran,95,1,0,0,0,0,1,0
-Jesse Randall|New Zealand,Jesse Randall,New Zealand,92,1,0,0,0,0,0,0
-Tyler Bindon|New Zealand,Tyler Bindon,New Zealand,95,1,0,0,0,0,2,1
-Amir Al Ammari|Iraq,Amir Al Ammari,Iraq,95,1,0,0,0,1,2,1
-David Møller Wolfe|Norway,David Møller Wolfe,Norway,73,1,0,0,0,3,3,1
-Akam Hashim|Iraq,Akam Hashim,Iraq,94,1,1,0,0,0,4,1
-Zaid Ismael|Iraq,Zaid Ismael,Iraq,59,1,0,0,0,2,3,2
-Ørjan Nyland|Norway,Ørjan Nyland,Norway,95,1,0,0,0,0,0,0
-Kristoffer Ajer|Norway,Kristoffer Ajer,Norway,96,1,0,0,0,0,7,5
-Torbjørn Heggem|Norway,Torbjørn Heggem,Norway,93,1,0,0,0,1,2,2
-Hussein Ali|Iraq,Hussein Ali,Iraq,73,1,1,0,0,1,1,1
-Zaid Tahseen|Iraq,Zaid Tahseen,Iraq,96,1,2,0,0,3,3,1
-Jalal Hassan|Iraq,Jalal Hassan,Iraq,91,1,0,0,0,0,0,0
-Fredrik Aursnes|Norway,Fredrik Aursnes,Norway,73,1,0,0,0,0,4,2
-Alexander Sørloth|Norway,Alexander Sørloth,Norway,73,1,2,2,0,3,3,2
-Aymen Hussein|Iraq,Aymen Hussein,Iraq,96,1,4,2,2,2,9,2
-Julian Ryerson|Norway,Julian Ryerson,Norway,96,1,0,0,0,2,1,0
-Martin Ødegaard|Norway,Martin Ødegaard,Norway,81,1,1,0,0,1,0,0
-Antonio Nusa|Norway,Antonio Nusa,Norway,73,1,0,0,0,0,2,1
-Erling Haaland|Norway,Erling Haaland,Norway,96,1,5,4,2,2,3,3
-Merchas Doski|Iraq,Merchas Doski,Iraq,95,1,0,0,0,0,0,0
-Sander Berge|Norway,Sander Berge,Norway,92,1,0,0,0,1,1,0
-Ali Jasim|Iraq,Ali Jasim,Iraq,73,1,0,0,0,0,1,0
-Ibrahim Bayesh|Iraq,Ibrahim Bayesh,Iraq,78,1,1,1,0,0,3,2
-Ali Al Hamadi|Iraq,Ali Al Hamadi,Iraq,59,1,3,1,0,1,1,0
-Zidane Iqbal|Iraq,Zidane Iqbal,Iraq,95,1,0,0,0,0,0,0
-Marko Farji|Iraq,Marko Farji,Iraq,94,1,0,0,0,0,0,0
-Andreas Schjelderup|Norway,Andreas Schjelderup,Norway,95,1,0,0,0,0,0,0
-Kristian Thorstvedt|Norway,Kristian Thorstvedt,Norway,95,1,2,1,0,0,0,0
-Oscar Bobb|Norway,Oscar Bobb,Norway,90,1,0,0,0,0,0,0
-Leo Østigård|Norway,Leo Østigård,Norway,93,1,2,1,1,0,1,1
-Mustafa Saadoon|Iraq,Mustafa Saadoon,Iraq,96,1,0,0,0,2,0,0
-Ahmed Qasem|Iraq,Ahmed Qasem,Iraq,89,1,0,0,0,0,0,0
-Mohanad Ali|Iraq,Mohanad Ali,Iraq,98,1,0,0,0,0,0,0
-Patrick Berg|Norway,Patrick Berg,Norway,96,1,0,0,0,0,0,0
-Enner Valencia|Ecuador,Enner Valencia,Ecuador,77,1,1,0,0,2,3,0
-Hernán Galíndez|Ecuador,Hernán Galíndez,Ecuador,98,1,0,0,0,0,0,0
-Emmanuel Agbadou|Ivory Coast,Emmanuel Agbadou,Ivory Coast,98,1,0,0,0,0,6,4
-Moisés Caicedo|Ecuador,Moisés Caicedo,Ecuador,99,1,1,0,0,3,1,1
-Pedro Vite|Ecuador,Pedro Vite,Ecuador,97,1,1,0,0,0,1,1
-Alan Minda|Ecuador,Alan Minda,Ecuador,56,1,2,0,0,0,1,0
-Yan Diomande|Ivory Coast,Yan Diomande,Ivory Coast,96,1,2,0,0,0,0,0
-Piero Hincapié|Ecuador,Piero Hincapié,Ecuador,99,1,1,1,0,0,4,2
-Yahia Fofana|Ivory Coast,Yahia Fofana,Ivory Coast,97,1,0,0,0,0,1,1
-Joel Ordóñez|Ecuador,Joel Ordóñez,Ecuador,98,1,2,2,0,0,3,3
-Willian Pacho|Ecuador,Willian Pacho,Ecuador,98,1,0,0,0,1,3,3
-Alan Franco|Ecuador,Alan Franco,Ecuador,62,1,0,0,0,3,1,0
-Wilfried Singo|Ivory Coast,Wilfried Singo,Ivory Coast,98,1,1,0,0,2,4,4
-Gonzalo Plata|Ecuador,Gonzalo Plata,Ecuador,98,1,1,1,0,1,2,0
-Ghislain Konan|Ivory Coast,Ghislain Konan,Ivory Coast,97,1,1,0,0,0,2,1
-Nicolas Pépé|Ivory Coast,Nicolas Pépé,Ivory Coast,77,1,2,2,0,0,1,0
-Elye Wahi|Ivory Coast,Elye Wahi,Ivory Coast,56,1,2,1,0,0,2,0
-Franck Kessie|Ivory Coast,Franck Kessie,Ivory Coast,97,1,0,0,0,3,0,0
-John Yeboah|Ecuador,John Yeboah,Ecuador,62,1,3,0,0,0,0,0
-Guéla Doué|Ivory Coast,Guéla Doué,Ivory Coast,89,1,0,0,0,3,4,4
-Seko Fofana|Ivory Coast,Seko Fofana,Ivory Coast,77,1,4,2,0,1,0,0
-Bazoumana Touré|Ivory Coast,Bazoumana Touré,Ivory Coast,56,1,0,0,0,0,1,1
-Nilson Angulo|Ecuador,Nilson Angulo,Ecuador,98,1,0,0,0,1,3,0
-Ange-Yoan Bonny|Ivory Coast,Ange-Yoan Bonny,Ivory Coast,97,1,0,0,0,0,2,0
-Amad Diallo|Ivory Coast,Amad Diallo,Ivory Coast,97,1,2,2,1,0,0,0
-Jackson Porozo|Ecuador,Jackson Porozo,Ecuador,94,1,0,0,0,2,0,0
-Ángelo Preciado|Ecuador,Ángelo Preciado,Ecuador,96,1,0,0,0,0,0,0
-Ibrahim Sangaré|Ivory Coast,Ibrahim Sangaré,Ivory Coast,89,1,0,0,0,0,2,1
-Christ Inao Oulaï|Ivory Coast,Christ Inao Oulaï,Ivory Coast,99,1,1,0,0,1,3,1
-Kevin Rodríguez|Ecuador,Kevin Rodríguez,Ecuador,98,1,0,0,0,0,6,1
-Odilon Kossounou|Ivory Coast,Odilon Kossounou,Ivory Coast,98,1,0,0,0,0,0,0
-Brian Gutiérrez|Mexico,Brian Gutiérrez,Mexico,66,1,4,2,0,2,2,0
-Érik Lira|Mexico,Érik Lira,Mexico,76,1,0,0,0,0,1,1
-Johan Vásquez|Mexico,Johan Vásquez,Mexico,96,1,0,0,0,0,5,3
-César Montes|Mexico,César Montes,Mexico,92,1,0,0,0,2,3,2
-Israel Reyes|Mexico,Israel Reyes,Mexico,96,1,1,0,0,0,1,1
-Julián Quiñones|Mexico,Julián Quiñones,Mexico,79,1,5,3,1,1,1,0
-Álvaro Fidalgo|Mexico,Álvaro Fidalgo,Mexico,66,1,0,0,0,0,0,0
-Roberto Alvarado|Mexico,Roberto Alvarado,Mexico,91,1,0,0,0,2,0,0
-Aubrey Modiba|South Africa,Aubrey Modiba,South Africa,77,1,1,1,0,2,1,0
-Jayden Adams|South Africa,Jayden Adams,South Africa,61,1,0,0,0,0,1,0
-Khuliso Mudau|South Africa,Khuliso Mudau,South Africa,97,1,0,0,0,2,1,0
-Nkosinathi Sibisi|South Africa,Nkosinathi Sibisi,South Africa,97,1,0,0,0,1,0,0
-Ronwen Williams|South Africa,Ronwen Williams,South Africa,96,1,0,0,0,0,0,0
-Ime Okon|South Africa,Ime Okon,South Africa,98,1,0,0,0,0,4,1
-Yaya Sithole|South Africa,Yaya Sithole,South Africa,50,1,0,0,0,3,1,1
-Teboho Mokoena|South Africa,Teboho Mokoena,South Africa,98,1,0,0,0,1,2,2
-Mbekezeli Mbokazi|South Africa,Mbekezeli Mbokazi,South Africa,95,1,1,1,0,1,1,0
-Raúl Jiménez|Mexico,Raúl Jiménez,Mexico,76,1,4,3,1,1,6,5
-Lyle Foster|South Africa,Lyle Foster,South Africa,56,1,1,0,0,0,4,0
-Iqraam Rayners|South Africa,Iqraam Rayners,South Africa,77,1,0,0,0,0,4,0
-Raúl Rangel|Mexico,Raúl Rangel,Mexico,90,1,0,0,0,0,0,0
-Jesús Gallardo|Mexico,Jesús Gallardo,Mexico,97,1,2,1,0,1,3,3
-Thalente Mbatha|South Africa,Thalente Mbatha,South Africa,95,1,0,0,0,0,0,0
-Themba Zwane|South Africa,Themba Zwane,South Africa,84,1,0,0,0,1,0,0
-Luis Chávez|Mexico,Luis Chávez,Mexico,95,1,0,0,0,1,0,0
-Gilberto Mora|Mexico,Gilberto Mora,Mexico,91,1,0,0,0,1,0,0
-Edson Álvarez|Mexico,Edson Álvarez,Mexico,91,1,0,0,0,0,0,0
-Armando González|Mexico,Armando González,Mexico,95,1,0,0,0,1,0,0
-Evidence Makgopa|South Africa,Evidence Makgopa,South Africa,96,1,0,0,0,0,3,3
-Oswin Appollis|South Africa,Oswin Appollis,South Africa,97,1,0,0,0,0,0,0
-Alexis Vega|Mexico,Alexis Vega,Mexico,97,1,0,0,0,0,0,0
-Tijjani Reijnders|Netherlands,Tijjani Reijnders,Netherlands,70,1,0,0,0,0,2,1
-Bart Verbruggen|Netherlands,Bart Verbruggen,Netherlands,96,1,0,0,0,0,0,0
-Shogo Taniguchi|Japan,Shogo Taniguchi,Japan,96,1,0,0,0,0,0,0
-Frenkie de Jong|Netherlands,Frenkie de Jong,Netherlands,96,1,0,0,0,2,0,0
-Jan Paul van Hecke|Netherlands,Jan Paul van Hecke,Netherlands,96,1,1,1,0,0,2,2
-Kaishu Sano|Japan,Kaishu Sano,Japan,96,1,0,0,0,0,5,1
-Ayase Ueda|Japan,Ayase Ueda,Japan,84,1,1,0,0,1,3,0
-Daizen Maeda|Japan,Daizen Maeda,Japan,66,1,0,0,0,0,4,1
-Denzel Dumfries|Netherlands,Denzel Dumfries,Netherlands,95,1,0,0,0,0,4,3
-Crysencio Summerville|Netherlands,Crysencio Summerville,Netherlands,70,1,1,1,1,1,1,1
-Cody Gakpo|Netherlands,Cody Gakpo,Netherlands,85,1,2,1,0,0,6,4
-Micky van de Ven|Netherlands,Micky van de Ven,Netherlands,96,1,1,0,0,2,3,2
-Virgil van Dijk|Netherlands,Virgil van Dijk,Netherlands,96,1,1,1,1,0,3,3
-Hiroki Ito|Japan,Hiroki Ito,Japan,96,1,1,0,0,1,4,1
-Daichi Kamada|Japan,Daichi Kamada,Japan,97,1,1,1,1,0,1,0
-Donyell Malen|Netherlands,Donyell Malen,Netherlands,70,1,2,2,0,0,3,2
-Zion Suzuki|Japan,Zion Suzuki,Japan,94,1,0,0,0,0,0,0
-Ryan Gravenberch|Netherlands,Ryan Gravenberch,Netherlands,81,1,0,0,0,0,1,1
-Keito Nakamura|Japan,Keito Nakamura,Japan,95,1,3,1,1,2,1,0
-Tsuyoshi Watanabe|Japan,Tsuyoshi Watanabe,Japan,75,1,0,0,0,0,6,2
-Ritsu Doan|Japan,Ritsu Doan,Japan,75,1,0,0,0,1,0,0
-Takefusa Kubo|Japan,Takefusa Kubo,Japan,75,1,1,0,0,1,0,0
-Junya Ito|Japan,Junya Ito,Japan,96,1,0,0,0,0,1,1
-Memphis Depay|Netherlands,Memphis Depay,Netherlands,96,1,0,0,0,1,0,0
-Teun Koopmeiners|Netherlands,Teun Koopmeiners,Netherlands,93,1,2,1,0,1,1,1
-Quinten Timber|Netherlands,Quinten Timber,Netherlands,96,1,0,0,0,0,1,1
-Yukinari Sugawara|Japan,Yukinari Sugawara,Japan,96,1,1,1,0,0,1,1
-Takehiro Tomiyasu|Japan,Takehiro Tomiyasu,Japan,96,1,0,0,0,1,1,0
-Koki Ogawa|Japan,Koki Ogawa,Japan,95,1,2,1,0,0,1,0
-Nathan Aké|Netherlands,Nathan Aké,Netherlands,95,1,0,0,0,0,1,0
-Kento Shiogai|Japan,Kento Shiogai,Japan,96,1,0,0,0,0,0,0
-Brian Brobbey|Netherlands,Brian Brobbey,Netherlands,87,1,0,0,0,0,0,0
-Cristiano Ronaldo|Portugal,Cristiano Ronaldo,Portugal,92,1,3,0,0,0,3,2
-João Neves|Portugal,João Neves,Portugal,94,1,1,1,1,0,2,1
-João Cancelo|Portugal,João Cancelo,Portugal,95,1,0,0,0,2,1,0
-Tomás Araújo|Portugal,Tomás Araújo,Portugal,94,1,0,0,0,1,2,1
-Vitinha|Portugal,Vitinha,Portugal,83,1,0,0,0,1,0,0
-Renato Veiga|Portugal,Renato Veiga,Portugal,92,1,0,0,0,1,2,1
-Nuno Mendes|Portugal,Nuno Mendes,Portugal,72,1,0,0,0,0,3,1
-Pedro Neto|Portugal,Pedro Neto,Portugal,72,1,0,0,0,0,0,0
-Bernardo Silva|Portugal,Bernardo Silva,Portugal,48,1,0,0,0,1,0,0
-Bruno Fernandes|Portugal,Bruno Fernandes,Portugal,95,1,2,1,0,1,2,2
-Edo Kayembe|DR Congo,Edo Kayembe,DR Congo,74,1,1,1,0,2,1,1
-Chancel Mbemba|DR Congo,Chancel Mbemba,DR Congo,93,1,0,0,0,1,1,0
-Aaron Wan-Bissaka|DR Congo,Aaron Wan-Bissaka,DR Congo,85,1,0,0,0,1,2,1
-Yoane Wissa|DR Congo,Yoane Wissa,DR Congo,95,1,2,1,1,3,1,0
-Ngal'ayel Mukau|DR Congo,Ngal'ayel Mukau,DR Congo,57,1,0,0,0,0,0,0
-Axel Tuanzebe|DR Congo,Axel Tuanzebe,DR Congo,92,1,0,0,0,0,2,0
-Samuel Moutoussamy|DR Congo,Samuel Moutoussamy,DR Congo,94,1,2,2,0,2,2,0
-Arthur Masuaku|DR Congo,Arthur Masuaku,DR Congo,75,1,0,0,0,0,0,0
-Steve Kapuadi|DR Congo,Steve Kapuadi,DR Congo,89,1,1,0,0,0,1,1
-Cédric Bakambu|DR Congo,Cédric Bakambu,DR Congo,85,1,2,1,0,1,4,3
-Lionel Mpasi|DR Congo,Lionel Mpasi,DR Congo,95,1,0,0,0,0,0,0
-Diogo Costa|Portugal,Diogo Costa,Portugal,93,1,0,0,0,0,0,0
-Francisco Conceição|Portugal,Francisco Conceição,Portugal,95,1,1,1,0,1,0,0
-Noah Sadiki|DR Congo,Noah Sadiki,DR Congo,93,1,0,0,0,0,0,0
-Rafael Leão|Portugal,Rafael Leão,Portugal,92,1,0,0,0,0,1,0
-Nélson Semedo|Portugal,Nélson Semedo,Portugal,94,1,0,0,0,1,0,0
-Charles Pickel|DR Congo,Charles Pickel,DR Congo,93,1,0,0,0,0,0,0
-Joris Kayembe|DR Congo,Joris Kayembe,DR Congo,94,1,0,0,0,0,0,0
-Gonçalo Ramos|Portugal,Gonçalo Ramos,Portugal,87,1,0,0,0,0,0,0
-Gédéon Kalulu|DR Congo,Gédéon Kalulu,DR Congo,93,1,0,0,0,0,1,1
-Simon Banza|DR Congo,Simon Banza,DR Congo,92,1,0,0,0,0,1,1
-Remo Freuler|Switzerland,Remo Freuler,Switzerland,89,1,0,0,0,2,1,0
-Manuel Akanji|Switzerland,Manuel Akanji,Switzerland,96,1,1,1,0,0,4,2
-Homam El Amin|Qatar,Homam El Amin,Qatar,94,1,1,0,0,1,1,1
-Denis Zakaria|Switzerland,Denis Zakaria,Switzerland,97,1,2,2,0,1,3,2
-Michel Aebischer|Switzerland,Michel Aebischer,Switzerland,65,1,1,1,0,0,1,0
-Boualem Khoukhi|Qatar,Boualem Khoukhi,Qatar,94,1,0,0,0,2,2,1
-Yusuf Abdurisag|Qatar,Yusuf Abdurisag,Qatar,60,1,0,0,0,0,2,1
-Nico Elvedi|Switzerland,Nico Elvedi,Switzerland,93,1,2,1,0,2,2,2
-Ricardo Rodríguez|Switzerland,Ricardo Rodríguez,Switzerland,89,1,0,0,0,2,3,3
-Rubén Vargas|Switzerland,Rubén Vargas,Switzerland,79,1,3,2,0,1,2,1
-Breel Embolo|Switzerland,Breel Embolo,Switzerland,91,1,4,3,1,2,0,0
-Granit Xhaka|Switzerland,Granit Xhaka,Switzerland,97,1,2,0,0,0,0,0
-Akram Afif|Qatar,Akram Afif,Qatar,94,1,0,0,0,0,0,0
-Dan Ndoye|Switzerland,Dan Ndoye,Switzerland,66,1,6,3,0,0,0,0
-Gregor Kobel|Switzerland,Gregor Kobel,Switzerland,90,1,0,0,0,0,0,0
-Edmílson Junior|Qatar,Edmílson Junior,Qatar,88,1,2,2,0,3,4,0
-Jassem Gaber|Qatar,Jassem Gaber,Qatar,60,1,0,0,0,2,3,2
-Pedro Miguel|Qatar,Pedro Miguel,Qatar,94,1,0,0,0,1,2,1
-Ayoub Al Oui|Qatar,Ayoub Al Oui,Qatar,60,1,0,0,0,1,2,1
-Issa Laye|Qatar,Issa Laye,Qatar,97,1,1,0,0,0,2,2
-Assim Madibo|Qatar,Assim Madibo,Qatar,79,1,0,0,0,1,0,0
-Mahmoud Abunada|Qatar,Mahmoud Abunada,Qatar,97,1,0,0,0,1,0,0
-Ahmed Fathy|Qatar,Ahmed Fathy,Qatar,92,1,0,0,0,0,0,0
-Karim Boudiaf|Qatar,Karim Boudiaf,Qatar,97,1,1,0,0,0,0,0
-Ahmed Alaa|Qatar,Ahmed Alaa,Qatar,92,1,1,1,0,0,1,0
-Fabian Rieder|Switzerland,Fabian Rieder,Switzerland,97,1,1,1,0,0,0,0
-Johan Manzambi|Switzerland,Johan Manzambi,Switzerland,97,1,2,1,0,1,1,0
-Mohammad Al Mannai|Qatar,Mohammad Al Mannai,Qatar,93,1,0,0,0,0,0,0
-Zeki Amdouni|Switzerland,Zeki Amdouni,Switzerland,93,1,1,1,0,0,0,0
-Hassan Al Haydos|Qatar,Hassan Al Haydos,Qatar,94,1,0,0,0,0,0,0
-Ardon Jashari|Switzerland,Ardon Jashari,Switzerland,97,1,1,0,0,0,0,0
-Miro Muheim|Switzerland,Miro Muheim,Switzerland,94,1,1,1,1,0,2,0
-Lukás Provod|Czechia,Lukás Provod,Czechia,64,1,0,0,0,1,3,0
-Matej Kovár|Czechia,Matej Kovár,Czechia,95,1,0,0,0,0,0,0
-Jaroslav Zeleny|Czechia,Jaroslav Zeleny,Czechia,96,1,0,0,0,0,2,1
-Seol Young-Woo|Republic of Korea,Seol Young-Woo,Republic of Korea,88,1,0,0,0,1,0,0
-Hwang In-Beom|Republic of Korea,Hwang In-Beom,Republic of Korea,84,1,3,2,1,0,2,1
-Ladislav Krejcí|Czechia,Ladislav Krejcí,Czechia,96,1,1,1,1,3,6,3
-Tomás Soucek|Czechia,Tomás Soucek,Czechia,96,1,1,0,0,1,4,2
-Robin Hranác|Czechia,Robin Hranác,Czechia,93,1,0,0,0,3,2,1
-Lee Han-Beom|Republic of Korea,Lee Han-Beom,Republic of Korea,95,1,1,0,0,3,7,5
-Vladimír Coufal|Czechia,Vladimír Coufal,Czechia,93,1,0,0,0,3,4,1
-Alexandr Sojka|Czechia,Alexandr Sojka,Czechia,84,1,0,0,0,0,0,0
-Patrik Schick|Czechia,Patrik Schick,Czechia,64,1,0,0,0,0,4,1
-Pavel Sulc|Czechia,Pavel Sulc,Czechia,64,1,1,0,0,1,1,1
-Paik Seung-Ho|Republic of Korea,Paik Seung-Ho,Republic of Korea,84,1,0,0,0,0,1,1
-Lee Jae-Sung|Republic of Korea,Lee Jae-Sung,Republic of Korea,62,1,2,1,0,1,4,2
-Kim Seung-Gyu|Republic of Korea,Kim Seung-Gyu,Republic of Korea,96,1,0,0,0,0,0,0
-Stepán Chaloupek|Czechia,Stepán Chaloupek,Czechia,97,1,0,0,0,1,3,1
-Kim Min-Jae|Republic of Korea,Kim Min-Jae,Republic of Korea,94,1,0,0,0,2,5,4
-Lee Gi-Hyuk|Republic of Korea,Lee Gi-Hyuk,Republic of Korea,96,1,0,0,0,1,6,4
-Son Heung-Min|Republic of Korea,Son Heung-Min,Republic of Korea,69,1,6,4,0,0,0,0
-Lee Kang-In|Republic of Korea,Lee Kang-In,Republic of Korea,94,1,1,1,0,0,0,0
-Lee Tae-Seok|Republic of Korea,Lee Tae-Seok,Republic of Korea,69,1,0,0,0,1,5,2
-Hwang Hee-Chan|Republic of Korea,Hwang Hee-Chan,Republic of Korea,89,1,0,0,0,0,0,0
-Adam Hlozek|Czechia,Adam Hlozek,Czechia,97,1,2,1,0,0,1,0
-Tomás Chory|Czechia,Tomás Chory,Czechia,96,1,0,0,0,3,8,4
-Michal Sadílek|Czechia,Michal Sadílek,Czechia,97,1,2,2,0,0,1,0
-Eom Ji-Sung|Republic of Korea,Eom Ji-Sung,Republic of Korea,97,1,0,0,0,0,1,1
-Oh Hyeon-Gyu|Republic of Korea,Oh Hyeon-Gyu,Republic of Korea,96,1,1,1,1,0,3,2
-Kim Jin-Gyu|Republic of Korea,Kim Jin-Gyu,Republic of Korea,95,1,1,1,0,0,1,0
-Park Jin-Seob|Republic of Korea,Park Jin-Seob,Republic of Korea,97,1,0,0,0,0,5,3
-Mojmír Chytil|Czechia,Mojmír Chytil,Czechia,96,1,0,0,0,0,1,0
-Salem Al Dawsari|Saudi Arabia,Salem Al Dawsari,Saudi Arabia,94,1,1,0,0,1,4,0
-Abdullah Al Khaibari|Saudi Arabia,Abdullah Al Khaibari,Saudi Arabia,95,1,1,0,0,0,1,0
-Abdulelah Al Amri|Saudi Arabia,Abdulelah Al Amri,Saudi Arabia,98,1,2,2,1,1,4,3
-Hassan Al Tambakti|Saudi Arabia,Hassan Al Tambakti,Saudi Arabia,84,1,0,0,0,0,3,1
-Guillermo Varela|Uruguay,Guillermo Varela,Uruguay,97,1,2,1,0,1,3,3
-Sebastián Cáceres|Uruguay,Sebastián Cáceres,Uruguay,98,1,2,0,0,1,9,4
-Fernando Muslera|Uruguay,Fernando Muslera,Uruguay,89,1,0,0,0,0,0,0
-Mathías Olivera|Uruguay,Mathías Olivera,Uruguay,97,1,1,1,0,0,9,6
-Feras Al Brikan|Saudi Arabia,Feras Al Brikan,Saudi Arabia,93,1,0,0,0,0,12,5
-Rodrigo Bentancur|Uruguay,Rodrigo Bentancur,Uruguay,96,1,1,0,0,1,4,1
-Mohammed Abu Al Shamat|Saudi Arabia,Mohammed Abu Al Shamat,Saudi Arabia,81,1,0,0,0,2,2,1
-Matías Viña|Uruguay,Matías Viña,Uruguay,49,1,0,0,0,0,2,1
-Moteb Al Harbi|Saudi Arabia,Moteb Al Harbi,Saudi Arabia,93,1,0,0,0,0,2,1
-Federico Valverde|Uruguay,Federico Valverde,Uruguay,98,1,3,3,0,1,0,0
-Manuel Ugarte|Uruguay,Manuel Ugarte,Uruguay,72,1,2,1,0,0,3,0
-Musab Al Juwayr|Saudi Arabia,Musab Al Juwayr,Saudi Arabia,63,1,0,0,0,1,0,0
-Federico Viñas|Uruguay,Federico Viñas,Uruguay,90,1,5,4,0,0,5,4
-Maxi Araújo|Uruguay,Maxi Araújo,Uruguay,81,1,2,2,1,1,0,0
-Mohammed Al Owais|Saudi Arabia,Mohammed Al Owais,Saudi Arabia,96,1,0,0,0,0,1,1
-Darwin Núñez|Uruguay,Darwin Núñez,Uruguay,46,1,1,0,0,1,3,1
-Mohamed Kanno|Saudi Arabia,Mohamed Kanno,Saudi Arabia,98,1,2,2,0,0,6,4
-Saud Abdulhamid|Saudi Arabia,Saud Abdulhamid,Saudi Arabia,93,1,1,0,0,2,2,1
-Juan Manuel Sanabria|Uruguay,Juan Manuel Sanabria,Uruguay,98,1,3,2,0,0,0,0
-Agustín Canobbio|Uruguay,Agustín Canobbio,Uruguay,98,1,1,0,0,0,1,0
-Nasser Al Dawsari|Saudi Arabia,Nasser Al Dawsari,Saudi Arabia,96,1,0,0,0,3,2,2
-Nicolás de la Cruz|Uruguay,Nicolás de la Cruz,Uruguay,98,1,2,2,0,0,0,0
-Brian Rodríguez|Uruguay,Brian Rodríguez,Uruguay,98,1,2,1,0,0,0,0
-Nawaf Bu Washl|Saudi Arabia,Nawaf Bu Washl,Saudi Arabia,98,1,0,0,0,1,0,0
-Rodrigo Aguirre|Uruguay,Rodrigo Aguirre,Uruguay,96,1,0,0,0,0,1,0
-Abdullah Al Hamddan|Saudi Arabia,Abdullah Al Hamddan,Saudi Arabia,96,1,0,0,0,0,0,0
-Alaa Al Hejji|Saudi Arabia,Alaa Al Hejji,Saudi Arabia,94,1,0,0,0,0,0,0
-Ali Lajami|Saudi Arabia,Ali Lajami,Saudi Arabia,98,1,0,0,0,0,1,1
-Dailon Livramento|Cabo Verde,Dailon Livramento,Cabo Verde,61,1,1,0,0,0,6,2
-Kevin Pina|Cabo Verde,Kevin Pina,Cabo Verde,95,1,1,1,0,0,2,1
-Pico Lopes|Cabo Verde,Pico Lopes,Cabo Verde,95,1,0,0,0,0,2,2
-Unai Simón|Spain,Unai Simón,Spain,94,1,0,0,0,0,0,0
-Pau Cubarsí|Spain,Pau Cubarsí,Spain,93,1,1,1,0,0,1,1
-Rodri|Spain,Rodri,Spain,87,1,2,1,0,1,4,3
-Marc Cucurella|Spain,Marc Cucurella,Spain,92,1,2,1,0,1,0,0
-Aymeric Laporte|Spain,Aymeric Laporte,Spain,95,1,2,1,0,0,8,3
-Pedri|Spain,Pedri,Spain,95,1,2,2,0,1,1,1
-Marcos Llorente|Spain,Marcos Llorente,Spain,94,1,0,0,0,1,3,2
-Fabián Ruiz|Spain,Fabián Ruiz,Spain,71,1,5,1,0,0,1,1
-Ferran Torres|Spain,Ferran Torres,Spain,81,1,4,3,0,2,2,2
-Gavi|Spain,Gavi,Spain,71,1,1,1,0,2,4,4
-Ryan Mendes|Cabo Verde,Ryan Mendes,Cabo Verde,94,1,1,0,0,0,1,0
-Vozinha|Cabo Verde,Vozinha,Cabo Verde,91,1,0,0,0,0,1,1
-Diney Borges|Cabo Verde,Diney Borges,Cabo Verde,95,1,1,1,0,0,3,1
-Sidny Cabral|Cabo Verde,Sidny Cabral,Cabo Verde,76,1,0,0,0,1,1,0
-Jamiro Monteiro|Cabo Verde,Jamiro Monteiro,Cabo Verde,79,1,0,0,0,0,0,0
-Steven Moreira|Cabo Verde,Steven Moreira,Cabo Verde,91,1,1,1,0,0,3,0
-Jovane Cabral|Cabo Verde,Jovane Cabral,Cabo Verde,61,1,1,0,0,0,1,0
-Mikel Oyarzabal|Spain,Mikel Oyarzabal,Spain,95,1,5,2,0,0,4,2
-Laros Duarte|Cabo Verde,Laros Duarte,Cabo Verde,61,1,0,0,0,0,4,0
-Willy Semedo|Cabo Verde,Willy Semedo,Cabo Verde,95,1,0,0,0,0,1,1
-Deroy Duarte|Cabo Verde,Deroy Duarte,Cabo Verde,94,1,0,0,0,0,0,0
-Nuno da Costa|Cabo Verde,Nuno da Costa,Cabo Verde,93,1,0,0,0,0,3,1
-Mikel Merino|Spain,Mikel Merino,Spain,94,1,1,1,0,1,0,0
-Lamine Yamal|Spain,Lamine Yamal,Spain,95,1,2,1,0,1,0,0
-João Paulo|Cabo Verde,João Paulo,Cabo Verde,94,1,0,0,0,0,0,0
-Telmo Arcanjo|Cabo Verde,Telmo Arcanjo,Cabo Verde,94,1,0,0,0,0,0,0
-Dani Olmo|Spain,Dani Olmo,Spain,95,1,0,0,0,0,0,0
-Nico Williams|Spain,Nico Williams,Spain,95,1,0,0,0,0,0,0
-Anis Ben Slimane|Tunisia,Anis Ben Slimane,Tunisia,84,1,0,0,0,0,7,4
-Gabriel Gudmundsson|Sweden,Gabriel Gudmundsson,Sweden,65,1,0,0,0,2,2,2
-Omar Rekik|Tunisia,Omar Rekik,Tunisia,92,1,1,1,1,0,2,2
-Yasin Ayari|Sweden,Yasin Ayari,Sweden,96,1,2,2,2,1,1,0
-Jesper Karlström|Sweden,Jesper Karlström,Sweden,84,1,0,0,0,1,3,1
-Alexander Isak|Sweden,Alexander Isak,Sweden,90,1,3,3,1,1,2,0
-Ellyes Skhiri|Tunisia,Ellyes Skhiri,Tunisia,72,1,0,0,0,0,0,0
-Isak Hien|Sweden,Isak Hien,Sweden,95,1,0,0,0,1,5,3
-Elias Saad|Tunisia,Elias Saad,Tunisia,72,1,1,0,0,0,2,0
-Yan Valery|Tunisia,Yan Valery,Tunisia,72,1,0,0,0,3,3,1
-Victor Lindelöf|Sweden,Victor Lindelöf,Sweden,92,1,1,0,0,2,3,2
-Rani Khedira|Tunisia,Rani Khedira,Tunisia,83,1,1,1,0,1,0,0
-Kristoffer Nordfeldt|Sweden,Kristoffer Nordfeldt,Sweden,95,1,0,0,0,0,0,0
-Gustaf Lagerbielke|Sweden,Gustaf Lagerbielke,Sweden,95,1,0,0,0,0,5,1
-Abdelmouhib Chamakh|Tunisia,Abdelmouhib Chamakh,Tunisia,91,1,0,0,0,0,0,0
-Montassar Talbi|Tunisia,Montassar Talbi,Tunisia,89,1,1,0,0,0,3,3
-Viktor Gyökeres|Sweden,Viktor Gyökeres,Sweden,96,1,5,3,1,0,3,2
-Hannibal Mejbri|Tunisia,Hannibal Mejbri,Tunisia,96,1,1,0,0,0,1,1
-Ali Abdi|Tunisia,Ali Abdi,Tunisia,93,1,0,0,0,3,5,3
-Alexander Bernhardsson|Sweden,Alexander Bernhardsson,Sweden,91,1,0,0,0,0,3,2
-Benjamin Nygren|Sweden,Benjamin Nygren,Sweden,65,1,0,0,0,1,1,1
-Mohamed Amine Ben Hmida|Tunisia,Mohamed Amine Ben Hmida,Tunisia,95,1,0,0,0,0,4,0
-Elliot Stroud|Sweden,Elliot Stroud,Sweden,88,1,0,0,0,0,1,0
-Lucas Bergvall|Sweden,Lucas Bergvall,Sweden,96,1,1,1,0,1,0,0
-Elias Achouri|Tunisia,Elias Achouri,Tunisia,93,1,1,1,0,0,0,0
-Sebastian Tounekti|Tunisia,Sebastian Tounekti,Tunisia,94,1,0,0,0,1,0,0
-Hadj Mahmoud|Tunisia,Hadj Mahmoud,Tunisia,94,1,0,0,0,0,0,0
-Ismaël Gharbi|Tunisia,Ismaël Gharbi,Tunisia,96,1,0,0,0,0,0,0
-Firas Chaouat|Tunisia,Firas Chaouat,Tunisia,97,1,0,0,0,0,2,1
-Mattias Svanberg|Sweden,Mattias Svanberg,Sweden,91,1,1,1,1,0,0,0
-Anthony Elanga|Sweden,Anthony Elanga,Sweden,90,1,0,0,0,0,0,0
-Daniel Svensson|Sweden,Daniel Svensson,Sweden,95,1,0,0,0,0,0,0
-Folarin Balogun|USA,Folarin Balogun,USA,72,1,5,4,2,0,2,0
-Malik Tillman|USA,Malik Tillman,USA,82,1,5,4,0,1,4,1
-Juan José Cáceres|Paraguay,Juan José Cáceres,Paraguay,79,1,0,0,0,3,2,1
-Tim Ream|USA,Tim Ream,USA,97,1,0,0,0,0,3,1
-Diego Gómez|Paraguay,Diego Gómez,Paraguay,80,1,4,2,0,1,3,2
-Tyler Adams|USA,Tyler Adams,USA,97,1,0,0,0,2,4,2
-Sergiño Dest|USA,Sergiño Dest,USA,72,1,0,0,0,0,0,0
-Júnior Alonso|Paraguay,Júnior Alonso,Paraguay,93,1,0,0,0,1,2,0
-Julio Enciso|Paraguay,Julio Enciso,Paraguay,93,1,2,1,0,0,2,0
-Gustavo Gómez|Paraguay,Gustavo Gómez,Paraguay,96,1,0,0,0,2,4,4
-Omar Alderete|Paraguay,Omar Alderete,Paraguay,96,1,0,0,0,1,3,3
-Antonio Sanabria|Paraguay,Antonio Sanabria,Paraguay,62,1,0,0,0,1,5,3
-Matt Freese|USA,Matt Freese,USA,97,1,0,0,0,0,0,0
-Chris Richards|USA,Chris Richards,USA,97,1,1,0,0,3,5,4
-Antonee Robinson|USA,Antonee Robinson,USA,97,1,0,0,0,1,3,2
-Andrés Cubas|Paraguay,Andrés Cubas,Paraguay,97,1,0,0,0,5,0,0
-Alex Freeman|USA,Alex Freeman,USA,98,1,0,0,0,1,7,6
-Weston McKennie|USA,Weston McKennie,USA,97,1,0,0,0,0,1,0
-Orlando Gill|Paraguay,Orlando Gill,Paraguay,90,1,0,0,0,0,0,0
-Christian Pulisic|USA,Christian Pulisic,USA,46,1,0,0,0,1,0,0
-Miguel Almirón|Paraguay,Miguel Almirón,Paraguay,79,1,2,2,0,1,2,1
-Damián Bobadilla|Paraguay,Damián Bobadilla,Paraguay,49,1,1,1,1,0,0,0
-Mauricio|Paraguay,Mauricio,Paraguay,97,1,1,1,1,0,3,0
-Sebastian Berhalter|USA,Sebastian Berhalter,USA,97,1,1,0,0,0,2,2
-Álex Arce|Paraguay,Álex Arce,Paraguay,92,1,0,0,0,1,5,0
-Timothy Weah|USA,Timothy Weah,USA,98,1,2,1,0,2,0,0
-Ricardo Pepi|USA,Ricardo Pepi,USA,98,1,1,0,0,1,2,0
-Ramón Sosa|Paraguay,Ramón Sosa,Paraguay,92,1,0,0,0,0,0,0
-Gustavo Velázquez|Paraguay,Gustavo Velázquez,Paraguay,96,1,0,0,0,0,2,1
-Alejandro Romero|Paraguay,Alejandro Romero,Paraguay,94,1,0,0,0,1,0,0
-Giovanni Reyna|USA,Giovanni Reyna,USA,98,1,1,1,1,1,0,0
-Luis Suárez|Colombia,Luis Suárez,Colombia,80,1,0,0,0,0,0,0
-James Rodríguez|Colombia,James Rodríguez,Colombia,72,1,2,2,0,0,1,0
-Johan Mojica|Colombia,Johan Mojica,Colombia,98,1,1,0,0,1,1,1
-Utkir Yusupov|Uzbekistan,Utkir Yusupov,Uzbekistan,96,1,0,0,0,0,0,0
-Jhon Lucumí|Colombia,Jhon Lucumí,Colombia,98,1,0,0,0,2,1,0
-Akmal Mozgovoy|Uzbekistan,Akmal Mozgovoy,Uzbekistan,101,1,1,0,0,0,1,0
-Eldor Shomurodov|Uzbekistan,Eldor Shomurodov,Uzbekistan,93,1,1,1,0,3,1,1
-Abbosbek Fayzullaev|Uzbekistan,Abbosbek Fayzullaev,Uzbekistan,77,1,1,1,1,1,2,1
-Jefferson Lerma|Colombia,Jefferson Lerma,Colombia,101,1,3,1,0,2,3,3
-Luis Díaz|Colombia,Luis Díaz,Colombia,93,1,2,1,1,0,2,1
-Bekhruz Karimov|Uzbekistan,Bekhruz Karimov,Uzbekistan,101,1,2,0,0,3,1,0
-Jhon Arias|Colombia,Jhon Arias,Colombia,93,1,2,1,0,1,1,0
-Davinson Sánchez|Colombia,Davinson Sánchez,Colombia,98,1,1,0,0,1,3,1
-Gustavo Puerta|Colombia,Gustavo Puerta,Colombia,80,1,1,1,0,2,1,1
-Otabek Shukurov|Uzbekistan,Otabek Shukurov,Uzbekistan,101,1,0,0,0,0,3,2
-Rustam Ashurmatov|Uzbekistan,Rustam Ashurmatov,Uzbekistan,77,1,0,0,0,0,2,2
-Camilo Vargas|Colombia,Camilo Vargas,Colombia,98,1,0,0,0,0,0,0
-Daniel Muñoz|Colombia,Daniel Muñoz,Colombia,100,1,1,1,1,1,1,0
-Abdukodir Khusanov|Uzbekistan,Abdukodir Khusanov,Uzbekistan,98,1,0,0,0,3,1,1
-Oston Urunov|Uzbekistan,Oston Urunov,Uzbekistan,46,1,0,0,0,0,0,0
-Abdulla Abdullaev|Uzbekistan,Abdulla Abdullaev,Uzbekistan,96,1,0,0,0,3,1,0
-Sherzod Nasrullaev|Uzbekistan,Sherzod Nasrullaev,Uzbekistan,50,1,0,0,0,1,1,0
-Dostonbek Khamdamov|Uzbekistan,Dostonbek Khamdamov,Uzbekistan,97,1,2,1,0,0,0,0
-Farrukh Sayfiev|Uzbekistan,Farrukh Sayfiev,Uzbekistan,101,1,0,0,0,0,2,1
-Jaminton Campaz|Colombia,Jaminton Campaz,Colombia,99,1,2,1,1,0,1,0
-Jakhongir Urozov|Uzbekistan,Jakhongir Urozov,Uzbekistan,101,1,0,0,0,0,2,1
-Azizbek Amonov|Uzbekistan,Azizbek Amonov,Uzbekistan,101,1,1,1,0,0,1,1
-Richard Ríos|Colombia,Richard Ríos,Colombia,98,1,0,0,0,1,1,0
-Cucho Hernández|Colombia,Cucho Hernández,Colombia,99,1,0,0,0,0,2,1
-Andrés Gómez|Colombia,Andrés Gómez,Colombia,101,1,0,0,0,0,0,0
-Kevin Castaño|Colombia,Kevin Castaño,Colombia,101,1,0,0,0,0,0,0
-Igor Sergeev|Uzbekistan,Igor Sergeev,Uzbekistan,93,1,0,0,0,0,0,0
+player_id,Player,Squad,minutes,appearances,shots_total,shots_on,goals_total,fouls_committed,duels_total,duels_won,pass_total,pass_accurate,key_passes,takeons_total,takeons_won,ball_recoveries,at_actions
+Lautaro Martínez|Argentina,Lautaro Martínez,Argentina,55,1,1,1,0,2,1,0,14,12,0,2,0,3,0
+Alexis Mac Allister|Argentina,Alexis Mac Allister,Argentina,95,1,2,1,0,2,1,0,64,60,1,0,0,6,1
+Rodrigo De Paul|Argentina,Rodrigo De Paul,Argentina,94,1,0,0,0,0,0,0,54,49,1,2,1,7,1
+Lisandro Martínez|Argentina,Lisandro Martínez,Argentina,94,1,0,0,0,0,0,0,67,64,0,0,0,3,0
+Enzo Fernández|Argentina,Enzo Fernández,Argentina,94,1,0,0,0,1,0,0,67,63,1,2,0,7,0
+Cristian Romero|Argentina,Cristian Romero,Argentina,80,1,0,0,0,2,1,1,66,65,0,0,0,2,0
+Facundo Medina|Argentina,Facundo Medina,Argentina,93,1,0,0,0,2,0,0,36,35,0,0,0,3,0
+Rafik Belghali|Algeria,Rafik Belghali,Algeria,95,1,0,0,0,2,2,2,39,36,1,0,0,3,0
+Anis Hadj Moussa|Algeria,Anis Hadj Moussa,Algeria,64,1,1,1,0,0,0,0,22,19,1,5,1,2,0
+Nabil Bentaleb|Algeria,Nabil Bentaleb,Algeria,82,1,0,0,0,0,0,0,56,52,0,0,0,2,1
+Aïssa Mandi|Algeria,Aïssa Mandi,Algeria,95,1,0,0,0,0,3,1,105,100,1,0,0,3,0
+Ramy Bensebaini|Algeria,Ramy Bensebaini,Algeria,95,1,0,0,0,0,0,0,95,89,0,0,0,5,0
+Luca Zidane|Algeria,Luca Zidane,Algeria,89,1,0,0,0,0,0,0,39,39,0,0,0,1,0
+Emiliano Martínez|Argentina,Emiliano Martínez,Argentina,95,1,0,0,0,0,0,0,41,31,0,0,0,1,0
+Gonzalo Montiel|Argentina,Gonzalo Montiel,Argentina,48,1,0,0,0,1,0,0,22,20,0,0,0,0,0
+Lionel Messi|Argentina,Lionel Messi,Argentina,80,1,6,4,3,1,0,0,40,31,2,3,0,3,1
+Rayan Aït-Nouri|Algeria,Rayan Aït-Nouri,Algeria,96,1,0,0,0,1,0,0,64,54,0,6,3,6,4
+Farès Chaïbi|Algeria,Farès Chaïbi,Algeria,95,1,3,0,0,1,0,0,51,44,1,2,1,1,1
+Ibrahim Maza|Algeria,Ibrahim Maza,Algeria,81,1,1,1,0,0,1,1,47,40,0,5,2,2,0
+Thiago Almada|Argentina,Thiago Almada,Argentina,55,1,1,0,0,0,2,1,35,30,0,0,0,4,0
+Hicham Boudaoui|Algeria,Hicham Boudaoui,Algeria,64,1,0,0,0,2,0,0,23,22,1,2,1,4,1
+Amine Gouiri|Algeria,Amine Gouiri,Algeria,64,1,0,0,0,1,1,0,18,16,0,1,0,1,0
+Nahuel Molina|Argentina,Nahuel Molina,Argentina,96,1,0,0,0,0,0,0,29,19,1,1,1,4,0
+Nico González|Argentina,Nico González,Argentina,93,1,0,0,0,0,1,1,14,11,1,1,0,1,0
+Julián Alvarez|Argentina,Julián Alvarez,Argentina,95,1,0,0,0,1,2,0,10,8,0,0,0,2,2
+Houssem Aouar|Algeria,Houssem Aouar,Algeria,93,1,1,0,0,0,0,0,21,21,0,1,0,3,0
+Mohammed Amoura|Algeria,Mohammed Amoura,Algeria,96,1,0,0,0,1,0,0,7,7,1,0,0,0,0
+Riyad Mahrez|Algeria,Riyad Mahrez,Algeria,91,1,1,1,0,0,0,0,21,17,0,0,0,2,1
+Nico Paz|Argentina,Nico Paz,Argentina,95,1,0,0,0,1,0,0,4,4,0,0,0,2,0
+Nicolás Otamendi|Argentina,Nicolás Otamendi,Argentina,96,1,0,0,0,0,0,0,16,13,0,0,0,1,0
+Adil Boulbina|Algeria,Adil Boulbina,Algeria,95,1,0,0,0,0,0,0,11,11,0,3,0,1,0
+Ramiz Zerrouki|Algeria,Ramiz Zerrouki,Algeria,95,1,0,0,0,0,1,1,20,18,0,0,0,1,0
+Mohamed Touré|Australia,Mohamed Touré,Australia,74,1,1,0,0,2,2,0,3,3,1,4,2,1,0
+Harry Souttar|Australia,Harry Souttar,Australia,95,1,1,1,0,1,4,3,23,14,0,1,1,0,0
+Abdülkerim Bardakci|Turkiye,Abdülkerim Bardakci,Turkiye,96,1,1,1,0,0,10,4,98,91,0,1,1,4,0
+Connor Metcalfe|Australia,Connor Metcalfe,Australia,96,1,1,1,1,0,6,2,20,10,1,1,1,4,1
+Aiden O'Neill|Australia,Aiden O'Neill,Australia,94,1,0,0,0,1,0,0,35,29,1,1,1,4,0
+Ferdi Kadioglu|Turkiye,Ferdi Kadioglu,Turkiye,96,1,1,0,0,0,3,2,116,103,5,0,0,6,1
+Jacob Italiano|Australia,Jacob Italiano,Australia,74,1,1,0,0,0,1,0,20,15,1,0,0,0,0
+Orkun Kökçü|Turkiye,Orkun Kökçü,Turkiye,62,1,1,0,0,0,0,0,41,30,3,1,0,2,2
+Hakan Çalhanoglu|Turkiye,Hakan Çalhanoglu,Turkiye,95,1,5,4,0,1,1,0,109,94,4,0,0,7,0
+Arda Güler|Turkiye,Arda Güler,Turkiye,95,1,8,4,0,0,2,1,80,71,2,5,1,3,2
+Merih Demiral|Turkiye,Merih Demiral,Turkiye,95,1,1,0,0,0,7,5,62,57,1,1,0,0,0
+Ismail Yüksek|Turkiye,Ismail Yüksek,Turkiye,81,1,3,2,0,1,2,2,58,55,0,1,1,2,2
+Ugurcan Çakir|Turkiye,Ugurcan Çakir,Turkiye,88,1,0,0,0,0,0,0,24,22,0,0,0,1,0
+Baris Alper Yilmaz|Turkiye,Baris Alper Yilmaz,Turkiye,48,1,0,0,0,0,0,0,24,12,0,2,0,0,0
+Alessandro Circati|Australia,Alessandro Circati,Australia,93,1,1,0,0,1,2,1,33,25,0,1,1,3,0
+Paul Okon-Engstler|Australia,Paul Okon-Engstler,Australia,84,1,0,0,0,1,2,1,38,30,1,1,0,3,0
+Nestory Irankunda|Australia,Nestory Irankunda,Australia,61,1,2,2,1,1,2,0,7,5,0,1,1,1,0
+Zeki Çelik|Turkiye,Zeki Çelik,Turkiye,81,1,1,1,0,1,3,2,36,33,0,0,0,4,2
+Patrick Beach|Australia,Patrick Beach,Australia,96,1,0,0,0,0,0,0,41,20,0,0,0,1,0
+Cameron Burgess|Australia,Cameron Burgess,Australia,92,1,0,0,0,0,2,2,41,37,0,0,0,1,1
+Jordan Bos|Australia,Jordan Bos,Australia,84,1,2,1,0,0,2,0,26,22,1,2,1,2,0
+Kerem Aktürkoglu|Turkiye,Kerem Aktürkoglu,Turkiye,85,1,3,2,0,0,2,0,11,6,1,1,0,0,1
+Kenan Yildiz|Turkiye,Kenan Yildiz,Turkiye,96,1,6,6,0,0,1,1,44,38,1,2,1,2,0
+Nishan Velupillay|Australia,Nishan Velupillay,Australia,90,1,0,0,0,0,1,0,5,3,0,0,0,1,0
+Yunus Akgün|Turkiye,Yunus Akgün,Turkiye,96,1,0,0,0,1,0,0,22,20,2,1,1,0,0
+Tete Yengi|Australia,Tete Yengi,Australia,96,1,0,0,0,3,4,4,5,2,0,0,0,1,0
+Jason Geria|Australia,Jason Geria,Australia,95,1,0,0,0,0,2,1,3,2,0,0,0,1,0
+Salih Özcan|Turkiye,Salih Özcan,Turkiye,96,1,0,0,0,0,0,0,17,17,0,0,0,1,0
+Mert Müldür|Turkiye,Mert Müldür,Turkiye,96,1,0,0,0,0,0,0,16,15,1,0,0,0,0
+Aziz Behich|Australia,Aziz Behich,Australia,95,1,0,0,0,1,1,0,3,3,0,0,0,1,0
+Jackson Irvine|Australia,Jackson Irvine,Australia,96,1,0,0,0,1,1,1,2,1,0,0,0,0,0
+Deniz Gül|Turkiye,Deniz Gül,Turkiye,91,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sasa Kalajdzic|Austria,Sasa Kalajdzic,Austria,49,1,2,0,0,1,3,1,15,10,1,4,1,0,0
+Xaver Schlager|Austria,Xaver Schlager,Austria,59,1,0,0,0,2,2,2,53,51,1,1,0,6,0
+Marcel Sabitzer|Austria,Marcel Sabitzer,Austria,99,1,1,1,0,0,1,0,46,32,1,1,1,6,0
+David Alaba|Austria,David Alaba,Austria,59,1,1,0,0,0,3,2,64,55,0,1,1,1,0
+Philipp Lienhart|Austria,Philipp Lienhart,Austria,99,1,0,0,0,0,2,2,88,79,0,0,0,9,0
+Abdallah Nasib|Jordan,Abdallah Nasib,Jordan,81,1,0,0,0,1,1,0,25,21,0,0,0,3,0
+Nizar Al Rashdan|Jordan,Nizar Al Rashdan,Jordan,98,1,0,0,0,3,1,1,27,19,1,5,4,6,0
+Nicolas Seiwald|Austria,Nicolas Seiwald,Austria,97,1,0,0,0,1,2,1,69,62,0,0,0,6,1
+Alexander Schlager|Austria,Alexander Schlager,Austria,99,1,0,0,0,0,1,1,32,23,0,0,0,2,0
+Stefan Posch|Austria,Stefan Posch,Austria,99,1,2,0,0,3,4,4,58,42,0,1,0,4,1
+Mohammad Abu Al Nadi|Jordan,Mohammad Abu Al Nadi,Jordan,72,1,0,0,0,0,1,0,34,26,0,0,0,5,0
+Mohannad Abu Taha|Jordan,Mohannad Abu Taha,Jordan,98,1,0,0,0,1,1,1,39,28,1,2,1,3,1
+Yazeed Abulaila|Jordan,Yazeed Abulaila,Jordan,102,1,0,0,0,0,1,1,27,16,0,0,0,0,0
+Konrad Laimer|Austria,Konrad Laimer,Austria,99,1,1,0,0,3,1,0,46,39,0,0,0,2,1
+Mousa Al Tamari|Jordan,Mousa Al Tamari,Jordan,88,1,4,2,0,1,3,0,10,8,1,6,3,2,0
+Odeh Fakhoury|Jordan,Odeh Fakhoury,Jordan,89,1,1,1,0,0,6,0,13,9,2,3,1,1,0
+Ehsan Haddad|Jordan,Ehsan Haddad,Jordan,81,1,1,0,0,0,1,1,25,12,2,1,0,1,0
+Phillipp Mwene|Austria,Phillipp Mwene,Austria,59,1,0,0,0,1,1,1,32,24,1,0,0,2,0
+Noor Al Rawabdeh|Jordan,Noor Al Rawabdeh,Jordan,97,1,0,0,0,0,1,0,48,36,2,2,1,8,0
+Ali Olwan|Jordan,Ali Olwan,Jordan,103,1,4,3,1,0,4,1,29,15,0,5,3,3,0
+Romano Schmid|Austria,Romano Schmid,Austria,83,1,1,1,1,0,1,0,31,22,1,1,0,4,1
+Yazan Al Arab|Jordan,Yazan Al Arab,Jordan,92,1,1,1,1,0,3,3,45,40,0,0,0,2,0
+Marko Arnautovic|Austria,Marko Arnautovic,Austria,102,1,2,2,1,0,2,1,13,9,0,0,0,0,0
+Paul Wanner|Austria,Paul Wanner,Austria,99,1,0,0,0,0,0,0,26,22,0,0,0,2,0
+Kevin Danso|Austria,Kevin Danso,Austria,99,1,0,0,0,0,0,0,27,24,0,2,1,1,0
+Carney Chukwuemeka|Austria,Carney Chukwuemeka,Austria,99,1,1,1,0,1,2,1,11,9,0,2,0,0,0
+Saleem Obaid|Jordan,Saleem Obaid,Jordan,99,1,0,0,0,1,0,0,14,9,0,0,0,0,0
+Saed Al Rosan|Jordan,Saed Al Rosan,Jordan,98,1,0,0,0,0,1,1,14,12,0,0,0,0,0
+Mahmoud Al Mardi|Jordan,Mahmoud Al Mardi,Jordan,97,1,0,0,0,0,1,0,11,7,0,0,0,2,0
+Patrick Wimmer|Austria,Patrick Wimmer,Austria,99,1,0,0,0,0,0,0,7,4,0,3,0,2,0
+Mohammad Al Daoud|Jordan,Mohammad Al Daoud,Jordan,98,1,0,0,0,0,0,0,5,2,0,1,1,1,0
+Ali Azaizeh|Jordan,Ali Azaizeh,Jordan,93,1,1,0,0,0,0,0,1,1,0,1,1,0,0
+Leandro Trossard|Belgium,Leandro Trossard,Belgium,93,1,3,3,0,0,0,0,37,31,3,5,3,3,0
+Kevin De Bruyne|Belgium,Kevin De Bruyne,Belgium,86,1,4,2,0,0,2,2,43,32,2,3,1,3,1
+Brandon Mechele|Belgium,Brandon Mechele,Belgium,95,1,2,1,0,2,1,1,59,57,0,0,0,2,0
+Thomas Meunier|Belgium,Thomas Meunier,Belgium,93,1,1,1,0,5,6,1,49,40,1,0,0,1,0
+Amadou Onana|Belgium,Amadou Onana,Belgium,56,1,0,0,0,1,1,1,36,31,0,0,0,5,0
+Ahmed Fatouh|Egypt,Ahmed Fatouh,Egypt,88,1,0,0,0,2,0,0,49,39,1,0,0,3,0
+Emam Ashour|Egypt,Emam Ashour,Egypt,71,1,2,1,1,0,4,3,30,20,0,3,1,6,0
+Hamdi Fathy|Egypt,Hamdi Fathy,Egypt,89,1,0,0,0,2,3,1,40,34,1,0,0,1,0
+Yasser Ibrahim|Egypt,Yasser Ibrahim,Egypt,92,1,0,0,0,0,1,0,53,48,0,0,0,2,0
+Marwan Attia|Egypt,Marwan Attia,Egypt,93,1,1,1,0,3,3,0,52,41,1,0,0,6,0
+Mohamed Hany|Egypt,Mohamed Hany,Egypt,93,1,3,3,1,1,1,0,38,30,0,3,2,3,1
+Timothy Castagne|Belgium,Timothy Castagne,Belgium,56,1,0,0,0,1,3,2,40,33,1,1,0,1,0
+Youri Tielemans|Belgium,Youri Tielemans,Belgium,95,1,2,0,0,1,1,1,49,38,3,1,1,4,0
+Jérémy Doku|Belgium,Jérémy Doku,Belgium,86,1,1,0,0,1,0,0,27,21,1,13,3,6,1
+Mohanad Lasheen|Egypt,Mohanad Lasheen,Egypt,93,1,0,0,0,2,2,0,31,25,0,1,1,3,4
+Mostafa Zico|Egypt,Mostafa Zico,Egypt,76,1,2,2,0,0,1,0,20,15,0,1,0,4,0
+Nathan Ngoy|Belgium,Nathan Ngoy,Belgium,95,1,0,0,0,2,2,1,71,69,0,2,1,5,0
+Thibaut Courtois|Belgium,Thibaut Courtois,Belgium,95,1,0,0,0,0,0,0,17,15,0,0,0,3,0
+Charles De Ketelaere|Belgium,Charles De Ketelaere,Belgium,66,1,0,0,0,0,4,4,27,22,1,3,2,3,2
+Mostafa Shobeir|Egypt,Mostafa Shobeir,Egypt,95,1,0,0,0,0,0,0,32,23,0,0,0,1,0
+Mohamed Salah|Egypt,Mohamed Salah,Egypt,76,1,1,1,0,2,2,1,21,17,3,4,0,3,1
+Omar Marmoush|Egypt,Omar Marmoush,Egypt,90,1,5,3,0,2,2,1,15,12,1,5,4,2,0
+Nicolas Raskin|Belgium,Nicolas Raskin,Belgium,92,1,0,0,0,0,2,1,24,16,1,0,0,2,0
+Maxim De Cuyper|Belgium,Maxim De Cuyper,Belgium,93,1,0,0,0,2,0,0,11,7,0,1,1,4,0
+Romelu Lukaku|Belgium,Romelu Lukaku,Belgium,93,1,2,1,0,0,0,0,6,6,0,2,0,0,0
+Ramy Rabia|Egypt,Ramy Rabia,Egypt,95,1,0,0,0,0,0,0,21,19,0,0,0,2,0
+Zizo|Egypt,Zizo,Egypt,93,1,1,1,0,1,0,0,10,8,0,2,0,0,0
+Hamza Abdelkarim|Egypt,Hamza Abdelkarim,Egypt,89,1,0,0,0,0,3,2,5,2,0,0,0,1,1
+Matias Fernandez-Pardo|Belgium,Matias Fernandez-Pardo,Belgium,93,1,0,0,0,0,0,0,3,2,0,0,0,0,0
+Hans Vanaken|Belgium,Hans Vanaken,Belgium,93,1,0,0,0,0,1,0,6,5,0,0,0,0,0
+Karim Hafez|Egypt,Karim Hafez,Egypt,95,1,0,0,0,0,1,1,10,8,0,0,0,2,0
+Ibrahim Adel|Egypt,Ibrahim Adel,Egypt,95,1,0,0,0,0,0,0,5,4,0,1,0,1,0
+Azzedine Ounahi|Morocco,Azzedine Ounahi,Morocco,65,1,0,0,0,0,0,0,37,33,1,8,4,7,0
+Roger Ibañez|Brazil,Roger Ibañez,Brazil,48,1,0,0,0,2,0,0,23,22,0,3,1,2,1
+Marquinhos|Brazil,Marquinhos,Brazil,98,1,2,1,0,0,3,3,79,75,0,0,0,3,0
+Issa Diop|Morocco,Issa Diop,Morocco,99,1,0,0,0,0,1,1,53,42,0,0,0,2,0
+Ayyoub Bouaddi|Morocco,Ayyoub Bouaddi,Morocco,100,1,0,0,0,1,1,0,67,61,0,5,3,6,0
+Lucas Paquetá|Brazil,Lucas Paquetá,Brazil,61,1,2,2,0,2,2,1,41,32,1,4,2,3,0
+Raphinha|Brazil,Raphinha,Brazil,93,1,2,2,0,0,1,1,35,22,3,6,1,3,2
+Noussair Mazraoui|Morocco,Noussair Mazraoui,Morocco,80,1,0,0,0,2,1,0,36,30,0,3,2,5,0
+Bilal El Khannouss|Morocco,Bilal El Khannouss,Morocco,80,1,1,1,0,2,1,0,29,24,2,4,2,6,0
+Bruno Guimarães|Brazil,Bruno Guimarães,Brazil,80,1,1,0,0,1,2,1,41,34,1,2,1,3,0
+Casemiro|Brazil,Casemiro,Brazil,48,1,0,0,0,1,1,1,19,18,1,2,0,5,0
+Alisson Becker|Brazil,Alisson Becker,Brazil,99,1,0,0,0,0,0,0,29,24,0,0,0,1,0
+Gabriel Magalhães|Brazil,Gabriel Magalhães,Brazil,100,1,0,0,0,1,1,1,85,82,0,0,0,5,0
+Neil El Aynaoui|Morocco,Neil El Aynaoui,Morocco,99,1,3,1,0,4,4,1,53,47,1,2,1,4,0
+Douglas Santos|Brazil,Douglas Santos,Brazil,99,1,0,0,0,1,0,0,70,61,1,0,0,6,0
+Brahim Díaz|Morocco,Brahim Díaz,Morocco,65,1,3,3,0,0,0,0,20,19,2,6,1,3,1
+Chadi Riad|Morocco,Chadi Riad,Morocco,98,1,0,0,0,0,0,0,40,34,0,2,2,3,0
+Ismael Saibari|Morocco,Ismael Saibari,Morocco,89,1,3,3,1,2,3,1,24,22,0,1,1,1,0
+Achraf Hakimi|Morocco,Achraf Hakimi,Morocco,100,1,3,0,0,3,2,0,59,54,3,5,0,5,1
+Igor Thiago|Brazil,Igor Thiago,Brazil,62,1,2,1,0,2,1,1,6,5,0,1,0,2,0
+Yassine Bounou|Morocco,Yassine Bounou,Morocco,101,1,0,0,0,0,1,1,38,20,0,0,0,0,0
+Vinícius Júnior|Brazil,Vinícius Júnior,Brazil,100,1,1,1,1,3,1,0,35,27,2,9,0,4,0
+Danilo|Brazil,Danilo,Brazil,98,1,0,0,0,0,2,1,41,34,0,1,0,1,0
+Fabinho|Brazil,Fabinho,Brazil,97,1,0,0,0,3,0,0,17,15,0,0,0,3,0
+Matheus Cunha|Brazil,Matheus Cunha,Brazil,96,1,0,0,0,0,0,0,11,5,0,3,0,0,0
+Luiz Henrique|Brazil,Luiz Henrique,Brazil,99,1,0,0,0,0,1,1,13,12,1,0,0,2,0
+Samir El Mourabet|Morocco,Samir El Mourabet,Morocco,99,1,0,0,0,0,0,0,27,24,0,0,0,0,0
+Chemsdine Talbi|Morocco,Chemsdine Talbi,Morocco,100,1,0,0,0,0,0,0,12,9,0,0,0,1,0
+Anass Salah-Eddine|Morocco,Anass Salah-Eddine,Morocco,100,1,0,0,0,0,0,0,13,10,0,1,0,0,0
+Ayoube Amaimouni-Echghouyab|Morocco,Ayoube Amaimouni-Echghouyab,Morocco,100,1,1,1,0,0,0,0,6,4,0,1,0,1,0
+Danilo Santos|Brazil,Danilo Santos,Brazil,99,1,2,1,0,0,0,0,4,4,0,0,0,0,0
+Soufiane Rahimi|Morocco,Soufiane Rahimi,Morocco,98,1,0,0,0,0,1,0,3,2,0,0,0,1,0
+Stephen Eustaquio|Canada,Stephen Eustaquio,Canada,91,1,1,0,0,2,1,0,56,46,3,0,0,9,0
+Ismaël Koné|Canada,Ismaël Koné,Canada,95,1,1,1,0,1,6,1,61,50,0,2,0,5,2
+Liam Millar|Canada,Liam Millar,Canada,61,1,0,0,0,1,5,2,36,22,1,5,2,1,2
+Richie Laryea|Canada,Richie Laryea,Canada,96,1,1,1,0,0,3,1,47,35,2,2,2,4,2
+Tani Oluwaseyi|Canada,Tani Oluwaseyi,Canada,76,1,2,1,0,0,13,5,20,6,0,2,1,2,0
+Nikola Katic|Bosnia and Herzegovina,Nikola Katic,Bosnia and Herzegovina,96,1,0,0,0,2,15,10,23,14,0,0,0,2,0
+Luc De Fougerolles|Canada,Luc De Fougerolles,Canada,96,1,0,0,0,2,13,4,50,39,0,1,0,2,0
+Tarik Muharemovic|Bosnia and Herzegovina,Tarik Muharemovic,Bosnia and Herzegovina,96,1,1,0,0,1,7,6,31,24,0,1,1,6,0
+Tajon Buchanan|Canada,Tajon Buchanan,Canada,61,1,0,0,0,0,2,0,13,8,0,3,0,3,1
+Amar Dedic|Bosnia and Herzegovina,Amar Dedic,Bosnia and Herzegovina,93,1,0,0,0,1,3,3,38,25,0,2,0,2,0
+Ermedin Demirovic|Bosnia and Herzegovina,Ermedin Demirovic,Bosnia and Herzegovina,94,1,1,1,0,4,11,7,17,12,0,2,0,3,0
+Maxime Crépeau|Canada,Maxime Crépeau,Canada,96,1,0,0,0,0,1,1,26,19,0,0,0,3,0
+Sead Kolasinac|Bosnia and Herzegovina,Sead Kolasinac,Bosnia and Herzegovina,84,1,0,0,0,3,2,1,31,21,1,0,0,2,0
+Jovo Lukic|Bosnia and Herzegovina,Jovo Lukic,Bosnia and Herzegovina,62,1,3,2,1,1,9,9,17,7,0,2,0,3,1
+Alistair Johnston|Canada,Alistair Johnston,Canada,96,1,1,1,0,2,1,1,52,33,1,1,1,3,0
+Ivan Basic|Bosnia and Herzegovina,Ivan Basic,Bosnia and Herzegovina,62,1,0,0,0,2,2,1,26,22,4,1,1,3,0
+Amar Memic|Bosnia and Herzegovina,Amar Memic,Bosnia and Herzegovina,74,1,1,0,0,1,2,1,8,4,0,4,0,2,0
+Esmir Bajraktarevic|Bosnia and Herzegovina,Esmir Bajraktarevic,Bosnia and Herzegovina,74,1,0,0,0,1,3,1,15,7,0,5,1,4,0
+Jonathan David|Canada,Jonathan David,Canada,61,1,3,2,0,0,1,0,14,8,0,1,0,1,0
+Derek Cornelius|Canada,Derek Cornelius,Canada,96,1,1,0,0,0,11,4,67,50,0,0,0,7,0
+Nikola Vasilj|Bosnia and Herzegovina,Nikola Vasilj,Bosnia and Herzegovina,95,1,0,0,0,0,0,0,33,14,0,0,0,3,0
+Benjamin Tahirovic|Bosnia and Herzegovina,Benjamin Tahirovic,Bosnia and Herzegovina,89,1,1,0,0,0,2,1,26,17,0,0,0,5,2
+Jacob Shaffelburg|Canada,Jacob Shaffelburg,Canada,96,1,0,0,0,0,1,0,8,6,1,0,0,2,0
+Promise David|Canada,Promise David,Canada,93,1,1,0,0,2,3,1,3,1,1,0,0,2,2
+Ali Ahmed|Canada,Ali Ahmed,Canada,96,1,0,0,0,0,1,0,21,11,0,1,1,3,0
+Samed Bazdar|Bosnia and Herzegovina,Samed Bazdar,Bosnia and Herzegovina,94,1,0,0,0,1,6,1,6,2,0,3,1,2,1
+Armin Gigovic|Bosnia and Herzegovina,Armin Gigovic,Bosnia and Herzegovina,96,1,0,0,0,0,1,1,16,12,0,3,1,3,0
+Ivan Sunjic|Bosnia and Herzegovina,Ivan Sunjic,Bosnia and Herzegovina,94,1,0,0,0,2,1,1,14,10,0,0,0,2,0
+Kerim Alajbegovic|Bosnia and Herzegovina,Kerim Alajbegovic,Bosnia and Herzegovina,92,1,0,0,0,1,0,0,6,5,0,3,1,2,1
+Cyle Larin|Canada,Cyle Larin,Canada,96,1,2,2,1,0,2,1,0,0,0,0,0,1,0
+Dzenis Burnic|Bosnia and Herzegovina,Dzenis Burnic,Bosnia and Herzegovina,91,1,1,1,0,0,0,0,3,2,0,0,0,0,0
+Jonathan Osorio|Canada,Jonathan Osorio,Canada,96,1,0,0,0,0,0,0,5,4,0,0,0,0,0
+Declan Rice|England,Declan Rice,England,72,1,1,1,0,1,1,1,47,37,3,1,1,4,0
+Jordan Pickford|England,Jordan Pickford,England,97,1,0,0,0,0,0,0,61,49,0,0,0,4,0
+Luka Vuskovic|Croatia,Luka Vuskovic,Croatia,66,1,0,0,0,1,0,0,42,37,0,3,1,6,1
+Martin Baturina|Croatia,Martin Baturina,Croatia,78,1,1,1,1,0,4,2,33,26,1,2,1,3,0
+Harry Kane|England,Harry Kane,England,96,1,7,4,2,2,4,2,21,14,2,0,0,1,0
+Josko Gvardiol|Croatia,Josko Gvardiol,Croatia,96,1,1,1,0,0,1,1,51,45,0,1,0,4,0
+Ivan Perisic|Croatia,Ivan Perisic,Croatia,96,1,0,0,0,2,6,4,37,28,4,1,0,2,2
+Ezri Konsa|England,Ezri Konsa,England,90,1,2,1,0,1,5,1,71,67,0,0,0,3,0
+John Stones|England,John Stones,England,87,1,0,0,0,1,3,2,65,62,0,0,0,5,0
+Dominik Livakovic|Croatia,Dominik Livakovic,Croatia,96,1,0,0,0,0,1,1,39,28,0,0,0,0,0
+Josip Sutalo|Croatia,Josip Sutalo,Croatia,95,1,1,0,0,0,4,4,72,63,0,1,1,3,1
+Petar Musa|Croatia,Petar Musa,Croatia,66,1,1,1,1,1,9,3,8,3,0,1,0,0,0
+Elliot Anderson|England,Elliot Anderson,England,96,1,1,1,0,3,4,2,56,48,1,0,0,8,0
+Nico O'Reilly|England,Nico O'Reilly,England,96,1,2,1,0,1,2,1,50,43,2,4,3,1,0
+Josip Stanisic|Croatia,Josip Stanisic,Croatia,93,1,0,0,0,0,1,0,44,40,1,2,1,6,1
+Noni Madueke|England,Noni Madueke,England,72,1,1,1,0,0,1,0,19,18,2,2,1,1,0
+Luka Modric|Croatia,Luka Modric,Croatia,58,1,0,0,0,1,0,0,28,27,0,1,0,1,0
+Petar Sucic|Croatia,Petar Sucic,Croatia,95,1,1,0,0,2,0,0,42,35,1,2,1,5,0
+Reece James|England,Reece James,England,94,1,1,1,0,1,5,2,48,40,0,1,0,1,0
+Jude Bellingham|England,Jude Bellingham,England,80,1,3,2,1,0,1,0,25,18,0,2,1,5,2
+Mario Pasalic|Croatia,Mario Pasalic,Croatia,78,1,1,0,0,1,0,0,22,21,0,0,0,2,0
+Anthony Gordon|England,Anthony Gordon,England,72,1,2,2,0,0,0,0,12,10,0,2,0,0,0
+Mateo Kovacic|Croatia,Mateo Kovacic,Croatia,95,1,1,1,0,1,0,0,30,30,0,0,0,1,0
+Igor Matanovic|Croatia,Igor Matanovic,Croatia,95,1,1,1,0,2,2,1,1,0,0,0,0,0,0
+Marco Pasalic|Croatia,Marco Pasalic,Croatia,96,1,1,1,0,0,0,0,12,6,0,1,0,2,0
+Morgan Rogers|England,Morgan Rogers,England,96,1,0,0,0,0,1,1,7,5,2,1,0,2,1
+Bukayo Saka|England,Bukayo Saka,England,95,1,0,0,0,0,0,0,6,5,1,2,1,1,0
+Marcus Rashford|England,Marcus Rashford,England,95,1,1,1,1,0,1,0,5,3,0,3,0,2,0
+Andrej Kramaric|Croatia,Andrej Kramaric,Croatia,96,1,1,1,0,0,0,0,12,10,0,0,0,1,0
+Nikola Vlasic|Croatia,Nikola Vlasic,Croatia,96,1,0,0,0,1,0,0,5,2,0,0,0,0,0
+Djed Spence|England,Djed Spence,England,94,1,1,1,0,0,0,0,8,6,0,0,0,0,0
+Marc Guéhi|England,Marc Guéhi,England,92,1,0,0,0,0,0,0,7,7,0,0,0,1,0
+Aurélien Tchouaméni|France,Aurélien Tchouaméni,France,100,1,0,0,0,0,3,3,70,63,0,0,0,6,0
+Krépin Diatta|Senegal,Krépin Diatta,Senegal,98,1,0,0,0,0,2,1,60,52,0,3,3,4,1
+Lamine Camara|Senegal,Lamine Camara,Senegal,76,1,0,0,0,2,1,0,31,26,0,2,1,3,2
+Théo Hernández|France,Théo Hernández,France,96,1,1,1,0,0,2,2,49,45,0,2,0,5,0
+Kalidou Koulibaly|Senegal,Kalidou Koulibaly,Senegal,98,1,0,0,0,0,0,0,44,36,0,0,0,3,0
+Jules Koundé|France,Jules Koundé,France,100,1,0,0,0,1,5,1,69,55,1,0,0,5,2
+Michael Olise|France,Michael Olise,France,100,1,2,2,0,0,0,0,61,52,4,3,2,6,2
+Sadio Mané|Senegal,Sadio Mané,Senegal,95,1,1,1,0,0,3,1,31,27,0,3,1,4,0
+Nicolas Jackson|Senegal,Nicolas Jackson,Senegal,83,1,1,0,0,2,5,1,18,12,2,1,0,2,1
+El Hadji Malick Diouf|Senegal,El Hadji Malick Diouf,Senegal,97,1,0,0,0,1,4,4,56,41,1,0,0,6,0
+Moussa Niakhaté|Senegal,Moussa Niakhaté,Senegal,98,1,0,0,0,0,0,0,85,76,0,0,0,1,0
+Pape Gueye|Senegal,Pape Gueye,Senegal,83,1,0,0,0,1,0,0,49,42,0,1,0,7,1
+Idrissa Gueye|Senegal,Idrissa Gueye,Senegal,88,1,0,0,0,1,0,0,62,57,0,0,0,6,0
+Mike Maignan|France,Mike Maignan,France,100,1,0,0,0,0,0,0,46,35,0,0,0,2,0
+William Saliba|France,William Saliba,France,98,1,0,0,0,0,1,1,72,69,0,0,0,2,0
+Dayot Upamecano|France,Dayot Upamecano,France,100,1,0,0,0,1,4,1,80,70,1,0,0,5,0
+Ousmane Dembélé|France,Ousmane Dembélé,France,80,1,1,1,0,0,0,0,36,26,0,1,0,3,0
+Adrien Rabiot|France,Adrien Rabiot,France,95,1,0,0,0,1,2,2,50,46,2,0,0,5,1
+Kylian Mbappé|France,Kylian Mbappé,France,98,1,4,4,2,2,0,0,16,15,0,9,1,2,0
+Édouard Mendy|Senegal,Édouard Mendy,Senegal,90,1,0,0,0,0,0,0,41,35,0,0,0,6,0
+Désiré Doué|France,Désiré Doué,France,87,1,2,1,0,0,2,1,36,31,1,4,1,4,0
+Ismaïla Sarr|Senegal,Ismaïla Sarr,Senegal,75,1,3,1,0,0,2,0,14,11,1,4,2,1,0
+Ibrahim Mbaye|Senegal,Ibrahim Mbaye,Senegal,100,1,1,1,1,0,1,0,10,7,0,1,1,2,0
+Habib Diarra|Senegal,Habib Diarra,Senegal,98,1,0,0,0,2,0,0,9,8,0,0,0,2,0
+Bradley Barcola|France,Bradley Barcola,France,96,1,1,1,1,0,1,1,7,6,0,3,1,0,0
+Iliman Ndiaye|Senegal,Iliman Ndiaye,Senegal,100,1,0,0,0,0,0,0,10,9,1,0,0,1,1
+Bamba Dieng|Senegal,Bamba Dieng,Senegal,99,1,0,0,0,0,1,0,3,3,0,0,0,1,0
+Rayan Cherki|France,Rayan Cherki,France,100,1,0,0,0,0,0,0,8,5,0,0,0,3,0
+Pathé Ciss|Senegal,Pathé Ciss,Senegal,98,1,0,0,0,0,1,1,14,12,0,0,0,0,0
+Jürgen Locadia|Curacao,Jürgen Locadia,Curacao,65,1,0,0,0,1,2,0,14,13,0,2,0,0,0
+Leandro Bacuna|Curacao,Leandro Bacuna,Curacao,94,1,2,0,0,1,3,2,58,49,1,2,1,4,1
+Deveron Fonville|Curacao,Deveron Fonville,Curacao,92,1,0,0,0,1,0,0,24,19,0,3,1,5,0
+Armando Obispo|Curacao,Armando Obispo,Curacao,94,1,0,0,0,0,2,1,41,37,0,1,0,5,0
+Eloy Room|Curacao,Eloy Room,Curacao,91,1,0,0,0,0,0,0,34,20,0,0,0,0,0
+Nico Schlotterbeck|Germany,Nico Schlotterbeck,Germany,94,1,2,2,1,2,4,4,86,74,0,3,2,8,0
+Kai Havertz|Germany,Kai Havertz,Germany,95,1,4,4,2,1,4,1,41,38,0,1,0,1,0
+Jamal Musiala|Germany,Jamal Musiala,Germany,64,1,3,3,1,2,0,0,27,14,2,5,4,2,2
+Joshua Kimmich|Germany,Joshua Kimmich,Germany,83,1,0,0,0,0,0,0,83,72,5,0,0,5,1
+Juninho Bacuna|Curacao,Juninho Bacuna,Curacao,94,1,1,0,0,2,2,0,34,28,0,10,3,9,1
+Tahith Chong|Curacao,Tahith Chong,Curacao,83,1,1,0,0,1,0,0,19,13,0,8,5,4,0
+Aleksandar Pavlovic|Germany,Aleksandar Pavlovic,Germany,94,1,3,2,0,6,0,0,72,67,1,1,1,6,1
+Riechedly Bazoer|Curacao,Riechedly Bazoer,Curacao,94,1,0,0,0,2,0,0,35,31,0,0,0,1,0
+Florian Wirtz|Germany,Florian Wirtz,Germany,94,1,3,2,0,0,0,0,68,58,4,3,1,8,2
+Felix Nmecha|Germany,Felix Nmecha,Germany,73,1,4,3,1,1,2,2,40,38,0,1,0,2,2
+Nathaniel Brown|Germany,Nathaniel Brown,Germany,73,1,2,2,1,2,0,0,46,39,3,2,0,2,0
+Leroy Sané|Germany,Leroy Sané,Germany,93,1,3,0,0,1,1,0,51,41,2,3,1,5,2
+Sontje Hansen|Curacao,Sontje Hansen,Curacao,47,1,1,1,0,0,0,0,7,6,2,0,0,2,0
+Sherel Floranus|Curacao,Sherel Floranus,Curacao,94,1,0,0,0,1,0,0,37,30,0,0,0,4,0
+Livano Comenencia|Curacao,Livano Comenencia,Curacao,96,1,2,1,1,1,1,1,27,22,2,2,2,5,0
+Jonathan Tah|Germany,Jonathan Tah,Germany,73,1,0,0,0,2,0,0,71,69,1,0,0,4,0
+Manuel Neuer|Germany,Manuel Neuer,Germany,92,1,0,0,0,0,0,0,24,20,0,0,0,0,0
+Jeremy Antonisse|Curacao,Jeremy Antonisse,Curacao,95,1,0,0,0,0,0,0,24,18,1,1,0,2,1
+Deniz Undav|Germany,Deniz Undav,Germany,94,1,1,1,1,1,0,0,12,8,3,2,0,3,0
+Jearl Margaritha|Curacao,Jearl Margaritha,Curacao,92,1,1,0,0,0,1,0,6,5,0,2,0,0,0
+Antonio Rüdiger|Germany,Antonio Rüdiger,Germany,92,1,0,0,0,0,1,1,17,14,0,0,0,1,0
+Leon Goretzka|Germany,Leon Goretzka,Germany,95,1,0,0,0,0,1,1,13,11,0,0,0,1,0
+David Raum|Germany,David Raum,Germany,95,1,1,1,0,0,0,0,10,6,0,0,0,0,1
+Gervane Kastaneer|Curacao,Gervane Kastaneer,Curacao,91,1,0,0,0,1,2,0,5,4,0,0,0,0,0
+Waldemar Anton|Germany,Waldemar Anton,Germany,96,1,0,0,0,0,0,0,7,6,0,0,0,1,0
+Kamaldeen Sulemana|Ghana,Kamaldeen Sulemana,Ghana,58,1,0,0,0,1,1,0,13,10,1,3,1,3,1
+Gideon Mensah|Ghana,Gideon Mensah,Ghana,94,1,0,0,0,0,4,2,58,51,0,3,1,4,0
+Jerome Opoku|Ghana,Jerome Opoku,Ghana,93,1,0,0,0,0,2,1,45,41,1,0,0,3,0
+Jordan Ayew|Ghana,Jordan Ayew,Ghana,87,1,0,0,0,2,10,8,22,11,1,4,2,0,0
+Andrés Andrade|Panama,Andrés Andrade,Panama,102,1,0,0,0,2,7,4,102,83,0,0,0,2,0
+Jiovany Ramos|Panama,Jiovany Ramos,Panama,101,1,2,0,0,1,1,1,90,81,0,2,2,2,1
+Orlando Mosquera|Panama,Orlando Mosquera,Panama,99,1,0,0,0,0,1,1,33,28,1,0,0,1,0
+José Córdoba|Panama,José Córdoba,Panama,98,1,0,0,0,1,2,0,101,91,0,1,1,4,0
+Amir Murillo|Panama,Amir Murillo,Panama,102,1,0,0,0,0,5,3,54,44,3,3,1,7,0
+Antoine Semenyo|Ghana,Antoine Semenyo,Ghana,98,1,2,1,0,2,2,2,26,21,1,1,0,2,0
+Elisha Owusu|Ghana,Elisha Owusu,Ghana,78,1,0,0,0,0,0,0,26,19,0,1,0,2,1
+Marvin Senaya|Ghana,Marvin Senaya,Ghana,93,1,0,0,0,1,0,0,43,31,0,0,0,2,0
+César Blackman|Panama,César Blackman,Panama,90,1,2,2,0,1,2,1,46,42,0,2,0,7,1
+Cecilio Waterman|Panama,Cecilio Waterman,Panama,63,1,1,1,0,0,1,0,8,5,0,0,0,0,0
+Lawrence Ati Zigi|Ghana,Lawrence Ati Zigi,Ghana,47,1,0,0,0,0,0,0,13,10,0,0,0,2,0
+Caleb Yirenkyi|Ghana,Caleb Yirenkyi,Ghana,99,1,2,1,1,1,3,0,32,31,0,3,3,9,2
+Carlos Harvey|Panama,Carlos Harvey,Panama,101,1,1,0,0,5,6,0,55,45,0,1,0,5,4
+Cristian Martínez|Panama,Cristian Martínez,Panama,63,1,1,0,0,1,2,1,22,17,0,0,0,2,1
+José Luis Rodríguez|Panama,José Luis Rodríguez,Panama,74,1,0,0,0,0,1,0,27,17,0,5,0,3,0
+Jonas Adjetey|Ghana,Jonas Adjetey,Ghana,93,1,2,1,0,0,3,3,52,47,0,0,0,4,0
+Yoel Bárcenas|Panama,Yoel Bárcenas,Panama,99,1,2,1,0,0,3,2,58,53,0,3,1,5,0
+Ernest Nuamah|Ghana,Ernest Nuamah,Ghana,58,1,0,0,0,0,4,1,14,10,0,3,0,4,0
+Benjamin Asare|Ghana,Benjamin Asare,Ghana,101,1,0,0,0,0,1,1,11,7,0,0,0,0,0
+Brandon Thomas-Asante|Ghana,Brandon Thomas-Asante,Ghana,101,1,1,1,0,0,1,1,6,1,0,1,1,1,0
+Abdul Fatawu|Ghana,Abdul Fatawu,Ghana,93,1,1,0,0,0,0,0,13,10,1,5,1,3,0
+José Fajardo|Panama,José Fajardo,Panama,86,1,0,0,0,0,1,0,3,0,0,0,0,1,0
+Azarías Londoño|Panama,Azarías Londoño,Panama,102,1,0,0,0,0,1,0,12,11,1,0,0,4,0
+Ismael Díaz|Panama,Ismael Díaz,Panama,99,1,2,2,0,0,0,0,10,8,0,1,1,1,0
+Kwasi Sibo|Ghana,Kwasi Sibo,Ghana,101,1,0,0,0,0,1,1,16,15,0,0,0,1,0
+Prince Adu|Ghana,Prince Adu,Ghana,101,1,0,0,0,2,1,0,2,2,0,3,0,2,0
+Aníbal Godoy|Panama,Aníbal Godoy,Panama,102,1,0,0,0,0,0,0,9,8,0,0,0,1,0
+Lawrence Shankland|Scotland,Lawrence Shankland,Scotland,83,1,2,1,0,4,6,5,16,7,0,0,0,2,1
+Lewis Ferguson|Scotland,Lewis Ferguson,Scotland,91,1,0,0,0,1,4,3,45,40,0,0,0,4,0
+Martin Expérience|Haiti,Martin Expérience,Haiti,97,1,1,0,0,2,0,0,53,40,2,1,0,6,0
+Aaron Hickey|Scotland,Aaron Hickey,Scotland,75,1,0,0,0,2,1,1,44,38,2,1,0,0,0
+Ben Gannon-Doak|Scotland,Ben Gannon-Doak,Scotland,75,1,2,1,0,0,0,0,25,20,2,8,2,1,0
+Grant Hanley|Scotland,Grant Hanley,Scotland,98,1,0,0,0,1,6,2,50,46,0,0,0,0,0
+Jack Hendry|Scotland,Jack Hendry,Scotland,92,1,0,0,0,0,1,1,56,51,0,0,0,0,0
+Hannes Delcroix|Haiti,Hannes Delcroix,Haiti,97,1,0,0,0,0,6,1,67,67,0,0,0,6,0
+Johny Placide|Haiti,Johny Placide,Haiti,98,1,0,0,0,0,0,0,33,22,0,0,0,4,0
+Jean-Ricner Bellegarde|Haiti,Jean-Ricner Bellegarde,Haiti,97,1,3,1,0,1,1,1,72,55,2,3,1,6,0
+Scott McTominay|Scotland,Scott McTominay,Scotland,98,1,2,0,0,1,1,1,29,27,0,4,1,5,0
+Andy Robertson|Scotland,Andy Robertson,Scotland,94,1,0,0,0,2,2,0,59,42,2,1,1,1,0
+Ché Adams|Scotland,Ché Adams,Scotland,75,1,1,1,0,4,6,3,11,8,0,0,0,0,0
+Ricardo Adé|Haiti,Ricardo Adé,Haiti,92,1,1,0,0,1,5,2,64,56,0,0,0,4,0
+Frantzdy Pierrot|Haiti,Frantzdy Pierrot,Haiti,98,1,3,2,0,4,9,4,6,5,1,0,0,1,1
+John McGinn|Scotland,John McGinn,Scotland,83,1,2,1,1,0,1,1,14,11,1,2,1,1,0
+Danley Jean Jacques|Haiti,Danley Jean Jacques,Haiti,92,1,0,0,0,3,1,1,55,45,1,0,0,5,2
+Carlens Arcus|Haiti,Carlens Arcus,Haiti,98,1,0,0,0,3,3,0,42,38,1,0,0,0,0
+Louicius Deedson|Haiti,Louicius Deedson,Haiti,61,1,1,0,0,2,0,0,11,7,0,4,3,2,1
+Angus Gunn|Scotland,Angus Gunn,Scotland,97,1,0,0,0,0,0,0,42,30,0,0,0,1,0
+Wilson Isidor|Haiti,Wilson Isidor,Haiti,76,1,2,1,0,3,6,3,9,5,1,0,0,0,0
+Ruben Providence|Haiti,Ruben Providence,Haiti,85,1,3,2,0,2,0,0,27,23,1,4,1,3,1
+Josué Casimir|Haiti,Josué Casimir,Haiti,97,1,1,0,0,1,0,0,22,18,1,3,1,0,0
+Ryan Christie|Scotland,Ryan Christie,Scotland,98,1,0,0,0,1,0,0,5,3,0,1,0,3,0
+Lyndon Dykes|Scotland,Lyndon Dykes,Scotland,97,1,0,0,0,2,3,2,6,3,0,0,0,0,0
+Nathan Patterson|Scotland,Nathan Patterson,Scotland,98,1,0,0,0,1,1,1,7,4,0,0,0,1,0
+Lenny Joseph|Haiti,Lenny Joseph,Haiti,94,1,0,0,0,1,1,0,4,2,1,2,0,1,0
+Findlay Curtis|Scotland,Findlay Curtis,Scotland,97,1,0,0,0,1,0,0,4,2,0,0,0,0,0
+Kenny McLean|Scotland,Kenny McLean,Scotland,98,1,0,0,0,1,0,0,3,3,0,0,0,1,1
+Yassin Fortuné|Haiti,Yassin Fortuné,Haiti,98,1,0,0,0,0,0,0,5,5,0,0,0,0,0
+Chris Wood|New Zealand,Chris Wood,New Zealand,93,1,4,3,0,0,4,2,16,14,2,2,0,0,0
+Joe Bell|New Zealand,Joe Bell,New Zealand,93,1,0,0,0,1,4,2,50,40,0,1,1,4,1
+Tim Payne|New Zealand,Tim Payne,New Zealand,78,1,0,0,0,1,3,1,38,29,0,0,0,2,0
+Sarpreet Singh|New Zealand,Sarpreet Singh,New Zealand,92,1,3,2,0,1,1,0,47,34,1,6,2,7,1
+Callum McCowatt|New Zealand,Callum McCowatt,New Zealand,68,1,2,1,0,0,3,2,37,30,0,2,2,4,0
+Milad Mohammadi|Iran,Milad Mohammadi,Iran,95,1,0,0,0,0,1,0,53,39,0,1,0,0,0
+Finn Surman|New Zealand,Finn Surman,New Zealand,91,1,1,0,0,0,1,1,54,51,1,0,0,3,0
+Mohammad Mohebbi|Iran,Mohammad Mohebbi,Iran,94,1,2,2,1,0,3,3,29,19,0,0,0,6,1
+Mehdi Taremi|Iran,Mehdi Taremi,Iran,80,1,2,0,0,0,4,4,39,30,1,2,1,6,2
+Ramin Rezaeian|Iran,Ramin Rezaeian,Iran,95,1,1,1,1,0,2,1,58,38,3,1,1,5,0
+Arya Yousefi|Iran,Arya Yousefi,Iran,51,1,1,1,0,0,0,0,19,17,1,2,0,3,0
+Saeid Ezatolahi|Iran,Saeid Ezatolahi,Iran,94,1,2,1,0,2,7,3,45,38,0,1,1,5,0
+Alireza Beiranvand|Iran,Alireza Beiranvand,Iran,93,1,0,0,0,0,0,0,22,20,0,1,1,1,0
+Ali Nemati|Iran,Ali Nemati,Iran,95,1,1,0,0,1,3,2,55,50,2,0,0,3,0
+Michael Boxall|New Zealand,Michael Boxall,New Zealand,94,1,0,0,0,0,5,2,56,50,0,0,0,2,0
+Marko Stamenic|New Zealand,Marko Stamenic,New Zealand,92,1,1,1,0,2,6,2,58,51,0,0,0,5,0
+Shahriyar Moghanloo|Iran,Shahriyar Moghanloo,Iran,53,1,3,1,0,1,11,6,20,8,0,0,0,4,0
+Saman Ghoddos|Iran,Saman Ghoddos,Iran,65,1,2,0,0,0,1,1,28,18,1,1,0,2,3
+Elijah Just|New Zealand,Elijah Just,New Zealand,95,1,2,2,2,1,3,1,29,24,1,3,1,7,2
+Max Crocombe|New Zealand,Max Crocombe,New Zealand,92,1,0,0,0,0,0,0,41,32,1,0,0,2,0
+Shoja Khalilzadeh|Iran,Shoja Khalilzadeh,Iran,95,1,0,0,0,2,2,2,49,36,0,0,0,5,0
+Liberato Cacace|New Zealand,Liberato Cacace,New Zealand,68,1,1,1,0,0,1,0,26,19,0,0,0,4,1
+Mehdi Ghayedi|Iran,Mehdi Ghayedi,Iran,95,1,1,1,0,2,3,1,13,7,1,2,0,1,1
+Ali Alipour|Iran,Ali Alipour,Iran,95,1,1,1,0,1,1,0,9,5,0,0,0,1,0
+Ehsan Hajisafi|Iran,Ehsan Hajisafi,Iran,95,1,1,1,0,1,1,1,9,7,0,0,0,0,0
+Ryan Thomas|New Zealand,Ryan Thomas,New Zealand,95,1,0,0,0,2,3,1,6,3,0,2,0,0,0
+Ben Old|New Zealand,Ben Old,New Zealand,91,1,0,0,0,0,1,0,9,7,0,0,0,0,0
+Callan Elliot|New Zealand,Callan Elliot,New Zealand,94,1,0,0,0,0,3,1,9,6,0,0,0,1,0
+Amirhossein Hosseinzadeh|Iran,Amirhossein Hosseinzadeh,Iran,95,1,0,0,0,0,1,0,9,8,1,1,0,1,0
+Jesse Randall|New Zealand,Jesse Randall,New Zealand,92,1,0,0,0,0,0,0,1,1,1,0,0,0,0
+Tyler Bindon|New Zealand,Tyler Bindon,New Zealand,95,1,0,0,0,0,2,1,1,1,0,0,0,1,0
+Amir Al Ammari|Iraq,Amir Al Ammari,Iraq,95,1,0,0,0,1,2,1,52,44,3,0,0,3,0
+David Møller Wolfe|Norway,David Møller Wolfe,Norway,73,1,0,0,0,3,3,1,51,42,1,1,0,2,0
+Akam Hashim|Iraq,Akam Hashim,Iraq,94,1,1,0,0,0,4,1,52,42,0,3,3,1,0
+Zaid Ismael|Iraq,Zaid Ismael,Iraq,59,1,0,0,0,2,3,2,27,23,0,1,0,4,0
+Ørjan Nyland|Norway,Ørjan Nyland,Norway,95,1,0,0,0,0,0,0,34,28,0,0,0,3,0
+Kristoffer Ajer|Norway,Kristoffer Ajer,Norway,96,1,0,0,0,0,7,5,66,57,0,0,0,4,0
+Torbjørn Heggem|Norway,Torbjørn Heggem,Norway,93,1,0,0,0,1,2,2,87,80,0,0,0,2,0
+Hussein Ali|Iraq,Hussein Ali,Iraq,73,1,1,0,0,1,1,1,20,17,0,1,0,0,0
+Zaid Tahseen|Iraq,Zaid Tahseen,Iraq,96,1,2,0,0,3,3,1,38,30,0,0,0,2,0
+Jalal Hassan|Iraq,Jalal Hassan,Iraq,91,1,0,0,0,0,0,0,35,28,0,0,0,0,0
+Fredrik Aursnes|Norway,Fredrik Aursnes,Norway,73,1,0,0,0,0,4,2,30,28,0,0,0,1,0
+Alexander Sørloth|Norway,Alexander Sørloth,Norway,73,1,2,2,0,3,3,2,16,13,1,3,0,1,0
+Aymen Hussein|Iraq,Aymen Hussein,Iraq,96,1,4,2,2,2,9,2,15,12,1,0,0,1,0
+Julian Ryerson|Norway,Julian Ryerson,Norway,96,1,0,0,0,2,1,0,70,57,3,5,1,3,2
+Martin Ødegaard|Norway,Martin Ødegaard,Norway,81,1,1,0,0,1,0,0,44,42,1,3,0,0,0
+Antonio Nusa|Norway,Antonio Nusa,Norway,73,1,0,0,0,0,2,1,24,17,0,7,2,1,0
+Erling Haaland|Norway,Erling Haaland,Norway,96,1,5,4,2,2,3,3,9,4,1,2,1,2,2
+Merchas Doski|Iraq,Merchas Doski,Iraq,95,1,0,0,0,0,0,0,42,34,1,3,1,5,0
+Sander Berge|Norway,Sander Berge,Norway,92,1,0,0,0,1,1,0,82,78,0,1,1,10,0
+Ali Jasim|Iraq,Ali Jasim,Iraq,73,1,0,0,0,0,1,0,20,15,1,5,2,1,0
+Ibrahim Bayesh|Iraq,Ibrahim Bayesh,Iraq,78,1,1,1,0,0,3,2,21,16,1,4,1,3,0
+Ali Al Hamadi|Iraq,Ali Al Hamadi,Iraq,59,1,3,1,0,1,1,0,13,9,0,1,1,5,1
+Zidane Iqbal|Iraq,Zidane Iqbal,Iraq,95,1,0,0,0,0,0,0,20,17,0,3,2,0,0
+Marko Farji|Iraq,Marko Farji,Iraq,94,1,0,0,0,0,0,0,6,4,0,2,0,2,0
+Andreas Schjelderup|Norway,Andreas Schjelderup,Norway,95,1,0,0,0,0,0,0,5,5,0,2,0,0,0
+Kristian Thorstvedt|Norway,Kristian Thorstvedt,Norway,95,1,2,1,0,0,0,0,10,10,0,0,0,1,0
+Oscar Bobb|Norway,Oscar Bobb,Norway,90,1,0,0,0,0,0,0,20,18,1,0,0,2,0
+Leo Østigård|Norway,Leo Østigård,Norway,93,1,2,1,1,0,1,1,20,17,0,0,0,1,0
+Mustafa Saadoon|Iraq,Mustafa Saadoon,Iraq,96,1,0,0,0,2,0,0,1,1,0,0,0,0,0
+Ahmed Qasem|Iraq,Ahmed Qasem,Iraq,89,1,0,0,0,0,0,0,2,2,0,0,0,2,0
+Mohanad Ali|Iraq,Mohanad Ali,Iraq,98,1,0,0,0,0,0,0,2,1,0,0,0,0,0
+Patrick Berg|Norway,Patrick Berg,Norway,96,1,0,0,0,0,0,0,11,10,0,0,0,0,0
+Enner Valencia|Ecuador,Enner Valencia,Ecuador,77,1,1,0,0,2,3,0,8,8,0,0,0,2,0
+Hernán Galíndez|Ecuador,Hernán Galíndez,Ecuador,98,1,0,0,0,0,0,0,38,25,0,0,0,1,0
+Emmanuel Agbadou|Ivory Coast,Emmanuel Agbadou,Ivory Coast,98,1,0,0,0,0,6,4,61,57,0,0,0,4,0
+Moisés Caicedo|Ecuador,Moisés Caicedo,Ecuador,99,1,1,0,0,3,1,1,64,56,3,2,0,2,2
+Pedro Vite|Ecuador,Pedro Vite,Ecuador,97,1,1,0,0,0,1,1,74,68,1,1,0,6,0
+Alan Minda|Ecuador,Alan Minda,Ecuador,56,1,2,0,0,0,1,0,17,11,0,3,0,2,0
+Yan Diomande|Ivory Coast,Yan Diomande,Ivory Coast,96,1,2,0,0,0,0,0,54,42,5,7,4,5,2
+Piero Hincapié|Ecuador,Piero Hincapié,Ecuador,99,1,1,1,0,0,4,2,32,21,0,1,0,0,1
+Yahia Fofana|Ivory Coast,Yahia Fofana,Ivory Coast,97,1,0,0,0,0,1,1,28,15,0,0,0,1,0
+Joel Ordóñez|Ecuador,Joel Ordóñez,Ecuador,98,1,2,2,0,0,3,3,64,58,0,0,0,3,1
+Willian Pacho|Ecuador,Willian Pacho,Ecuador,98,1,0,0,0,1,3,3,79,72,0,0,0,9,0
+Alan Franco|Ecuador,Alan Franco,Ecuador,62,1,0,0,0,3,1,0,46,44,0,0,0,5,0
+Wilfried Singo|Ivory Coast,Wilfried Singo,Ivory Coast,98,1,1,0,0,2,4,4,48,44,1,1,0,7,0
+Gonzalo Plata|Ecuador,Gonzalo Plata,Ecuador,98,1,1,1,0,1,2,0,39,31,3,4,2,8,2
+Ghislain Konan|Ivory Coast,Ghislain Konan,Ivory Coast,97,1,1,0,0,0,2,1,49,37,1,2,1,3,0
+Nicolas Pépé|Ivory Coast,Nicolas Pépé,Ivory Coast,77,1,2,2,0,0,1,0,33,28,0,2,1,6,2
+Elye Wahi|Ivory Coast,Elye Wahi,Ivory Coast,56,1,2,1,0,0,2,0,10,6,0,0,0,0,1
+Franck Kessie|Ivory Coast,Franck Kessie,Ivory Coast,97,1,0,0,0,3,0,0,59,54,1,0,0,7,0
+John Yeboah|Ecuador,John Yeboah,Ecuador,62,1,3,0,0,0,0,0,25,20,0,2,1,4,3
+Guéla Doué|Ivory Coast,Guéla Doué,Ivory Coast,89,1,0,0,0,3,4,4,59,53,2,0,0,6,1
+Seko Fofana|Ivory Coast,Seko Fofana,Ivory Coast,77,1,4,2,0,1,0,0,36,33,1,1,1,4,3
+Bazoumana Touré|Ivory Coast,Bazoumana Touré,Ivory Coast,56,1,0,0,0,0,1,1,16,7,0,3,0,1,0
+Nilson Angulo|Ecuador,Nilson Angulo,Ecuador,98,1,0,0,0,1,3,0,10,6,1,0,0,1,0
+Ange-Yoan Bonny|Ivory Coast,Ange-Yoan Bonny,Ivory Coast,97,1,0,0,0,0,2,0,6,4,0,1,1,1,0
+Amad Diallo|Ivory Coast,Amad Diallo,Ivory Coast,97,1,2,2,1,0,0,0,17,15,1,7,6,3,0
+Jackson Porozo|Ecuador,Jackson Porozo,Ecuador,94,1,0,0,0,2,0,0,12,12,0,0,0,0,0
+Ángelo Preciado|Ecuador,Ángelo Preciado,Ecuador,96,1,0,0,0,0,0,0,14,6,0,1,0,2,1
+Ibrahim Sangaré|Ivory Coast,Ibrahim Sangaré,Ivory Coast,89,1,0,0,0,0,2,1,9,9,0,0,0,0,0
+Christ Inao Oulaï|Ivory Coast,Christ Inao Oulaï,Ivory Coast,99,1,1,0,0,1,3,1,8,8,0,1,0,1,0
+Kevin Rodríguez|Ecuador,Kevin Rodríguez,Ecuador,98,1,0,0,0,0,6,1,4,2,0,0,0,0,0
+Odilon Kossounou|Ivory Coast,Odilon Kossounou,Ivory Coast,98,1,0,0,0,0,0,0,2,2,0,0,0,1,0
+Brian Gutiérrez|Mexico,Brian Gutiérrez,Mexico,66,1,4,2,0,2,2,0,25,21,3,2,0,1,0
+Érik Lira|Mexico,Érik Lira,Mexico,76,1,0,0,0,0,1,1,45,42,0,0,0,0,1
+Johan Vásquez|Mexico,Johan Vásquez,Mexico,96,1,0,0,0,0,5,3,81,75,0,0,0,1,0
+César Montes|Mexico,César Montes,Mexico,92,1,0,0,0,2,3,2,66,60,0,0,0,4,0
+Israel Reyes|Mexico,Israel Reyes,Mexico,96,1,1,0,0,0,1,1,51,46,2,0,0,2,0
+Julián Quiñones|Mexico,Julián Quiñones,Mexico,79,1,5,3,1,1,1,0,34,28,2,6,5,4,2
+Álvaro Fidalgo|Mexico,Álvaro Fidalgo,Mexico,66,1,0,0,0,0,0,0,34,30,0,1,1,5,1
+Roberto Alvarado|Mexico,Roberto Alvarado,Mexico,91,1,0,0,0,2,0,0,40,35,2,2,2,6,0
+Aubrey Modiba|South Africa,Aubrey Modiba,South Africa,77,1,1,1,0,2,1,0,18,13,0,2,0,4,0
+Jayden Adams|South Africa,Jayden Adams,South Africa,61,1,0,0,0,0,1,0,21,17,0,1,1,1,0
+Khuliso Mudau|South Africa,Khuliso Mudau,South Africa,97,1,0,0,0,2,1,0,33,28,0,0,0,4,0
+Nkosinathi Sibisi|South Africa,Nkosinathi Sibisi,South Africa,97,1,0,0,0,1,0,0,54,43,0,0,0,3,0
+Ronwen Williams|South Africa,Ronwen Williams,South Africa,96,1,0,0,0,0,0,0,47,35,0,0,0,2,0
+Ime Okon|South Africa,Ime Okon,South Africa,98,1,0,0,0,0,4,1,49,45,0,1,0,4,0
+Yaya Sithole|South Africa,Yaya Sithole,South Africa,50,1,0,0,0,3,1,1,19,17,0,0,0,2,0
+Teboho Mokoena|South Africa,Teboho Mokoena,South Africa,98,1,0,0,0,1,2,2,45,40,1,0,0,4,0
+Mbekezeli Mbokazi|South Africa,Mbekezeli Mbokazi,South Africa,95,1,1,1,0,1,1,0,33,25,1,0,0,3,0
+Raúl Jiménez|Mexico,Raúl Jiménez,Mexico,76,1,4,3,1,1,6,5,19,15,2,2,0,0,0
+Lyle Foster|South Africa,Lyle Foster,South Africa,56,1,1,0,0,0,4,0,5,1,0,1,0,0,0
+Iqraam Rayners|South Africa,Iqraam Rayners,South Africa,77,1,0,0,0,0,4,0,11,9,0,0,0,1,0
+Raúl Rangel|Mexico,Raúl Rangel,Mexico,90,1,0,0,0,0,0,0,33,29,0,0,0,3,0
+Jesús Gallardo|Mexico,Jesús Gallardo,Mexico,97,1,2,1,0,1,3,3,58,47,0,0,0,3,0
+Thalente Mbatha|South Africa,Thalente Mbatha,South Africa,95,1,0,0,0,0,0,0,7,4,0,1,0,1,0
+Themba Zwane|South Africa,Themba Zwane,South Africa,84,1,0,0,0,1,0,0,7,5,0,0,0,2,1
+Luis Chávez|Mexico,Luis Chávez,Mexico,95,1,0,0,0,1,0,0,29,28,0,0,0,1,1
+Gilberto Mora|Mexico,Gilberto Mora,Mexico,91,1,0,0,0,1,0,0,14,14,0,2,1,2,0
+Edson Álvarez|Mexico,Edson Álvarez,Mexico,91,1,0,0,0,0,0,0,15,14,0,0,0,1,0
+Armando González|Mexico,Armando González,Mexico,95,1,0,0,0,1,0,0,1,1,0,0,0,0,0
+Evidence Makgopa|South Africa,Evidence Makgopa,South Africa,96,1,0,0,0,0,3,3,5,2,0,0,0,1,0
+Oswin Appollis|South Africa,Oswin Appollis,South Africa,97,1,0,0,0,0,0,0,6,5,0,0,0,3,0
+Alexis Vega|Mexico,Alexis Vega,Mexico,97,1,0,0,0,0,0,0,11,10,0,1,0,1,1
+Tijjani Reijnders|Netherlands,Tijjani Reijnders,Netherlands,70,1,0,0,0,0,2,1,30,23,2,0,0,0,0
+Bart Verbruggen|Netherlands,Bart Verbruggen,Netherlands,96,1,0,0,0,0,0,0,32,22,0,0,0,1,0
+Shogo Taniguchi|Japan,Shogo Taniguchi,Japan,96,1,0,0,0,0,0,0,50,49,0,0,0,2,0
+Frenkie de Jong|Netherlands,Frenkie de Jong,Netherlands,96,1,0,0,0,2,0,0,74,70,1,1,1,5,0
+Jan Paul van Hecke|Netherlands,Jan Paul van Hecke,Netherlands,96,1,1,1,0,0,2,2,95,87,0,0,0,2,0
+Kaishu Sano|Japan,Kaishu Sano,Japan,96,1,0,0,0,0,5,1,31,25,0,0,0,4,0
+Ayase Ueda|Japan,Ayase Ueda,Japan,84,1,1,0,0,1,3,0,5,4,0,1,1,1,0
+Daizen Maeda|Japan,Daizen Maeda,Japan,66,1,0,0,0,0,4,1,7,4,0,2,0,0,0
+Denzel Dumfries|Netherlands,Denzel Dumfries,Netherlands,95,1,0,0,0,0,4,3,49,40,1,0,0,2,0
+Crysencio Summerville|Netherlands,Crysencio Summerville,Netherlands,70,1,1,1,1,1,1,1,32,26,0,3,1,1,0
+Cody Gakpo|Netherlands,Cody Gakpo,Netherlands,85,1,2,1,0,0,6,4,38,28,1,3,1,2,1
+Micky van de Ven|Netherlands,Micky van de Ven,Netherlands,96,1,1,0,0,2,3,2,53,51,0,1,1,1,0
+Virgil van Dijk|Netherlands,Virgil van Dijk,Netherlands,96,1,1,1,1,0,3,3,103,95,0,1,0,0,0
+Hiroki Ito|Japan,Hiroki Ito,Japan,96,1,1,0,0,1,4,1,47,40,0,1,0,0,0
+Daichi Kamada|Japan,Daichi Kamada,Japan,97,1,1,1,1,0,1,0,61,48,1,2,1,4,0
+Donyell Malen|Netherlands,Donyell Malen,Netherlands,70,1,2,2,0,0,3,2,9,4,0,6,2,3,2
+Zion Suzuki|Japan,Zion Suzuki,Japan,94,1,0,0,0,0,0,0,24,14,0,0,0,1,0
+Ryan Gravenberch|Netherlands,Ryan Gravenberch,Netherlands,81,1,0,0,0,0,1,1,27,23,2,3,2,2,0
+Keito Nakamura|Japan,Keito Nakamura,Japan,95,1,3,1,1,2,1,0,37,30,1,2,1,1,0
+Tsuyoshi Watanabe|Japan,Tsuyoshi Watanabe,Japan,75,1,0,0,0,0,6,2,26,21,1,1,0,2,0
+Ritsu Doan|Japan,Ritsu Doan,Japan,75,1,0,0,0,1,0,0,22,17,0,1,0,1,0
+Takefusa Kubo|Japan,Takefusa Kubo,Japan,75,1,1,0,0,1,0,0,16,12,1,0,0,2,0
+Junya Ito|Japan,Junya Ito,Japan,96,1,0,0,0,0,1,1,22,14,3,2,0,0,0
+Memphis Depay|Netherlands,Memphis Depay,Netherlands,96,1,0,0,0,1,0,0,8,8,1,1,0,2,1
+Teun Koopmeiners|Netherlands,Teun Koopmeiners,Netherlands,93,1,2,1,0,1,1,1,1,1,0,0,0,0,0
+Quinten Timber|Netherlands,Quinten Timber,Netherlands,96,1,0,0,0,0,1,1,6,5,1,1,0,0,0
+Yukinari Sugawara|Japan,Yukinari Sugawara,Japan,96,1,1,1,0,0,1,1,16,14,1,0,0,0,0
+Takehiro Tomiyasu|Japan,Takehiro Tomiyasu,Japan,96,1,0,0,0,1,1,0,21,19,0,1,0,1,0
+Koki Ogawa|Japan,Koki Ogawa,Japan,95,1,2,1,0,0,1,0,1,0,0,0,0,0,0
+Nathan Aké|Netherlands,Nathan Aké,Netherlands,95,1,0,0,0,0,1,0,10,9,0,0,0,1,0
+Kento Shiogai|Japan,Kento Shiogai,Japan,96,1,0,0,0,0,0,0,1,1,0,0,0,1,0
+Brian Brobbey|Netherlands,Brian Brobbey,Netherlands,87,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+Cristiano Ronaldo|Portugal,Cristiano Ronaldo,Portugal,92,1,3,0,0,0,3,2,21,19,0,0,0,1,1
+João Neves|Portugal,João Neves,Portugal,94,1,1,1,1,0,2,1,90,88,1,0,0,4,1
+João Cancelo|Portugal,João Cancelo,Portugal,95,1,0,0,0,2,1,0,78,63,0,3,2,6,1
+Tomás Araújo|Portugal,Tomás Araújo,Portugal,94,1,0,0,0,1,2,1,104,98,1,0,0,7,0
+Vitinha|Portugal,Vitinha,Portugal,83,1,0,0,0,1,0,0,129,121,0,2,1,4,1
+Renato Veiga|Portugal,Renato Veiga,Portugal,92,1,0,0,0,1,2,1,91,88,0,1,0,4,0
+Nuno Mendes|Portugal,Nuno Mendes,Portugal,72,1,0,0,0,0,3,1,76,66,0,3,1,1,0
+Pedro Neto|Portugal,Pedro Neto,Portugal,72,1,0,0,0,0,0,0,45,41,1,2,0,1,0
+Bernardo Silva|Portugal,Bernardo Silva,Portugal,48,1,0,0,0,1,0,0,18,17,0,0,0,1,0
+Bruno Fernandes|Portugal,Bruno Fernandes,Portugal,95,1,2,1,0,1,2,2,83,69,1,0,0,1,0
+Edo Kayembe|DR Congo,Edo Kayembe,DR Congo,74,1,1,1,0,2,1,1,18,15,1,3,2,5,0
+Chancel Mbemba|DR Congo,Chancel Mbemba,DR Congo,93,1,0,0,0,1,1,0,33,24,1,0,0,4,0
+Aaron Wan-Bissaka|DR Congo,Aaron Wan-Bissaka,DR Congo,85,1,0,0,0,1,2,1,27,23,0,3,1,5,0
+Yoane Wissa|DR Congo,Yoane Wissa,DR Congo,95,1,2,1,1,3,1,0,19,17,0,3,0,2,0
+Ngal'ayel Mukau|DR Congo,Ngal'ayel Mukau,DR Congo,57,1,0,0,0,0,0,0,21,18,0,1,1,2,0
+Axel Tuanzebe|DR Congo,Axel Tuanzebe,DR Congo,92,1,0,0,0,0,2,0,17,13,0,0,0,2,0
+Samuel Moutoussamy|DR Congo,Samuel Moutoussamy,DR Congo,94,1,2,2,0,2,2,0,25,21,0,2,1,4,1
+Arthur Masuaku|DR Congo,Arthur Masuaku,DR Congo,75,1,0,0,0,0,0,0,23,16,2,4,1,3,0
+Steve Kapuadi|DR Congo,Steve Kapuadi,DR Congo,89,1,1,0,0,0,1,1,21,18,1,0,0,1,0
+Cédric Bakambu|DR Congo,Cédric Bakambu,DR Congo,85,1,2,1,0,1,4,3,12,10,1,2,2,2,1
+Lionel Mpasi|DR Congo,Lionel Mpasi,DR Congo,95,1,0,0,0,0,0,0,30,14,0,0,0,0,0
+Diogo Costa|Portugal,Diogo Costa,Portugal,93,1,0,0,0,0,0,0,34,29,0,0,0,4,0
+Francisco Conceição|Portugal,Francisco Conceição,Portugal,95,1,1,1,0,1,0,0,29,26,2,1,0,2,0
+Noah Sadiki|DR Congo,Noah Sadiki,DR Congo,93,1,0,0,0,0,0,0,8,7,1,1,0,0,0
+Rafael Leão|Portugal,Rafael Leão,Portugal,92,1,0,0,0,0,1,0,10,10,1,1,0,0,0
+Nélson Semedo|Portugal,Nélson Semedo,Portugal,94,1,0,0,0,1,0,0,17,14,0,1,1,0,0
+Charles Pickel|DR Congo,Charles Pickel,DR Congo,93,1,0,0,0,0,0,0,9,8,0,0,0,0,0
+Joris Kayembe|DR Congo,Joris Kayembe,DR Congo,94,1,0,0,0,0,0,0,8,5,0,0,0,1,0
+Gonçalo Ramos|Portugal,Gonçalo Ramos,Portugal,87,1,0,0,0,0,0,0,2,2,0,0,0,0,0
+Gédéon Kalulu|DR Congo,Gédéon Kalulu,DR Congo,93,1,0,0,0,0,1,1,7,5,0,0,0,0,0
+Simon Banza|DR Congo,Simon Banza,DR Congo,92,1,0,0,0,0,1,1,1,1,0,1,0,0,0
+Remo Freuler|Switzerland,Remo Freuler,Switzerland,89,1,0,0,0,2,1,0,53,46,1,1,0,2,0
+Manuel Akanji|Switzerland,Manuel Akanji,Switzerland,96,1,1,1,0,0,4,2,102,92,2,0,0,6,0
+Homam El Amin|Qatar,Homam El Amin,Qatar,94,1,1,0,0,1,1,1,29,18,0,0,0,0,0
+Denis Zakaria|Switzerland,Denis Zakaria,Switzerland,97,1,2,2,0,1,3,2,69,61,0,3,1,5,3
+Michel Aebischer|Switzerland,Michel Aebischer,Switzerland,65,1,1,1,0,0,1,0,37,32,3,0,0,3,0
+Boualem Khoukhi|Qatar,Boualem Khoukhi,Qatar,94,1,0,0,0,2,2,1,35,24,0,0,0,1,0
+Yusuf Abdurisag|Qatar,Yusuf Abdurisag,Qatar,60,1,0,0,0,0,2,1,9,5,0,1,0,3,0
+Nico Elvedi|Switzerland,Nico Elvedi,Switzerland,93,1,2,1,0,2,2,2,93,90,1,0,0,3,0
+Ricardo Rodríguez|Switzerland,Ricardo Rodríguez,Switzerland,89,1,0,0,0,2,3,3,72,57,2,0,0,7,0
+Rubén Vargas|Switzerland,Rubén Vargas,Switzerland,79,1,3,2,0,1,2,1,41,30,5,8,2,2,3
+Breel Embolo|Switzerland,Breel Embolo,Switzerland,91,1,4,3,1,2,0,0,8,6,4,1,1,0,0
+Granit Xhaka|Switzerland,Granit Xhaka,Switzerland,97,1,2,0,0,0,0,0,75,70,2,0,0,9,2
+Akram Afif|Qatar,Akram Afif,Qatar,94,1,0,0,0,0,0,0,34,21,2,1,0,4,1
+Dan Ndoye|Switzerland,Dan Ndoye,Switzerland,66,1,6,3,0,0,0,0,22,17,0,4,2,3,1
+Gregor Kobel|Switzerland,Gregor Kobel,Switzerland,90,1,0,0,0,0,0,0,24,22,0,0,0,2,0
+Edmílson Junior|Qatar,Edmílson Junior,Qatar,88,1,2,2,0,3,4,0,15,12,0,2,1,3,1
+Jassem Gaber|Qatar,Jassem Gaber,Qatar,60,1,0,0,0,2,3,2,5,1,0,0,0,0,0
+Pedro Miguel|Qatar,Pedro Miguel,Qatar,94,1,0,0,0,1,2,1,24,19,0,1,1,1,0
+Ayoub Al Oui|Qatar,Ayoub Al Oui,Qatar,60,1,0,0,0,1,2,1,13,6,0,0,0,2,1
+Issa Laye|Qatar,Issa Laye,Qatar,97,1,1,0,0,0,2,2,33,31,0,0,0,3,0
+Assim Madibo|Qatar,Assim Madibo,Qatar,79,1,0,0,0,1,0,0,22,16,0,0,0,2,0
+Mahmoud Abunada|Qatar,Mahmoud Abunada,Qatar,97,1,0,0,0,1,0,0,35,24,0,0,0,0,0
+Ahmed Fathy|Qatar,Ahmed Fathy,Qatar,92,1,0,0,0,0,0,0,17,14,1,0,0,3,0
+Karim Boudiaf|Qatar,Karim Boudiaf,Qatar,97,1,1,0,0,0,0,0,21,19,0,0,0,3,0
+Ahmed Alaa|Qatar,Ahmed Alaa,Qatar,92,1,1,1,0,0,1,0,5,3,0,0,0,2,0
+Fabian Rieder|Switzerland,Fabian Rieder,Switzerland,97,1,1,1,0,0,0,0,8,5,1,1,0,0,0
+Johan Manzambi|Switzerland,Johan Manzambi,Switzerland,97,1,2,1,0,1,1,0,11,9,1,2,0,1,0
+Mohammad Al Mannai|Qatar,Mohammad Al Mannai,Qatar,93,1,0,0,0,0,0,0,5,1,0,0,0,1,0
+Zeki Amdouni|Switzerland,Zeki Amdouni,Switzerland,93,1,1,1,0,0,0,0,4,4,0,3,1,0,0
+Hassan Al Haydos|Qatar,Hassan Al Haydos,Qatar,94,1,0,0,0,0,0,0,3,2,0,0,0,0,0
+Ardon Jashari|Switzerland,Ardon Jashari,Switzerland,97,1,1,0,0,0,0,0,9,7,0,0,0,0,0
+Miro Muheim|Switzerland,Miro Muheim,Switzerland,94,1,1,1,1,0,2,0,6,4,0,0,0,1,0
+Lukás Provod|Czechia,Lukás Provod,Czechia,64,1,0,0,0,1,3,0,23,17,0,1,1,3,1
+Matej Kovár|Czechia,Matej Kovár,Czechia,95,1,0,0,0,0,0,0,32,15,0,0,0,1,0
+Jaroslav Zeleny|Czechia,Jaroslav Zeleny,Czechia,96,1,0,0,0,0,2,1,37,28,0,1,1,6,0
+Seol Young-Woo|Republic of Korea,Seol Young-Woo,Republic of Korea,88,1,0,0,0,1,0,0,47,42,1,1,0,3,0
+Hwang In-Beom|Republic of Korea,Hwang In-Beom,Republic of Korea,84,1,3,2,1,0,2,1,81,73,1,2,2,5,0
+Ladislav Krejcí|Czechia,Ladislav Krejcí,Czechia,96,1,1,1,1,3,6,3,47,34,0,0,0,5,0
+Tomás Soucek|Czechia,Tomás Soucek,Czechia,96,1,1,0,0,1,4,2,35,27,0,1,0,4,0
+Robin Hranác|Czechia,Robin Hranác,Czechia,93,1,0,0,0,3,2,1,38,31,0,0,0,3,0
+Lee Han-Beom|Republic of Korea,Lee Han-Beom,Republic of Korea,95,1,1,0,0,3,7,5,66,54,0,0,0,2,0
+Vladimír Coufal|Czechia,Vladimír Coufal,Czechia,93,1,0,0,0,3,4,1,39,22,1,1,0,3,0
+Alexandr Sojka|Czechia,Alexandr Sojka,Czechia,84,1,0,0,0,0,0,0,34,27,1,1,1,2,0
+Patrik Schick|Czechia,Patrik Schick,Czechia,64,1,0,0,0,0,4,1,5,3,0,0,0,0,0
+Pavel Sulc|Czechia,Pavel Sulc,Czechia,64,1,1,0,0,1,1,1,17,12,0,1,0,6,2
+Paik Seung-Ho|Republic of Korea,Paik Seung-Ho,Republic of Korea,84,1,0,0,0,0,1,1,63,56,0,1,0,1,0
+Lee Jae-Sung|Republic of Korea,Lee Jae-Sung,Republic of Korea,62,1,2,1,0,1,4,2,34,26,3,1,0,3,1
+Kim Seung-Gyu|Republic of Korea,Kim Seung-Gyu,Republic of Korea,96,1,0,0,0,0,0,0,36,21,0,0,0,4,0
+Stepán Chaloupek|Czechia,Stepán Chaloupek,Czechia,97,1,0,0,0,1,3,1,27,16,0,0,0,4,0
+Kim Min-Jae|Republic of Korea,Kim Min-Jae,Republic of Korea,94,1,0,0,0,2,5,4,55,51,2,0,0,3,0
+Lee Gi-Hyuk|Republic of Korea,Lee Gi-Hyuk,Republic of Korea,96,1,0,0,0,1,6,4,63,59,0,0,0,2,0
+Son Heung-Min|Republic of Korea,Son Heung-Min,Republic of Korea,69,1,6,4,0,0,0,0,24,20,1,1,0,3,0
+Lee Kang-In|Republic of Korea,Lee Kang-In,Republic of Korea,94,1,1,1,0,0,0,0,40,37,3,6,5,1,0
+Lee Tae-Seok|Republic of Korea,Lee Tae-Seok,Republic of Korea,69,1,0,0,0,1,5,2,37,31,2,0,0,0,0
+Hwang Hee-Chan|Republic of Korea,Hwang Hee-Chan,Republic of Korea,89,1,0,0,0,0,0,0,11,10,0,2,1,1,0
+Adam Hlozek|Czechia,Adam Hlozek,Czechia,97,1,2,1,0,0,1,0,4,4,0,0,0,0,0
+Tomás Chory|Czechia,Tomás Chory,Czechia,96,1,0,0,0,3,8,4,8,5,0,0,0,0,0
+Michal Sadílek|Czechia,Michal Sadílek,Czechia,97,1,2,2,0,0,1,0,13,8,0,0,0,0,0
+Eom Ji-Sung|Republic of Korea,Eom Ji-Sung,Republic of Korea,97,1,0,0,0,0,1,1,5,4,0,1,0,1,0
+Oh Hyeon-Gyu|Republic of Korea,Oh Hyeon-Gyu,Republic of Korea,96,1,1,1,1,0,3,2,6,4,1,0,0,0,0
+Kim Jin-Gyu|Republic of Korea,Kim Jin-Gyu,Republic of Korea,95,1,1,1,0,0,1,0,4,3,0,0,0,0,0
+Park Jin-Seob|Republic of Korea,Park Jin-Seob,Republic of Korea,97,1,0,0,0,0,5,3,9,6,0,0,0,1,0
+Mojmír Chytil|Czechia,Mojmír Chytil,Czechia,96,1,0,0,0,0,1,0,2,2,1,0,0,0,0
+Salem Al Dawsari|Saudi Arabia,Salem Al Dawsari,Saudi Arabia,94,1,1,0,0,1,4,0,35,26,0,2,1,4,0
+Abdullah Al Khaibari|Saudi Arabia,Abdullah Al Khaibari,Saudi Arabia,95,1,1,0,0,0,1,0,26,21,0,1,1,5,1
+Abdulelah Al Amri|Saudi Arabia,Abdulelah Al Amri,Saudi Arabia,98,1,2,2,1,1,4,3,27,23,0,0,0,3,0
+Hassan Al Tambakti|Saudi Arabia,Hassan Al Tambakti,Saudi Arabia,84,1,0,0,0,0,3,1,28,22,0,0,0,0,0
+Guillermo Varela|Uruguay,Guillermo Varela,Uruguay,97,1,2,1,0,1,3,3,66,55,2,0,0,0,0
+Sebastián Cáceres|Uruguay,Sebastián Cáceres,Uruguay,98,1,2,0,0,1,9,4,84,72,0,1,0,2,0
+Fernando Muslera|Uruguay,Fernando Muslera,Uruguay,89,1,0,0,0,0,0,0,32,31,0,0,0,3,0
+Mathías Olivera|Uruguay,Mathías Olivera,Uruguay,97,1,1,1,0,0,9,6,107,102,2,2,1,8,1
+Feras Al Brikan|Saudi Arabia,Feras Al Brikan,Saudi Arabia,93,1,0,0,0,0,12,5,22,13,0,0,0,5,0
+Rodrigo Bentancur|Uruguay,Rodrigo Bentancur,Uruguay,96,1,1,0,0,1,4,1,82,69,2,2,2,11,1
+Mohammed Abu Al Shamat|Saudi Arabia,Mohammed Abu Al Shamat,Saudi Arabia,81,1,0,0,0,2,2,1,26,20,0,1,0,2,0
+Matías Viña|Uruguay,Matías Viña,Uruguay,49,1,0,0,0,0,2,1,33,23,1,1,0,6,0
+Moteb Al Harbi|Saudi Arabia,Moteb Al Harbi,Saudi Arabia,93,1,0,0,0,0,2,1,38,26,0,2,1,1,0
+Federico Valverde|Uruguay,Federico Valverde,Uruguay,98,1,3,3,0,1,0,0,51,37,0,2,2,2,1
+Manuel Ugarte|Uruguay,Manuel Ugarte,Uruguay,72,1,2,1,0,0,3,0,63,57,0,2,1,6,2
+Musab Al Juwayr|Saudi Arabia,Musab Al Juwayr,Saudi Arabia,63,1,0,0,0,1,0,0,35,26,1,1,0,5,1
+Federico Viñas|Uruguay,Federico Viñas,Uruguay,90,1,5,4,0,0,5,4,17,11,0,0,0,2,1
+Maxi Araújo|Uruguay,Maxi Araújo,Uruguay,81,1,2,2,1,1,0,0,27,23,5,1,1,4,0
+Mohammed Al Owais|Saudi Arabia,Mohammed Al Owais,Saudi Arabia,96,1,0,0,0,0,1,1,30,11,0,0,0,0,0
+Darwin Núñez|Uruguay,Darwin Núñez,Uruguay,46,1,1,0,0,1,3,1,3,3,0,0,0,1,2
+Mohamed Kanno|Saudi Arabia,Mohamed Kanno,Saudi Arabia,98,1,2,2,0,0,6,4,37,33,0,1,0,5,2
+Saud Abdulhamid|Saudi Arabia,Saud Abdulhamid,Saudi Arabia,93,1,1,0,0,2,2,1,24,14,0,0,0,3,1
+Juan Manuel Sanabria|Uruguay,Juan Manuel Sanabria,Uruguay,98,1,3,2,0,0,0,0,43,38,2,0,0,0,0
+Agustín Canobbio|Uruguay,Agustín Canobbio,Uruguay,98,1,1,0,0,0,1,0,27,23,0,2,1,2,0
+Nasser Al Dawsari|Saudi Arabia,Nasser Al Dawsari,Saudi Arabia,96,1,0,0,0,3,2,2,13,11,0,0,0,1,0
+Nicolás de la Cruz|Uruguay,Nicolás de la Cruz,Uruguay,98,1,2,2,0,0,0,0,28,25,4,0,0,1,0
+Brian Rodríguez|Uruguay,Brian Rodríguez,Uruguay,98,1,2,1,0,0,0,0,17,9,1,0,0,1,0
+Nawaf Bu Washl|Saudi Arabia,Nawaf Bu Washl,Saudi Arabia,98,1,0,0,0,1,0,0,5,4,0,0,0,1,0
+Rodrigo Aguirre|Uruguay,Rodrigo Aguirre,Uruguay,96,1,0,0,0,0,1,0,1,0,0,0,0,0,0
+Abdullah Al Hamddan|Saudi Arabia,Abdullah Al Hamddan,Saudi Arabia,96,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+Alaa Al Hejji|Saudi Arabia,Alaa Al Hejji,Saudi Arabia,94,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ali Lajami|Saudi Arabia,Ali Lajami,Saudi Arabia,98,1,0,0,0,0,1,1,0,0,0,0,0,0,0
+Dailon Livramento|Cabo Verde,Dailon Livramento,Cabo Verde,61,1,1,0,0,0,6,2,4,3,0,0,0,1,0
+Kevin Pina|Cabo Verde,Kevin Pina,Cabo Verde,95,1,1,1,0,0,2,1,20,12,0,2,1,2,0
+Pico Lopes|Cabo Verde,Pico Lopes,Cabo Verde,95,1,0,0,0,0,2,2,41,31,0,0,0,1,0
+Unai Simón|Spain,Unai Simón,Spain,94,1,0,0,0,0,0,0,24,24,0,0,0,3,0
+Pau Cubarsí|Spain,Pau Cubarsí,Spain,93,1,1,1,0,0,1,1,109,107,1,0,0,8,0
+Rodri|Spain,Rodri,Spain,87,1,2,1,0,1,4,3,128,116,3,0,0,3,1
+Marc Cucurella|Spain,Marc Cucurella,Spain,92,1,2,1,0,1,0,0,76,68,2,2,1,0,0
+Aymeric Laporte|Spain,Aymeric Laporte,Spain,95,1,2,1,0,0,8,3,112,107,0,0,0,5,1
+Pedri|Spain,Pedri,Spain,95,1,2,2,0,1,1,1,110,89,5,4,3,8,8
+Marcos Llorente|Spain,Marcos Llorente,Spain,94,1,0,0,0,1,3,2,92,85,3,0,0,4,1
+Fabián Ruiz|Spain,Fabián Ruiz,Spain,71,1,5,1,0,0,1,1,78,71,0,0,0,4,2
+Ferran Torres|Spain,Ferran Torres,Spain,81,1,4,3,0,2,2,2,39,27,0,3,1,7,2
+Gavi|Spain,Gavi,Spain,71,1,1,1,0,2,4,4,32,26,0,0,0,2,2
+Ryan Mendes|Cabo Verde,Ryan Mendes,Cabo Verde,94,1,1,0,0,0,1,0,18,13,0,0,0,3,0
+Vozinha|Cabo Verde,Vozinha,Cabo Verde,91,1,0,0,0,0,1,1,52,39,0,0,0,0,0
+Diney Borges|Cabo Verde,Diney Borges,Cabo Verde,95,1,1,1,0,0,3,1,40,32,0,1,0,3,0
+Sidny Cabral|Cabo Verde,Sidny Cabral,Cabo Verde,76,1,0,0,0,1,1,0,23,18,1,3,1,5,0
+Jamiro Monteiro|Cabo Verde,Jamiro Monteiro,Cabo Verde,79,1,0,0,0,0,0,0,21,16,0,2,0,5,0
+Steven Moreira|Cabo Verde,Steven Moreira,Cabo Verde,91,1,1,1,0,0,3,0,34,27,0,1,1,0,0
+Jovane Cabral|Cabo Verde,Jovane Cabral,Cabo Verde,61,1,1,0,0,0,1,0,13,10,0,1,1,6,0
+Mikel Oyarzabal|Spain,Mikel Oyarzabal,Spain,95,1,5,2,0,0,4,2,12,8,1,1,0,0,0
+Laros Duarte|Cabo Verde,Laros Duarte,Cabo Verde,61,1,0,0,0,0,4,0,8,6,0,1,0,2,0
+Willy Semedo|Cabo Verde,Willy Semedo,Cabo Verde,95,1,0,0,0,0,1,1,9,6,0,2,0,1,0
+Deroy Duarte|Cabo Verde,Deroy Duarte,Cabo Verde,94,1,0,0,0,0,0,0,8,6,1,0,0,2,0
+Nuno da Costa|Cabo Verde,Nuno da Costa,Cabo Verde,93,1,0,0,0,0,3,1,6,3,0,1,0,3,0
+Mikel Merino|Spain,Mikel Merino,Spain,94,1,1,1,0,1,0,0,11,9,2,0,0,1,1
+Lamine Yamal|Spain,Lamine Yamal,Spain,95,1,2,1,0,1,0,0,26,18,1,5,2,1,0
+João Paulo|Cabo Verde,João Paulo,Cabo Verde,94,1,0,0,0,0,0,0,6,2,0,0,0,0,0
+Telmo Arcanjo|Cabo Verde,Telmo Arcanjo,Cabo Verde,94,1,0,0,0,0,0,0,3,3,2,0,0,0,0
+Dani Olmo|Spain,Dani Olmo,Spain,95,1,0,0,0,0,0,0,10,8,1,0,0,1,0
+Nico Williams|Spain,Nico Williams,Spain,95,1,0,0,0,0,0,0,2,1,0,1,0,0,0
+Anis Ben Slimane|Tunisia,Anis Ben Slimane,Tunisia,84,1,0,0,0,0,7,4,33,23,1,2,0,1,0
+Gabriel Gudmundsson|Sweden,Gabriel Gudmundsson,Sweden,65,1,0,0,0,2,2,2,31,23,0,1,0,4,0
+Omar Rekik|Tunisia,Omar Rekik,Tunisia,92,1,1,1,1,0,2,2,49,37,0,0,0,4,0
+Yasin Ayari|Sweden,Yasin Ayari,Sweden,96,1,2,2,2,1,1,0,32,18,1,2,0,5,2
+Jesper Karlström|Sweden,Jesper Karlström,Sweden,84,1,0,0,0,1,3,1,21,13,1,0,0,2,1
+Alexander Isak|Sweden,Alexander Isak,Sweden,90,1,3,3,1,1,2,0,20,16,1,2,0,1,2
+Ellyes Skhiri|Tunisia,Ellyes Skhiri,Tunisia,72,1,0,0,0,0,0,0,37,30,0,1,0,5,0
+Isak Hien|Sweden,Isak Hien,Sweden,95,1,0,0,0,1,5,3,54,48,0,0,0,3,0
+Elias Saad|Tunisia,Elias Saad,Tunisia,72,1,1,0,0,0,2,0,21,17,0,4,1,2,0
+Yan Valery|Tunisia,Yan Valery,Tunisia,72,1,0,0,0,3,3,1,25,17,0,4,3,2,1
+Victor Lindelöf|Sweden,Victor Lindelöf,Sweden,92,1,1,0,0,2,3,2,57,51,0,0,0,2,0
+Rani Khedira|Tunisia,Rani Khedira,Tunisia,83,1,1,1,0,1,0,0,15,11,0,0,0,2,0
+Kristoffer Nordfeldt|Sweden,Kristoffer Nordfeldt,Sweden,95,1,0,0,0,0,0,0,29,20,0,0,0,1,0
+Gustaf Lagerbielke|Sweden,Gustaf Lagerbielke,Sweden,95,1,0,0,0,0,5,1,53,38,1,0,0,1,0
+Abdelmouhib Chamakh|Tunisia,Abdelmouhib Chamakh,Tunisia,91,1,0,0,0,0,0,0,23,15,0,0,0,0,0
+Montassar Talbi|Tunisia,Montassar Talbi,Tunisia,89,1,1,0,0,0,3,3,38,36,0,0,0,2,0
+Viktor Gyökeres|Sweden,Viktor Gyökeres,Sweden,96,1,5,3,1,0,3,2,20,17,4,3,1,5,2
+Hannibal Mejbri|Tunisia,Hannibal Mejbri,Tunisia,96,1,1,0,0,0,1,1,59,39,3,2,2,4,1
+Ali Abdi|Tunisia,Ali Abdi,Tunisia,93,1,0,0,0,3,5,3,31,19,0,2,1,2,0
+Alexander Bernhardsson|Sweden,Alexander Bernhardsson,Sweden,91,1,0,0,0,0,3,2,27,19,0,4,1,7,1
+Benjamin Nygren|Sweden,Benjamin Nygren,Sweden,65,1,0,0,0,1,1,1,18,16,1,2,2,3,0
+Mohamed Amine Ben Hmida|Tunisia,Mohamed Amine Ben Hmida,Tunisia,95,1,0,0,0,0,4,0,53,47,0,0,0,10,0
+Elliot Stroud|Sweden,Elliot Stroud,Sweden,88,1,0,0,0,0,1,0,10,8,0,0,0,1,0
+Lucas Bergvall|Sweden,Lucas Bergvall,Sweden,96,1,1,1,0,1,0,0,8,5,0,1,1,1,1
+Elias Achouri|Tunisia,Elias Achouri,Tunisia,93,1,1,1,0,0,0,0,2,2,0,0,0,0,0
+Sebastian Tounekti|Tunisia,Sebastian Tounekti,Tunisia,94,1,0,0,0,1,0,0,4,4,0,2,0,0,0
+Hadj Mahmoud|Tunisia,Hadj Mahmoud,Tunisia,94,1,0,0,0,0,0,0,8,8,0,0,0,1,0
+Ismaël Gharbi|Tunisia,Ismaël Gharbi,Tunisia,96,1,0,0,0,0,0,0,4,3,0,0,0,0,0
+Firas Chaouat|Tunisia,Firas Chaouat,Tunisia,97,1,0,0,0,0,2,1,3,2,0,0,0,0,0
+Mattias Svanberg|Sweden,Mattias Svanberg,Sweden,91,1,1,1,1,0,0,0,2,1,0,0,0,0,0
+Anthony Elanga|Sweden,Anthony Elanga,Sweden,90,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Daniel Svensson|Sweden,Daniel Svensson,Sweden,95,1,0,0,0,0,0,0,5,4,0,0,0,0,0
+Folarin Balogun|USA,Folarin Balogun,USA,72,1,5,4,2,0,2,0,16,10,0,3,1,0,0
+Malik Tillman|USA,Malik Tillman,USA,82,1,5,4,0,1,4,1,40,32,3,3,2,7,3
+Juan José Cáceres|Paraguay,Juan José Cáceres,Paraguay,79,1,0,0,0,3,2,1,42,21,0,2,2,2,0
+Tim Ream|USA,Tim Ream,USA,97,1,0,0,0,0,3,1,90,84,0,1,1,5,0
+Diego Gómez|Paraguay,Diego Gómez,Paraguay,80,1,4,2,0,1,3,2,27,22,0,3,1,2,1
+Tyler Adams|USA,Tyler Adams,USA,97,1,0,0,0,2,4,2,60,53,1,2,2,3,1
+Sergiño Dest|USA,Sergiño Dest,USA,72,1,0,0,0,0,0,0,37,28,0,8,4,3,1
+Júnior Alonso|Paraguay,Júnior Alonso,Paraguay,93,1,0,0,0,1,2,0,42,26,1,0,0,2,0
+Julio Enciso|Paraguay,Julio Enciso,Paraguay,93,1,2,1,0,0,2,0,26,20,1,5,2,4,0
+Gustavo Gómez|Paraguay,Gustavo Gómez,Paraguay,96,1,0,0,0,2,4,4,29,23,0,0,0,0,0
+Omar Alderete|Paraguay,Omar Alderete,Paraguay,96,1,0,0,0,1,3,3,32,21,1,0,0,2,0
+Antonio Sanabria|Paraguay,Antonio Sanabria,Paraguay,62,1,0,0,0,1,5,3,10,6,1,0,0,0,0
+Matt Freese|USA,Matt Freese,USA,97,1,0,0,0,0,0,0,23,15,0,0,0,3,0
+Chris Richards|USA,Chris Richards,USA,97,1,1,0,0,3,5,4,84,84,0,0,0,3,0
+Antonee Robinson|USA,Antonee Robinson,USA,97,1,0,0,0,1,3,2,74,53,1,5,3,7,1
+Andrés Cubas|Paraguay,Andrés Cubas,Paraguay,97,1,0,0,0,5,0,0,31,25,0,0,0,5,0
+Alex Freeman|USA,Alex Freeman,USA,98,1,0,0,0,1,7,6,85,72,1,4,2,5,2
+Weston McKennie|USA,Weston McKennie,USA,97,1,0,0,0,0,1,0,55,40,3,4,3,1,0
+Orlando Gill|Paraguay,Orlando Gill,Paraguay,90,1,0,0,0,0,0,0,30,20,0,0,0,0,0
+Christian Pulisic|USA,Christian Pulisic,USA,46,1,0,0,0,1,0,0,24,19,2,7,4,0,0
+Miguel Almirón|Paraguay,Miguel Almirón,Paraguay,79,1,2,2,0,1,2,1,23,18,2,1,1,4,0
+Damián Bobadilla|Paraguay,Damián Bobadilla,Paraguay,49,1,1,1,1,0,0,0,10,9,0,0,0,1,1
+Mauricio|Paraguay,Mauricio,Paraguay,97,1,1,1,1,0,3,0,21,15,0,0,0,4,0
+Sebastian Berhalter|USA,Sebastian Berhalter,USA,97,1,1,0,0,0,2,2,29,20,0,0,0,3,0
+Álex Arce|Paraguay,Álex Arce,Paraguay,92,1,0,0,0,1,5,0,6,4,1,0,0,0,0
+Timothy Weah|USA,Timothy Weah,USA,98,1,2,1,0,2,0,0,14,13,0,1,0,1,0
+Ricardo Pepi|USA,Ricardo Pepi,USA,98,1,1,0,0,1,2,0,3,3,1,0,0,0,0
+Ramón Sosa|Paraguay,Ramón Sosa,Paraguay,92,1,0,0,0,0,0,0,3,3,0,0,0,2,0
+Gustavo Velázquez|Paraguay,Gustavo Velázquez,Paraguay,96,1,0,0,0,0,2,1,5,4,0,0,0,1,0
+Alejandro Romero|Paraguay,Alejandro Romero,Paraguay,94,1,0,0,0,1,0,0,9,6,0,0,0,3,0
+Giovanni Reyna|USA,Giovanni Reyna,USA,98,1,1,1,1,1,0,0,9,8,0,1,0,1,0
+Luis Suárez|Colombia,Luis Suárez,Colombia,80,1,0,0,0,0,0,0,10,8,0,2,1,0,1
+James Rodríguez|Colombia,James Rodríguez,Colombia,72,1,2,2,0,0,1,0,60,51,0,0,0,0,0
+Johan Mojica|Colombia,Johan Mojica,Colombia,98,1,1,0,0,1,1,1,42,37,0,1,0,1,0
+Utkir Yusupov|Uzbekistan,Utkir Yusupov,Uzbekistan,96,1,0,0,0,0,0,0,29,18,0,0,0,2,0
+Jhon Lucumí|Colombia,Jhon Lucumí,Colombia,98,1,0,0,0,2,1,0,74,68,0,0,0,7,0
+Akmal Mozgovoy|Uzbekistan,Akmal Mozgovoy,Uzbekistan,101,1,1,0,0,0,1,0,34,26,0,1,1,2,0
+Eldor Shomurodov|Uzbekistan,Eldor Shomurodov,Uzbekistan,93,1,1,1,0,3,1,1,18,13,0,1,0,1,1
+Abbosbek Fayzullaev|Uzbekistan,Abbosbek Fayzullaev,Uzbekistan,77,1,1,1,1,1,2,1,15,5,0,1,0,2,1
+Jefferson Lerma|Colombia,Jefferson Lerma,Colombia,101,1,3,1,0,2,3,3,61,51,1,0,0,5,0
+Luis Díaz|Colombia,Luis Díaz,Colombia,93,1,2,1,1,0,2,1,28,22,2,4,2,3,0
+Bekhruz Karimov|Uzbekistan,Bekhruz Karimov,Uzbekistan,101,1,2,0,0,3,1,0,27,21,1,2,2,7,0
+Jhon Arias|Colombia,Jhon Arias,Colombia,93,1,2,1,0,1,1,0,48,45,2,2,1,0,0
+Davinson Sánchez|Colombia,Davinson Sánchez,Colombia,98,1,1,0,0,1,3,1,77,67,2,0,0,3,0
+Gustavo Puerta|Colombia,Gustavo Puerta,Colombia,80,1,1,1,0,2,1,1,54,46,2,0,0,4,1
+Otabek Shukurov|Uzbekistan,Otabek Shukurov,Uzbekistan,101,1,0,0,0,0,3,2,53,46,1,1,1,2,1
+Rustam Ashurmatov|Uzbekistan,Rustam Ashurmatov,Uzbekistan,77,1,0,0,0,0,2,2,44,29,0,0,0,3,0
+Camilo Vargas|Colombia,Camilo Vargas,Colombia,98,1,0,0,0,0,0,0,39,27,0,0,0,7,0
+Daniel Muñoz|Colombia,Daniel Muñoz,Colombia,100,1,1,1,1,1,1,0,53,45,0,0,0,4,1
+Abdukodir Khusanov|Uzbekistan,Abdukodir Khusanov,Uzbekistan,98,1,0,0,0,3,1,1,34,29,0,0,0,3,0
+Oston Urunov|Uzbekistan,Oston Urunov,Uzbekistan,46,1,0,0,0,0,0,0,3,2,0,2,1,2,0
+Abdulla Abdullaev|Uzbekistan,Abdulla Abdullaev,Uzbekistan,96,1,0,0,0,3,1,0,38,32,0,0,0,2,0
+Sherzod Nasrullaev|Uzbekistan,Sherzod Nasrullaev,Uzbekistan,50,1,0,0,0,1,1,0,10,7,0,0,0,0,0
+Dostonbek Khamdamov|Uzbekistan,Dostonbek Khamdamov,Uzbekistan,97,1,2,1,0,0,0,0,13,10,1,0,0,0,0
+Farrukh Sayfiev|Uzbekistan,Farrukh Sayfiev,Uzbekistan,101,1,0,0,0,0,2,1,16,12,1,0,0,0,0
+Jaminton Campaz|Colombia,Jaminton Campaz,Colombia,99,1,2,1,1,0,1,0,4,1,0,1,1,2,1
+Jakhongir Urozov|Uzbekistan,Jakhongir Urozov,Uzbekistan,101,1,0,0,0,0,2,1,20,16,0,1,0,0,0
+Azizbek Amonov|Uzbekistan,Azizbek Amonov,Uzbekistan,101,1,1,1,0,0,1,1,7,5,1,2,0,0,0
+Richard Ríos|Colombia,Richard Ríos,Colombia,98,1,0,0,0,1,1,0,9,7,0,0,0,1,0
+Cucho Hernández|Colombia,Cucho Hernández,Colombia,99,1,0,0,0,0,2,1,4,2,1,1,0,1,0
+Andrés Gómez|Colombia,Andrés Gómez,Colombia,101,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kevin Castaño|Colombia,Kevin Castaño,Colombia,101,1,0,0,0,0,0,0,1,1,0,0,0,0,0
+Igor Sergeev|Uzbekistan,Igor Sergeev,Uzbekistan,93,1,0,0,0,0,0,0,0,0,0,0,0,0,0
