@@ -4,7 +4,7 @@ WC26 Leaderboard — Composite Attacker Index (CAI)
 
 Reads data/api_football_raw.csv and computes:
 
-    CAI = 3.0×z(Goals/90) + 2.5×z(Dribble%) + 2.0×z(SoT%†)
+    CAI = 3.0×z(Goals) + 2.5×z(Dribble%) + 2.0×z(SoT%†)
           + 1.5×z(Recoveries/90) + 1.0×z(AT_actions/90) + 0.5×z(Aerial_Won%)
 
     † SoT% uses Bayesian credibility adjustment (K=10 pseudo-shots) so players
@@ -71,8 +71,10 @@ def main():
     df["90s"] = df["minutes"].clip(lower=1) / 90
 
     # ── Shot-based ───────────────────────────────────────────────────────────
-    df["SoT%"]      = np.where(df["shots_total"] > 0, df["shots_on"] / df["shots_total"] * 100, np.nan)
-    df["goals_p90"] = df["goals_total"] / df["90s"]
+    df["SoT%"] = np.where(df["shots_total"] > 0, df["shots_on"] / df["shots_total"] * 100, np.nan)
+    # Total goals (not per 90): late subs who score in 5 minutes would get
+    # Goals/90 ~18+, artificially dominating the index. Total goals treats
+    # every goal equally regardless of how long the player was on the pitch.
 
     # SoT% credibility adjustment: Bayesian shrinkage toward the population mean.
     # K_SOT pseudo-shots anchor every player's rate; after K_SOT real shots the
@@ -100,24 +102,24 @@ def main():
     df["recoveries_p90"] = df["ball_recoveries"] / df["90s"]
     df["at_actions_p90"] = df["at_actions"] / df["90s"]
 
-    df = df.dropna(subset=["goals_p90"]).copy()
+    df = df.dropna(subset=["SoT%_adj"]).copy()
     print(f"After dropna on required metrics: {len(df)}")
     if len(df) < 2:
         sys.exit(f"Only {len(df)} players after dropna — cannot z-score. Check raw data.")
 
     # ── Weighted z-scores ────────────────────────────────────────────────────
-    # Weights reflect priority order: Goals/90 > Dribble% > SoT% >
+    # Weights reflect priority order: Goals > Dribble% > SoT% >
     # Recoveries/90 > AT Actions/90 > Aerial Won%.
     # NaN z-scores (no data for optional metric) → 0 (neutral contribution).
-    df["z_goals_p90"]      = zscore(df["goals_p90"])
+    df["z_goals"]          = zscore(df["goals_total"])
     df["z_dribble_success"]= zscore(df["dribble_success_pct"]).fillna(0)
-    df["z_sot_adj"]        = zscore(df["SoT%_adj"])           # never NaN
+    df["z_sot_adj"]        = zscore(df["SoT%_adj"])
     df["z_recoveries_p90"] = zscore(df["recoveries_p90"]).fillna(0)
     df["z_at_actions_p90"] = zscore(df["at_actions_p90"]).fillna(0)
     df["z_aerial_won"]     = zscore(df["Aerial_Won%"]).fillna(0)
 
     df["CAI"] = (
-        3.0 * df["z_goals_p90"]
+        3.0 * df["z_goals"]
         + 2.5 * df["z_dribble_success"]
         + 2.0 * df["z_sot_adj"]
         + 1.5 * df["z_recoveries_p90"]
@@ -133,7 +135,7 @@ def main():
     print(f"Saved {len(df)} players → {out_path}")
     print(
         df[["rank", "Player", "Squad", "CAI",
-            "goals_p90", "dribble_success_pct", "SoT%", "SoT%_adj",
+            "goals_total", "dribble_success_pct", "SoT%", "SoT%_adj",
             "recoveries_p90", "at_actions_p90", "Aerial_Won%"]]
         .head(10)
         .round(3)

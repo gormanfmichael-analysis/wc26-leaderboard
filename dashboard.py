@@ -36,11 +36,11 @@ st.caption(f"Data last updated: {pd.Timestamp(mtime, unit='s')}")
 with st.expander("How the Complete Attacker Index (CAI) is calculated"):
     st.markdown(
         """
-        **CAI = 3×z(Goals/90) + 2.5×z(Dribble%) + 2×z(SoT%\*) + 1.5×z(Recoveries/90) + 1×z(AT Actions/90) + 0.5×z(Aerial Won%)**
+        **CAI = 3×z(Goals) + 2.5×z(Dribble%) + 2×z(SoT%\*) + 1.5×z(Recoveries/90) + 1×z(AT Actions/90) + 0.5×z(Aerial Won%)**
 
         | Weight | Metric | What it measures |
         |--------|--------|-----------------|
-        | 3.0× | **Goals/90** | Scoring volume per 90 minutes |
+        | 3.0× | **Goals** | Total goals scored |
         | 2.5× | **Dribble%** | Take-on success rate |
         | 2.0× | **SoT%\*** | Shot accuracy — shots on target / shots taken |
         | 1.5× | **Recoveries/90** | Ball recoveries per 90 minutes |
@@ -62,7 +62,7 @@ with col1:
         "Player":             "Player",
         "Squad":              "Squad",
         "CAI":                "CAI",
-        "goals_p90":          "Goals/90",
+        "goals_total":        "Goals",
         "dribble_success_pct":"Dribble%",
         "SoT%":               "SoT%",
         "recoveries_p90":     "Recoveries/90",
