@@ -5,13 +5,11 @@ WC26 Leaderboard — Composite Index
 Reads data/api_football_raw.csv (produced by scripts/fetch_stats.py) and
 computes the Complete Attacker Index (CAI):
 
-    CAI = z(SoT%) + z(G/Sh) + z(Duel Won%) − z(Fouls per 90)
+    CAI = z(SoT%) + z(G/Sh) + z(Aerial Won%) − z(Fouls per 90)
 
   SoT%        — shot accuracy: shots on target / shots taken
   G/Sh        — finishing: goals / shots taken
-  Duel Won%   — physical contest rate: duels won / total duels
-                (API-Football reports all duels combined, not aerial-only;
-                 stored as Aerial_Won% to keep leaderboard.csv schema stable)
+  Aerial Won% — aerial duel win rate (WhoScored Aerial events)
   Fouls /90   — discipline: subtracted — fewer fouls is better
 
 All four are z-scored before summing so no single metric dominates by range.
@@ -25,7 +23,10 @@ import numpy as np
 import pandas as pd
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
-MIN_90S = 2.0  # minimum 90-minute periods played to qualify
+# Minimum appearances to qualify. Event data gives unreliable minute counts
+# (a quiet second half leaves no events), so we gate on matches played rather
+# than accumulated 90s. Raise to 2 once matchday 2 is complete.
+MIN_APPEARANCES = 1
 
 
 def zscore(s: pd.Series) -> pd.Series:
@@ -41,22 +42,23 @@ def main():
 
     df = pd.read_csv(raw_path)
 
-    # Coerce numerics — API occasionally returns None as string
-    numeric_cols = ["minutes", "shots_total", "shots_on", "goals_total",
-                    "fouls_committed", "duels_total", "duels_won"]
+    numeric_cols = ["minutes", "appearances", "shots_total", "shots_on",
+                    "goals_total", "fouls_committed", "duels_total", "duels_won"]
     for col in numeric_cols:
         df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
 
-    df["90s"] = df["minutes"] / 90
-    df = df[df["90s"] >= MIN_90S].copy()
+    # Gate on appearances (reliable) rather than minutes (underestimated from events)
+    df = df[df["appearances"] >= MIN_APPEARANCES].copy()
 
     # Need at least one shot to compute shot-based metrics
     df = df[df["shots_total"] > 0].copy()
 
+    # 90s used only for fouls/90 denominator; guard against 0 minutes
+    df["90s"] = df["minutes"].clip(lower=1) / 90
+
     df["SoT%"] = (df["shots_on"] / df["shots_total"]) * 100
     df["G/Sh"] = df["goals_total"] / df["shots_total"]
 
-    # Duel Won% — proxy for physical presence (all duels, not aerial-only)
     df["Aerial_Won%"] = np.where(
         df["duels_total"] > 0,
         df["duels_won"] / df["duels_total"] * 100,
