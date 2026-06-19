@@ -247,6 +247,7 @@ def main():
         print(f"Event types found: {sorted(events['event'].dropna().unique().tolist())}")
 
     stats = aggregate_to_players(events)
+    stats["total_matches"] = len(files)  # used by compute_leaderboard to auto-set MIN_APPEARANCES
     print(f"Players found: {len(stats)}")
     print(f"  with >= 1 appearance:  {(stats['appearances'] >= 1).sum()}")
     print(f"  with shots:            {(stats['shots_total'] > 0).sum()}")

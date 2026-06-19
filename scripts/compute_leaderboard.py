@@ -23,8 +23,9 @@ import numpy as np
 import pandas as pd
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
-# Raise to 2 once matchday 2 is complete (~June 22-25 2026)
-MIN_APPEARANCES = 1
+# WC2026 group stage: 12 groups × 2 games each = 24 matches per matchday.
+# MIN_APPEARANCES is derived automatically from the match count in the raw data.
+MATCHES_PER_MATCHDAY = 24
 
 
 def zscore(s: pd.Series) -> pd.Series:
@@ -52,7 +53,14 @@ def main():
         else:
             df[col] = 0
 
+    # Auto-detect matchday from the match file count embedded by fetch_stats.py.
+    # Floor division keeps the threshold at the last *complete* matchday so a
+    # pipeline run mid-round doesn't prematurely raise the bar.
+    total_matches   = int(df["total_matches"].iloc[0]) if "total_matches" in df.columns else 0
+    completed_matchday = max(1, total_matches // MATCHES_PER_MATCHDAY)
+    MIN_APPEARANCES    = completed_matchday
     print(f"Total players in raw data: {len(df)}")
+    print(f"Match files in data: {total_matches}  →  matchday {completed_matchday}  →  MIN_APPEARANCES={MIN_APPEARANCES}")
 
     df = df[df["appearances"] >= MIN_APPEARANCES].copy()
     print(f"After appearances >= {MIN_APPEARANCES}: {len(df)}")
