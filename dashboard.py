@@ -36,16 +36,20 @@ st.caption(f"Data last updated: {pd.Timestamp(mtime, unit='s')}")
 with st.expander("How the Complete Attacker Index (CAI) is calculated"):
     st.markdown(
         """
-        **CAI = z(SoT%) + z(G/Sh) + z(Aerial Won%) − z(Fouls per 90)**
+        **CAI = z(SoT%) + z(G/Sh) + z(Goals/90) + z(Aerial Won%) + z(Pass completion%) + z(Dribble success%) + z(Recoveries/90) + z(Key passes/90) + z(AT actions/90) − z(Fouls/90)**
 
-        - **SoT%** — shot accuracy
+        - **SoT%** — shot accuracy (shots on target / shots taken)
         - **G/Sh** — finishing quality (goals per shot)
-        - **Aerial Won%** — physical presence
-        - **Fouls /90** — discipline (subtracted — fewer is better)
+        - **Goals/90** — scoring volume per 90 minutes
+        - **Aerial Won%** — aerial duel win rate
+        - **Pass completion%** — passing accuracy
+        - **Dribble success%** — take-on success rate
+        - **Recoveries/90** — ball recoveries per 90 minutes
+        - **Key passes/90** — shot-creating passes per 90 minutes
+        - **AT actions/90** — defensive actions in the attacking third (recoveries + tackles won + interceptions) per 90 minutes
+        - **Fouls/90** — discipline (subtracted — fewer is better)
 
-        Built without xG, since Opta withdrew that feed from FBref in
-        January 2026 following a data-rights dispute tied to their
-        exclusive FIFA World Cup 2026 deal.
+        All components are z-scored before summing so no single metric dominates. Players missing data for an optional metric receive a neutral score (0). Position-agnostic — defenders can rank highly via aerial, recovery, and attacking-third defensive metrics.
         """
     )
 
