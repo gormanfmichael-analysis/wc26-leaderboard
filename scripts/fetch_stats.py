@@ -1,120 +1,169 @@
 #!/usr/bin/env python3
 """
-WC26 Player Stats Fetcher — API-Football (RapidAPI)
+WC26 Player Stats Fetcher — nlbair/wc2026-events (GitHub)
 
-Fetches player statistics for the FIFA World Cup 2026 and saves raw data
-to data/api_football_raw.csv for use by compute_leaderboard.py.
+Downloads all match event CSVs from https://github.com/nlbair/wc2026-events,
+aggregates them into per-player stats, and saves data/api_football_raw.csv
+for use by compute_leaderboard.py. No API key required.
 
-API provider: API-Football v3 via RapidAPI
-  - Host: api-football-v1.p.rapidapi.com
-  - Endpoint: /v3/players
-  - League: FIFA World Cup (league_id=1, season=2026)
+Optionally set GITHUB_TOKEN to raise the GitHub API rate limit from
+60 to 5,000 requests/hour. In GitHub Actions this is injected automatically.
 
-To verify the correct league ID for WC2026:
-    curl -H "x-rapidapi-key: YOUR_KEY" \
-         "https://api-football-v1.p.rapidapi.com/v3/leagues?name=FIFA%20World%20Cup&season=2026"
-
-Set env var before running:
-    export RAPIDAPI_KEY=your_key_here
     python scripts/fetch_stats.py
 """
 import os
 import sys
-import time
+from io import StringIO
 
 import pandas as pd
 import requests
 
-API_HOST = "api-football-v1.p.rapidapi.com"
-BASE_URL = f"https://{API_HOST}/v3"
-LEAGUE_ID = 1     # FIFA World Cup in API-Football
-SEASON = 2026
+EVENTS_REPO  = "nlbair/wc2026-events"
+EVENTS_PATH  = "data/raw"
+API_URL      = f"https://api.github.com/repos/{EVENTS_REPO}/contents/{EVENTS_PATH}"
+RAW_BASE_URL = f"https://raw.githubusercontent.com/{EVENTS_REPO}/main/{EVENTS_PATH}"
 
-OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
+OUT_DIR  = os.path.join(os.path.dirname(__file__), "..", "data")
 OUT_FILE = os.path.join(OUT_DIR, "api_football_raw.csv")
 
 
-def fetch_all_players(api_key: str) -> list:
-    headers = {
-        "x-rapidapi-host": API_HOST,
-        "x-rapidapi-key": api_key,
-    }
-    players = []
-    page = 1
-    while True:
-        resp = requests.get(
-            f"{BASE_URL}/players",
-            headers=headers,
-            params={"league": LEAGUE_ID, "season": SEASON, "page": page},
-            timeout=30,
-        )
-        resp.raise_for_status()
-        data = resp.json()
-
-        batch = data.get("response", [])
-        players.extend(batch)
-
-        paging = data.get("paging", {})
-        total_pages = paging.get("total", 1)
-        print(f"  Page {page}/{total_pages} — {len(batch)} players fetched")
-
-        if page >= total_pages:
-            break
-        page += 1
-        time.sleep(0.4)  # stay within free-tier rate limits (100 req/day)
-
-    return players
+def _headers(token: str | None) -> dict:
+    h = {"Accept": "application/vnd.github+json"}
+    if token:
+        h["Authorization"] = f"Bearer {token}"
+    return h
 
 
-def flatten_players(players: list) -> pd.DataFrame:
-    """Flatten nested API-Football player response into a flat DataFrame.
+def list_event_files(token: str | None) -> list[str]:
+    resp = requests.get(API_URL, headers=_headers(token), timeout=30)
+    resp.raise_for_status()
+    return sorted(item["name"] for item in resp.json() if item["name"].endswith(".csv"))
 
-    Note on duels: API-Football's duels.total/won covers all physical contests
-    (ground challenges + aerial duels combined), not aerial duels in isolation.
-    compute_leaderboard.py uses this as the duel-contest proxy and outputs it
-    as Aerial_Won% to keep leaderboard.csv schema stable.
-    """
-    rows = []
-    for item in players:
-        p = item.get("player", {})
-        for stat in item.get("statistics", []):
-            games = stat.get("games", {})
-            shots = stat.get("shots", {})
-            goals = stat.get("goals", {})
-            fouls = stat.get("fouls", {})
-            duels = stat.get("duels", {})
 
-            rows.append({
-                "player_id":       p.get("id"),
-                "Player":          p.get("name"),
-                "Squad":           (stat.get("team") or {}).get("name"),
-                "minutes":         games.get("minutes") or 0,
-                "appearances":     games.get("appearences") or 0,  # API has typo
-                "shots_total":     shots.get("total") or 0,
-                "shots_on":        shots.get("on") or 0,
-                "goals_total":     goals.get("total") or 0,
-                "fouls_committed": fouls.get("committed") or 0,
-                "duels_total":     duels.get("total") or 0,
-                "duels_won":       duels.get("won") or 0,
-            })
+def fetch_match_events(filename: str, token: str | None) -> pd.DataFrame:
+    url = f"{RAW_BASE_URL}/{filename}"
+    resp = requests.get(url, headers=_headers(token), timeout=30)
+    resp.raise_for_status()
+    return pd.read_csv(StringIO(resp.text))
 
-    return pd.DataFrame(rows)
+
+def normalize_bools(df: pd.DataFrame, cols: list[str]) -> pd.DataFrame:
+    """Coerce boolean columns that may arrive as True/False strings or 0/1."""
+    for col in cols:
+        if col in df.columns:
+            df[col] = df[col].map(
+                lambda v: str(v).strip().lower() in ("true", "1", "yes")
+            )
+    return df
+
+
+def aggregate_to_players(events: pd.DataFrame) -> pd.DataFrame:
+    df = events.copy()
+    df = normalize_bools(df, ["isShot", "isGoal"])
+
+    # Drop non-player rows (FormationSet, Start, End have no meaningful player)
+    df = df[df["player"].notna() & df["playerId"].notna()]
+
+    # Minutes played: sum of (max_minute + 1) per player per match.
+    # Approximates time on pitch; understimates for late subs, solid for starters.
+    minutes = (
+        df.groupby(["playerId", "match_id"])["minute"]
+        .max()
+        .add(1)
+        .groupby(level="playerId")
+        .sum()
+        .rename("minutes")
+    )
+
+    appearances = (
+        df.groupby("playerId")["match_id"]
+        .nunique()
+        .rename("appearances")
+    )
+
+    # Player name and team — mode per playerId handles minor spelling variants
+    names = (
+        df.groupby("playerId")["player"]
+        .agg(lambda s: s.mode().iloc[0])
+        .rename("Player")
+    )
+    teams = (
+        df.groupby("playerId")["team"]
+        .agg(lambda s: s.mode().iloc[0])
+        .rename("Squad")
+    )
+
+    shots       = df[df["isShot"]]
+    shots_total = shots.groupby("playerId").size().rename("shots_total")
+    shots_on    = (
+        shots[shots["isGoal"] | (shots["event"] == "SavedShot")]
+        .groupby("playerId")
+        .size()
+        .rename("shots_on")
+    )
+    goals_total = df[df["isGoal"]].groupby("playerId").size().rename("goals_total")
+
+    # Fouls committed: event=Foul, outcome=Unsuccessful (the player who fouled)
+    fouls_committed = (
+        df[(df["event"] == "Foul") & (df["outcome"] == "Unsuccessful")]
+        .groupby("playerId")
+        .size()
+        .rename("fouls_committed")
+    )
+
+    # Aerial duels: event=Aerial — WhoScored records both sides of each contest
+    aerials    = df[df["event"] == "Aerial"]
+    duels_total = aerials.groupby("playerId").size().rename("duels_total")
+    duels_won   = (
+        aerials[aerials["outcome"] == "Successful"]
+        .groupby("playerId")
+        .size()
+        .rename("duels_won")
+    )
+
+    stats = (
+        pd.DataFrame({"player_id": df["playerId"].unique()})
+        .set_index("player_id")
+        .join(names)
+        .join(teams)
+        .join(minutes)
+        .join(appearances)
+        .join(shots_total)
+        .join(shots_on)
+        .join(goals_total)
+        .join(fouls_committed)
+        .join(duels_total)
+        .join(duels_won)
+    )
+
+    int_cols = [
+        "minutes", "appearances", "shots_total", "shots_on",
+        "goals_total", "fouls_committed", "duels_total", "duels_won",
+    ]
+    stats[int_cols] = stats[int_cols].fillna(0).astype(int)
+
+    return stats.reset_index()
 
 
 def main():
-    api_key = os.environ.get("RAPIDAPI_KEY")
-    if not api_key:
-        sys.exit("Error: RAPIDAPI_KEY environment variable is not set.")
-
+    token = os.environ.get("GITHUB_TOKEN")
     os.makedirs(OUT_DIR, exist_ok=True)
 
-    print(f"Fetching WC2026 player stats (league={LEAGUE_ID}, season={SEASON})...")
-    players = fetch_all_players(api_key)
-    print(f"Total player records fetched: {len(players)}")
+    print("Listing match event files from nlbair/wc2026-events...")
+    files = list_event_files(token)
+    print(f"Found {len(files)} match files")
 
-    df = flatten_players(players)
-    df.to_csv(OUT_FILE, index=False)
-    print(f"Saved {len(df)} rows → {OUT_FILE}")
+    all_events = []
+    for i, fname in enumerate(files, 1):
+        print(f"  [{i}/{len(files)}] {fname}")
+        all_events.append(fetch_match_events(fname, token))
+
+    events = pd.concat(all_events, ignore_index=True)
+    print(f"Total events loaded: {len(events):,}")
+
+    stats = aggregate_to_players(events)
+    stats.to_csv(OUT_FILE, index=False)
+    print(f"Saved {len(stats)} players → {OUT_FILE}")
 
 
 if __name__ == "__main__":
