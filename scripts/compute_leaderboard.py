@@ -47,11 +47,18 @@ def main():
     for col in numeric_cols:
         df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
 
+    print(f"Total players in raw data: {len(df)}")
+
     # Gate on appearances (reliable) rather than minutes (underestimated from events)
     df = df[df["appearances"] >= MIN_APPEARANCES].copy()
+    print(f"After appearances >= {MIN_APPEARANCES} filter: {len(df)}")
 
     # Need at least one shot to compute shot-based metrics
     df = df[df["shots_total"] > 0].copy()
+    print(f"After shots_total > 0 filter: {len(df)}")
+
+    if len(df) < 2:
+        sys.exit(f"Only {len(df)} players have shots — cannot z-score. Check raw data.")
 
     # 90s used only for fouls/90 denominator; guard against 0 minutes
     df["90s"] = df["minutes"].clip(lower=1) / 90
@@ -67,14 +74,18 @@ def main():
 
     df["fouls_p90"] = df["fouls_committed"] / df["90s"]
 
-    df = df.dropna(subset=["SoT%", "G/Sh", "Aerial_Won%", "fouls_p90"]).copy()
+    # Aerial_Won% intentionally excluded: players with no aerial duel data
+    # get a neutral z-score (0) rather than being dropped entirely.
+    df = df.dropna(subset=["SoT%", "G/Sh", "fouls_p90"]).copy()
+    print(f"After dropna on required metrics: {len(df)}")
+    print(f"  - players with aerial data: {df['Aerial_Won%'].notna().sum()}")
 
     if len(df) < 2:
-        sys.exit(f"Only {len(df)} qualifying players — cannot z-score. Check raw data.")
+        sys.exit(f"Only {len(df)} players after dropna — cannot z-score. Check raw data.")
 
     df["z_sot_pct"]    = zscore(df["SoT%"])
     df["z_g_per_sh"]   = zscore(df["G/Sh"])
-    df["z_aerial_won"] = zscore(df["Aerial_Won%"])
+    df["z_aerial_won"] = zscore(df["Aerial_Won%"]).fillna(0)  # no aerial data → neutral
     df["z_fouls_p90"]  = zscore(df["fouls_p90"])
 
     df["CAI"] = (

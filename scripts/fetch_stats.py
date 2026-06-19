@@ -25,8 +25,9 @@ RAW_BASE_URL = f"https://raw.githubusercontent.com/{EVENTS_REPO}/main/{EVENTS_PA
 OUT_DIR  = os.path.join(os.path.dirname(__file__), "..", "data")
 OUT_FILE = os.path.join(OUT_DIR, "api_football_raw.csv")
 
-# Event names that identify a shot (used as fallback if isShot flag is missing/NaN)
-SHOT_EVENTS     = {"MissedShots", "SavedShot", "BlockedShot", "Goal", "AttemptSaved"}
+# Event names that identify a shot (fallback when isShot flag is unreliable)
+SHOT_EVENTS      = {"MissedShots", "SavedShot", "BlockedShot", "ShotOnPost",
+                    "Goal", "AttemptSaved", "OwnGoal"}
 ON_TARGET_EVENTS = {"SavedShot", "Goal", "AttemptSaved"}
 
 
@@ -55,8 +56,21 @@ def fetch_match_events(filename: str, token: str | None) -> pd.DataFrame:
 
 
 def coerce_bool(series: pd.Series) -> pd.Series:
-    """Convert a bool-ish column (True/False strings, 1/0, or NaN) to bool."""
-    return series.map(lambda v: str(v).strip().lower() in ("true", "1", "yes"))
+    """Convert a bool-ish column to bool, handling all pandas storage types.
+
+    pandas reads a column as float64 when it mixes integers with NaN, so
+    True ends up as 1.0. str(1.0) == "1.0" which would not match "1" — this
+    handles that case explicitly before falling back to string comparison.
+    """
+    def _cast(v) -> bool:
+        if isinstance(v, bool):
+            return v
+        if isinstance(v, float):
+            return not pd.isna(v) and bool(v)
+        if isinstance(v, int):
+            return bool(v)
+        return str(v).strip().lower() in ("true", "1", "yes")
+    return series.map(_cast)
 
 
 def aggregate_to_players(events: pd.DataFrame) -> pd.DataFrame:
@@ -173,10 +187,17 @@ def main():
     events = pd.concat(all_events, ignore_index=True)
     print(f"Total events loaded: {len(events):,}")
 
+    # Diagnostic: show what event types were found before aggregating
+    if "event" in events.columns:
+        print(f"Unique event types in data: {sorted(events['event'].dropna().unique().tolist())}")
+    if "isShot" in events.columns:
+        print(f"isShot value counts: {events['isShot'].value_counts().to_dict()}")
+
     stats = aggregate_to_players(events)
     print(f"Total players found: {len(stats)}")
-    print(f"Players with shots: {(stats['shots_total'] > 0).sum()}")
     print(f"Players with >= 1 appearance: {(stats['appearances'] >= 1).sum()}")
+    print(f"Players with shots (shots_total > 0): {(stats['shots_total'] > 0).sum()}")
+    print(f"Players with aerial data (duels_total > 0): {(stats['duels_total'] > 0).sum()}")
 
     stats.to_csv(OUT_FILE, index=False)
     print(f"Saved {len(stats)} players → {OUT_FILE}")
