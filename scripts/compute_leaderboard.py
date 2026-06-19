@@ -4,8 +4,8 @@ WC26 Leaderboard — Composite Attacker Index (CAI)
 
 Reads data/api_football_raw.csv and computes:
 
-    CAI = 3.0×z(Goals) + 2.5×z(Dribble%) + 2.0×z(SoT%†)
-          + 1.5×z(Recoveries/90) + 1.0×z(AT_actions/90) + 0.5×z(Aerial_Won%)
+    CAI = 2.0×z(Goals) + 1.7×z(Dribble%) + 1.4×z(SoT%†) + 1.4×z(Shots)
+          + 1.1×z(Recoveries/90) + 0.8×z(AT_actions/90) + 0.5×z(Aerial_Won%)
 
     † SoT% uses Bayesian credibility adjustment (K=10 pseudo-shots) so players
       with small shot samples are shrunk toward the population mean rather than
@@ -108,22 +108,24 @@ def main():
         sys.exit(f"Only {len(df)} players after dropna — cannot z-score. Check raw data.")
 
     # ── Weighted z-scores ────────────────────────────────────────────────────
-    # Weights reflect priority order: Goals > Dribble% > SoT% >
-    # Recoveries/90 > AT Actions/90 > Aerial Won%.
+    # Weights evenly spaced 2.0 → 0.5 (step 0.3). Shots and SoT% share 1.4
+    # to reward both shot volume (process) and accuracy (quality) equally.
     # NaN z-scores (no data for optional metric) → 0 (neutral contribution).
     df["z_goals"]          = zscore(df["goals_total"])
     df["z_dribble_success"]= zscore(df["dribble_success_pct"]).fillna(0)
     df["z_sot_adj"]        = zscore(df["SoT%_adj"])
+    df["z_shots_total"]    = zscore(df["shots_total"]).fillna(0)
     df["z_recoveries_p90"] = zscore(df["recoveries_p90"]).fillna(0)
     df["z_at_actions_p90"] = zscore(df["at_actions_p90"]).fillna(0)
     df["z_aerial_won"]     = zscore(df["Aerial_Won%"]).fillna(0)
 
     df["CAI"] = (
-        3.0 * df["z_goals"]
-        + 2.5 * df["z_dribble_success"]
-        + 2.0 * df["z_sot_adj"]
-        + 1.5 * df["z_recoveries_p90"]
-        + 1.0 * df["z_at_actions_p90"]
+        2.0 * df["z_goals"]
+        + 1.7 * df["z_dribble_success"]
+        + 1.4 * df["z_sot_adj"]
+        + 1.4 * df["z_shots_total"]
+        + 1.1 * df["z_recoveries_p90"]
+        + 0.8 * df["z_at_actions_p90"]
         + 0.5 * df["z_aerial_won"]
     )
 
@@ -135,7 +137,7 @@ def main():
     print(f"Saved {len(df)} players → {out_path}")
     print(
         df[["rank", "Player", "Squad", "CAI",
-            "goals_total", "dribble_success_pct", "SoT%", "SoT%_adj",
+            "goals_total", "shots_total", "dribble_success_pct", "SoT%",
             "recoveries_p90", "at_actions_p90", "Aerial_Won%"]]
         .head(10)
         .round(3)
