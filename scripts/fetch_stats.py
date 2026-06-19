@@ -82,16 +82,38 @@ def aggregate_to_players(events: pd.DataFrame) -> pd.DataFrame:
     for col in ("isShot", "isGoal"):
         df[col] = coerce_bool(df[col]) if col in df.columns else False
 
+    # Capture match end times before player filter so added-time events with no
+    # player name still contribute to the correct match duration.
+    match_max_min = pd.to_numeric(df["minute"], errors="coerce").groupby(df["_match_file"]).max()
+
     df = df[df["player"].notna() & (df["player"] != "")].copy()
     df["_key"] = df["player"].str.strip() + "|" + df["team"].fillna("").str.strip()
 
     x_num = pd.to_numeric(df.get("x"), errors="coerce")
     in_at  = x_num >= AT_X_THRESHOLD   # attacking third mask
 
-    # ── Time on pitch ────────────────────────────────────────────────────────
+    # ── Time on pitch ─────────────────────────────────────────────────────────
+    # SubstitutionOff/On events give exact timing. Fall back to the match's max
+    # recorded minute for players who played the full game without being subbed.
+    sub_off_min = (
+        df[df["event"] == "SubstitutionOff"]
+        .groupby(["_key", "_match_file"])["minute"].first()
+    )
+    sub_on_min = (
+        df[df["event"] == "SubstitutionOn"]
+        .groupby(["_key", "_match_file"])["minute"].first()
+    )
+    pm_idx = df.groupby(["_key", "_match_file"]).size().index
+    pm_df  = pd.DataFrame({
+        "end_min":   sub_off_min.reindex(pm_idx),
+        "start_min": sub_on_min.reindex(pm_idx).fillna(0),
+    }, index=pm_idx)
+    pm_df["end_min"] = pm_df["end_min"].fillna(
+        pm_df.index.get_level_values("_match_file").map(match_max_min.to_dict())
+    )
     minutes = (
-        df.groupby(["_key", "_match_file"])["minute"]
-        .max().add(1)
+        (pm_df["end_min"] - pm_df["start_min"])
+        .clip(lower=1)
         .groupby(level="_key").sum()
         .rename("minutes")
     )
@@ -167,14 +189,12 @@ def aggregate_to_players(events: pd.DataFrame) -> pd.DataFrame:
     ball_recoveries = df[df["event"] == "BallRecovery"].groupby("_key").size().rename("ball_recoveries")
 
     # ── Attacking third defensive actions ────────────────────────────────────
-    # Combined: ball recoveries + tackles won + interceptions, all in x >= 67.
-    at_rec   = df[(df["event"] == "BallRecovery") & in_at].groupby("_key").size()
+    # Tackles won + interceptions in x >= 67. BallRecovery intentionally
+    # excluded here — it's already captured in ball_recoveries (all zones),
+    # so including it again would double-count attacking-third recoveries.
     at_tack  = df[(df["event"] == "Tackle") & (df["outcome"] == "Successful") & in_at].groupby("_key").size()
     at_inter = df[(df["event"] == "Interception") & in_at].groupby("_key").size()
-    at_actions = (
-        at_rec.add(at_tack, fill_value=0).add(at_inter, fill_value=0)
-        .rename("at_actions")
-    )
+    at_actions = at_tack.add(at_inter, fill_value=0).rename("at_actions")
 
     # ── Assemble ─────────────────────────────────────────────────────────────
     stats = (

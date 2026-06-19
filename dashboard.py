@@ -17,8 +17,8 @@ st.set_page_config(page_title="WC26 Complete Attacker Index", layout="wide")
 
 st.title("World Cup 2026 — Complete Attacker Index")
 st.caption(
-    "Composite ranking from FBref's basic Shooting and Miscellaneous stats. "
-    "Auto-refreshed during the tournament — see the data freshness note below."
+    "Composite ranking across shooting, passing, dribbling, and defensive metrics. "
+    "Auto-refreshed every 8 hours during the tournament."
 )
 
 if not os.path.exists(DATA_PATH):
@@ -36,16 +36,15 @@ st.caption(f"Data last updated: {pd.Timestamp(mtime, unit='s')}")
 with st.expander("How the Complete Attacker Index (CAI) is calculated"):
     st.markdown(
         """
-        **CAI = z(SoT%) + z(Goals/90) + z(Aerial Won%) + z(Progressive pass completion%) + z(Dribble success%) + z(Recoveries/90) + z(Key passes/90) + z(AT actions/90)**
+        **CAI = z(SoT%) + z(Goals/90) + z(Aerial Won%) + z(Prog Pass%) + z(Dribble%) + z(Recoveries/90) + z(AT Actions/90)**
 
         - **SoT%** — shot accuracy (shots on target / shots taken)
         - **Goals/90** — scoring volume per 90 minutes
         - **Aerial Won%** — aerial duel win rate
-        - **Progressive pass completion%** — accuracy on passes that advance the ball ≥10 yards toward goal
-        - **Dribble success%** — take-on success rate
+        - **Prog Pass%** — completion rate on passes advancing the ball ≥10 yards toward goal
+        - **Dribble%** — take-on success rate
         - **Recoveries/90** — ball recoveries per 90 minutes
-        - **Key passes/90** — shot-creating passes per 90 minutes
-        - **AT actions/90** — defensive actions in the attacking third (recoveries + tackles won + interceptions) per 90 minutes
+        - **AT Actions/90** — tackles won + interceptions in the attacking third per 90 minutes
 
         All components are z-scored before summing so no single metric dominates. Players missing data for an optional metric receive a neutral score (0). Position-agnostic — all outfield players qualify regardless of position.
         """
@@ -56,9 +55,19 @@ col1, col2 = st.columns([2, 1])
 with col1:
     st.subheader("Leaderboard")
     st.dataframe(
-        df[["rank", "Player", "Squad", "CAI", "SoT%", "G/Sh", "Aerial_Won%", "fouls_p90"]]
-        .rename(columns={"fouls_p90": "Fouls/90"})
-        .round(3),
+        df[["rank", "Player", "Squad", "CAI",
+            "SoT%", "goals_p90", "Aerial_Won%",
+            "prog_pass_completion_pct", "dribble_success_pct",
+            "recoveries_p90", "at_actions_p90"]]
+        .rename(columns={
+            "goals_p90":               "Goals/90",
+            "Aerial_Won%":             "Aerial Won%",
+            "prog_pass_completion_pct":"Prog Pass%",
+            "dribble_success_pct":     "Dribble%",
+            "recoveries_p90":          "Recoveries/90",
+            "at_actions_p90":          "AT Actions/90",
+        })
+        .round(1),
         use_container_width=True,
         hide_index=True,
     )
@@ -70,4 +79,4 @@ with col2:
         st.metric(f"#{row['rank']} {row['Player']}", f"CAI {row['CAI']:.2f}", row["Squad"])
 
 st.divider()
-st.caption("Data: FBref (Sports Reference). Composite methodology and code: see README.md.")
+st.caption("Data: WhoScored/Opta via nlbair/wc2026-events. Composite methodology and code: see README.md.")

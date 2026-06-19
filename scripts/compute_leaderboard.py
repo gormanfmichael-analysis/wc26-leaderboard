@@ -6,7 +6,7 @@ Reads data/api_football_raw.csv and computes:
 
     CAI = z(SoT%) + z(Goals/90) + z(Aerial_Won%)
           + z(Prog_pass_completion%) + z(Dribble_success%)
-          + z(Recoveries/90) + z(Key_passes/90) + z(AT_actions/90)
+          + z(Recoveries/90) + z(AT_actions/90)
 
 NaN z-scores (players missing data for an optional metric) → 0 (neutral).
 Position-agnostic: defenders can rank via AT_actions, Aerial_Won%, etc.
@@ -76,7 +76,6 @@ def main():
         df["prog_pass_accurate"] / df["prog_pass_total"] * 100,
         np.nan,
     )
-    df["key_passes_p90"] = df["key_passes"] / df["90s"]
 
     # ── Dribbles ─────────────────────────────────────────────────────────────
     df["dribble_success_pct"] = np.where(
@@ -99,7 +98,6 @@ def main():
     df["z_goals_p90"]            = zscore(df["goals_p90"])
     df["z_aerial_won"]           = zscore(df["Aerial_Won%"]).fillna(0)
     df["z_prog_pass_completion"] = zscore(df["prog_pass_completion_pct"]).fillna(0)
-    df["z_key_passes_p90"]       = zscore(df["key_passes_p90"]).fillna(0)
     df["z_dribble_success"]      = zscore(df["dribble_success_pct"]).fillna(0)
     df["z_recoveries_p90"]       = zscore(df["recoveries_p90"]).fillna(0)
     df["z_at_actions_p90"]       = zscore(df["at_actions_p90"]).fillna(0)
@@ -111,7 +109,6 @@ def main():
         + df["z_prog_pass_completion"]
         + df["z_dribble_success"]
         + df["z_recoveries_p90"]
-        + df["z_key_passes_p90"]
         + df["z_at_actions_p90"]
     )
 
