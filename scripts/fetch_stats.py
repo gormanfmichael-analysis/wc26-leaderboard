@@ -109,7 +109,10 @@ def aggregate_to_players(events: pd.DataFrame) -> pd.DataFrame:
         "start_min": sub_on_min.reindex(pm_idx).fillna(0),
     }, index=pm_idx)
     pm_df["end_min"] = pm_df["end_min"].fillna(
-        pm_df.index.get_level_values("_match_file").map(match_max_min.to_dict())
+        pd.Series(
+            pm_df.index.get_level_values("_match_file").map(match_max_min.to_dict()),
+            index=pm_df.index,
+        )
     )
     minutes = (
         (pm_df["end_min"] - pm_df["start_min"])
