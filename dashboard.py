@@ -116,6 +116,37 @@ with col2:
 
 st.divider()
 
+st.subheader("Player Spotlight")
+_search = st.selectbox("Search for a player", options=[""] + df["Player"].tolist(), format_func=lambda x: "— select a player —" if x == "" else x)
+if _search:
+    _p = df[df["Player"] == _search].iloc[0]
+    _c1, _c2, _c3, _c4 = st.columns(4)
+    _c1.metric("CAI", f"{_p['CAI']:.2f}")
+    _c2.metric("Goals", int(_p.get("goals_total", 0)))
+    _c3.metric("Assists", int(_p.get("assists", 0)))
+    _c4.metric("Squad", _p["Squad"])
+
+    _stat_rows = [
+        ("Goals",          _p.get("goals_total"),    _p.get("z_goals"),          2.0),
+        ("Assists",        _p.get("assists"),         _p.get("z_assists"),        1.8),
+        ("Dribble%",       _p.get("dribble_success_pct"), _p.get("z_dribble_success"), 1.7),
+        ("SoT%",           _p.get("SoT%"),            _p.get("z_sot_adj"),        1.4),
+        ("Shots",          _p.get("shots_total"),     _p.get("z_shots_total"),    1.4),
+        ("Recoveries/90",  _p.get("recoveries_p90"),  _p.get("z_recoveries_p90"), 1.1),
+        ("AT Actions/90",  _p.get("at_actions_p90"),  _p.get("z_at_actions_p90"), 0.8),
+        ("Aerial Won%",    _p.get("Aerial_Won%"),     _p.get("z_aerial_won"),     0.5),
+    ]
+    _spot = pd.DataFrame(
+        [(m, round(float(v), 2) if pd.notna(v) else "—",
+          round(float(z), 2) if pd.notna(z) else "—",
+          round(float(z) * w, 2) if pd.notna(z) else "—")
+         for m, v, z, w in _stat_rows],
+        columns=["Metric", "Raw value", "Z-score", "Weighted contribution"],
+    )
+    st.dataframe(_spot, use_container_width=True, hide_index=True)
+
+st.divider()
+
 st.subheader("CAI Breakdown — Top 20")
 _n = min(20, len(df))
 _chart_df = df.head(_n).copy()
