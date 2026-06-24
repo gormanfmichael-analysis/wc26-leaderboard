@@ -91,11 +91,8 @@ with col1:
         "Aerial_Won%":        "Aerial Won%",
     }
     _avail = {k: v for k, v in _col_map.items() if k in df.columns}
-    _display = df[list(_avail.keys())].rename(columns=_avail).round(1)
-    _color_cols = [c for c in ["CAI", "Goals", "Assists"] if c in _display.columns]
-    _styled = _display.style.background_gradient(subset=_color_cols, cmap="RdYlGn")
     st.dataframe(
-        _styled,
+        df[list(_avail.keys())].rename(columns=_avail).round(1),
         use_container_width=True,
         hide_index=True,
     )
@@ -105,59 +102,6 @@ with col2:
     top5 = df.head(5)
     for _, row in top5.iterrows():
         st.metric(f"#{row['rank']} {row['Player']}", f"CAI {row['CAI']:.2f}", row["Squad"])
-
-st.divider()
-
-st.subheader("Player Spotlight")
-_search = st.selectbox("Search for a player", options=[""] + df["Player"].tolist(), format_func=lambda x: "— select a player —" if x == "" else x)
-if _search:
-    _p = df[df["Player"] == _search].iloc[0]
-    _c1, _c2, _c3, _c4 = st.columns(4)
-    _c1.metric("CAI", f"{_p['CAI']:.2f}")
-    _c2.metric("Goals", int(_p.get("goals_total", 0)))
-    _c3.metric("Assists", int(_p.get("assists", 0)))
-    _c4.metric("Squad", _p["Squad"])
-
-    _stat_rows = [
-        ("Goals",          _p.get("goals_total"),    _p.get("z_goals"),          2.0),
-        ("Assists",        _p.get("assists"),         _p.get("z_assists"),        1.8),
-        ("Dribble%",       _p.get("dribble_success_pct"), _p.get("z_dribble_success"), 1.7),
-        ("SoT%",           _p.get("SoT%"),            _p.get("z_sot_adj"),        1.4),
-        ("Shots",          _p.get("shots_total"),     _p.get("z_shots_total"),    1.4),
-        ("Recoveries/90",  _p.get("recoveries_p90"),  _p.get("z_recoveries_p90"), 1.1),
-        ("AT Actions/90",  _p.get("at_actions_p90"),  _p.get("z_at_actions_p90"), 0.8),
-        ("Aerial Won%",    _p.get("Aerial_Won%"),     _p.get("z_aerial_won"),     0.5),
-    ]
-    _spot = pd.DataFrame(
-        [(m, round(float(v), 2) if pd.notna(v) else "—",
-          round(float(z), 2) if pd.notna(z) else "—",
-          round(float(z) * w, 2) if pd.notna(z) else "—")
-         for m, v, z, w in _stat_rows],
-        columns=["Metric", "Raw value", "Z-score", "Weighted contribution"],
-    )
-    st.dataframe(_spot, use_container_width=True, hide_index=True)
-
-st.divider()
-
-st.subheader("CAI Breakdown — Top 20")
-_n = min(20, len(df))
-_chart_df = df.head(_n).copy()
-_components = {
-    "z_goals":          ("Goals",           2.0),
-    "z_assists":        ("Assists",          1.8),
-    "z_dribble_success":("Dribble%",         1.7),
-    "z_sot_adj":        ("SoT%",             1.4),
-    "z_shots_total":    ("Shots",            1.4),
-    "z_recoveries_p90": ("Recoveries/90",    1.1),
-    "z_at_actions_p90": ("AT Actions/90",    0.8),
-    "z_aerial_won":     ("Aerial Won%",      0.5),
-}
-_bar_data = {}
-for col, (label, weight) in _components.items():
-    if col in _chart_df.columns:
-        _bar_data[label] = (_chart_df[col] * weight).values
-_bar_plot = pd.DataFrame(_bar_data, index=_chart_df["Player"].values)
-st.bar_chart(_bar_plot, horizontal=True, use_container_width=True, height=500)
 
 st.divider()
 st.caption("Data: WhoScored/Opta via nlbair/wc2026-events. Composite methodology and code: see README.md.")
