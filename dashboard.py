@@ -72,6 +72,14 @@ with st.expander("How the Complete Attacker Index (CAI) is calculated"):
         """
     )
 
+with st.sidebar:
+    st.header("Filters")
+    all_squads = sorted(df["Squad"].dropna().unique().tolist())
+    selected_squads = st.multiselect("Team", all_squads, placeholder="All teams")
+    if selected_squads:
+        df = df[df["Squad"].isin(selected_squads)].reset_index(drop=True)
+        df["rank"] = range(1, len(df) + 1)
+
 col1, col2 = st.columns([2, 1])
 
 with col1:
