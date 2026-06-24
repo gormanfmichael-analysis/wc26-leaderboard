@@ -115,4 +115,26 @@ with col2:
         st.metric(f"#{row['rank']} {row['Player']}", f"CAI {row['CAI']:.2f}", row["Squad"])
 
 st.divider()
+
+st.subheader("CAI Breakdown — Top 20")
+_n = min(20, len(df))
+_chart_df = df.head(_n).copy()
+_components = {
+    "z_goals":          ("Goals",           2.0),
+    "z_assists":        ("Assists",          1.8),
+    "z_dribble_success":("Dribble%",         1.7),
+    "z_sot_adj":        ("SoT%",             1.4),
+    "z_shots_total":    ("Shots",            1.4),
+    "z_recoveries_p90": ("Recoveries/90",    1.1),
+    "z_at_actions_p90": ("AT Actions/90",    0.8),
+    "z_aerial_won":     ("Aerial Won%",      0.5),
+}
+_bar_data = {}
+for col, (label, weight) in _components.items():
+    if col in _chart_df.columns:
+        _bar_data[label] = (_chart_df[col] * weight).values
+_bar_plot = pd.DataFrame(_bar_data, index=_chart_df["Player"].values)
+st.bar_chart(_bar_plot, horizontal=True, use_container_width=True, height=500)
+
+st.divider()
 st.caption("Data: WhoScored/Opta via nlbair/wc2026-events. Composite methodology and code: see README.md.")
