@@ -2,3 +2,4 @@ requests>=2.31
 pandas
 numpy
 streamlit
+matplotlib
