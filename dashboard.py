@@ -91,8 +91,11 @@ with col1:
         "Aerial_Won%":        "Aerial Won%",
     }
     _avail = {k: v for k, v in _col_map.items() if k in df.columns}
+    _display = df[list(_avail.keys())].rename(columns=_avail).round(1)
+    _color_cols = [c for c in ["CAI", "Goals", "Assists"] if c in _display.columns]
+    _styled = _display.style.background_gradient(subset=_color_cols, cmap="RdYlGn")
     st.dataframe(
-        df[list(_avail.keys())].rename(columns=_avail).round(1),
+        _styled,
         use_container_width=True,
         hide_index=True,
     )
