@@ -31,15 +31,6 @@ def _parse_last_match(filename: str) -> str:
 st.set_page_config(page_title="WC26 Complete Attacker Index", layout="wide")
 
 st.title("World Cup 2026 — Complete Attacker Index")
-st.caption("Composite ranking across shooting, passing, dribbling, and defensive metrics.")
-
-_meta = {}
-if os.path.exists(META_PATH):
-    with open(META_PATH) as _f:
-        _meta = json.load(_f)
-if _meta.get("last_match"):
-    st.info(f"Updated through: **{_parse_last_match(_meta['last_match'])}**")
-
 if not os.path.exists(DATA_PATH):
     st.warning(
         "No leaderboard data found yet. Run `scripts/make_sample_data.py` "
@@ -49,8 +40,15 @@ if not os.path.exists(DATA_PATH):
     st.stop()
 
 df = pd.read_csv(DATA_PATH)
-mtime = os.path.getmtime(DATA_PATH)
-st.caption(f"Data last updated: {pd.Timestamp(mtime, unit='s')}")
+mtime = pd.Timestamp(os.path.getmtime(DATA_PATH), unit="s").strftime("%Y-%m-%d %H:%M UTC")
+
+_meta = {}
+if os.path.exists(META_PATH):
+    with open(META_PATH) as _f:
+        _meta = json.load(_f)
+
+_through = f" · Updated through: {_parse_last_match(_meta['last_match'])}" if _meta.get("last_match") else ""
+st.caption(f"Composite ranking across shooting, passing, dribbling, and defensive metrics.{_through} · Data last updated: {mtime}")
 
 with st.expander("How the Complete Attacker Index (CAI) is calculated"):
     st.markdown(

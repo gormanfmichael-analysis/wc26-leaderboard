@@ -26,6 +26,9 @@ DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 # WC2026 group stage: 12 groups × 2 games each = 24 matches per matchday.
 # MIN_APPEARANCES is derived automatically from the match count in the raw data.
 MATCHES_PER_MATCHDAY = 24
+# Minimum cumulative minutes to qualify for the index.
+# Group stage: 45 (one half). Raise to 90 after group stage ends.
+MIN_MINUTES = 45
 
 
 def zscore(s: pd.Series) -> pd.Series:
@@ -65,6 +68,9 @@ def main():
 
     df = df[df["appearances"] >= MIN_APPEARANCES].copy()
     print(f"After appearances >= {MIN_APPEARANCES}: {len(df)}")
+
+    df = df[df["minutes"] >= MIN_MINUTES].copy()
+    print(f"After minutes >= {MIN_MINUTES}: {len(df)}")
 
     if len(df) < 2:
         sys.exit(f"Only {len(df)} qualifying players — cannot z-score. Check raw data.")
