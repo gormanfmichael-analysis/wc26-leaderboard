@@ -11,7 +11,9 @@ Optionally set GITHUB_TOKEN to raise the GitHub API rate limit from
 
     python scripts/fetch_stats.py
 """
+import json
 import os
+import re
 from io import StringIO
 
 import pandas as pd
@@ -45,7 +47,12 @@ def _headers(token: str | None) -> dict:
 def list_event_files(token: str | None) -> list[str]:
     resp = requests.get(API_URL, headers=_headers(token), timeout=30)
     resp.raise_for_status()
-    return sorted(item["name"] for item in resp.json() if item["name"].endswith(".csv"))
+    files = [item["name"] for item in resp.json() if item["name"].endswith(".csv")]
+    # Sort chronologically by the YYYY-MM-DD embedded in each filename.
+    def _date_key(name):
+        m = re.search(r"(\d{4}-\d{2}-\d{2})", name)
+        return m.group(1) if m else name
+    return sorted(files, key=_date_key)
 
 
 def fetch_match_events(filename: str, token: str | None) -> pd.DataFrame:
@@ -180,6 +187,15 @@ def aggregate_to_players(events: pd.DataFrame) -> pd.DataFrame:
     else:
         key_passes = pd.Series(dtype=int, name="key_passes")
 
+    # Assists: goal assists via qual_IntentionalGoalAssist on a Pass event.
+    if "qual_IntentionalGoalAssist" in df.columns:
+        assists = (
+            df[(df["event"] == "Pass") & qual_flag(df["qual_IntentionalGoalAssist"])]
+            .groupby("_key").size().rename("assists")
+        )
+    else:
+        assists = pd.Series(dtype=int, name="assists")
+
     # ── Dribbles (TakeOns) ───────────────────────────────────────────────────
     takeons       = df[df["event"] == "TakeOn"]
     takeons_total = takeons.groupby("_key").size().rename("takeons_total")
@@ -210,6 +226,7 @@ def aggregate_to_players(events: pd.DataFrame) -> pd.DataFrame:
         .join(pass_total).join(pass_accurate)
         .join(prog_pass_total).join(prog_pass_accurate)
         .join(key_passes)
+        .join(assists)
         .join(takeons_total).join(takeons_won)
         .join(ball_recoveries)
         .join(at_actions)
@@ -220,6 +237,7 @@ def aggregate_to_players(events: pd.DataFrame) -> pd.DataFrame:
         "shots_total", "shots_on", "goals_total", "fouls_committed",
         "duels_total", "duels_won",
         "pass_total", "pass_accurate", "prog_pass_total", "prog_pass_accurate", "key_passes",
+        "assists",
         "takeons_total", "takeons_won",
         "ball_recoveries", "at_actions",
     ]
@@ -258,6 +276,12 @@ def main():
 
     stats.to_csv(OUT_FILE, index=False)
     print(f"Saved {len(stats)} players → {OUT_FILE}")
+
+    meta = {"total_matches": len(files), "last_match": files[-1] if files else ""}
+    meta_path = os.path.join(OUT_DIR, "meta.json")
+    with open(meta_path, "w") as f:
+        json.dump(meta, f)
+    print(f"Saved meta → {meta_path}  (last match: {meta['last_match']})")
 
 
 if __name__ == "__main__":

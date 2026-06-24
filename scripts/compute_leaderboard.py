@@ -4,7 +4,7 @@ WC26 Leaderboard — Composite Attacker Index (CAI)
 
 Reads data/api_football_raw.csv and computes:
 
-    CAI = 2.0×z(Goals) + 1.7×z(Dribble%) + 1.4×z(SoT%†) + 1.4×z(Shots)
+    CAI = 2.0×z(Goals) + 1.8×z(Assists) + 1.7×z(Dribble%) + 1.4×z(SoT%†) + 1.4×z(Shots)
           + 1.1×z(Recoveries/90) + 0.8×z(AT_actions/90) + 0.5×z(Aerial_Won%)
 
     † SoT% uses Bayesian credibility adjustment (K=10 pseudo-shots) so players
@@ -44,6 +44,7 @@ def main():
         "shots_total", "shots_on", "goals_total", "fouls_committed",
         "duels_total", "duels_won",
         "pass_total", "pass_accurate", "prog_pass_total", "prog_pass_accurate", "key_passes",
+        "assists",
         "takeons_total", "takeons_won",
         "ball_recoveries", "at_actions",
     ]
@@ -112,6 +113,7 @@ def main():
     # to reward both shot volume (process) and accuracy (quality) equally.
     # NaN z-scores (no data for optional metric) → 0 (neutral contribution).
     df["z_goals"]          = zscore(df["goals_total"])
+    df["z_assists"]        = zscore(df["assists"]).fillna(0)
     df["z_dribble_success"]= zscore(df["dribble_success_pct"]).fillna(0)
     df["z_sot_adj"]        = zscore(df["SoT%_adj"])
     df["z_shots_total"]    = zscore(df["shots_total"]).fillna(0)
@@ -121,6 +123,7 @@ def main():
 
     df["CAI"] = (
         2.0 * df["z_goals"]
+        + 1.8 * df["z_assists"]
         + 1.7 * df["z_dribble_success"]
         + 1.4 * df["z_sot_adj"]
         + 1.4 * df["z_shots_total"]
@@ -137,7 +140,7 @@ def main():
     print(f"Saved {len(df)} players → {out_path}")
     print(
         df[["rank", "Player", "Squad", "CAI",
-            "goals_total", "shots_total", "dribble_success_pct", "SoT%",
+            "goals_total", "assists", "shots_total", "dribble_success_pct", "SoT%",
             "recoveries_p90", "at_actions_p90", "Aerial_Won%"]]
         .head(10)
         .round(3)

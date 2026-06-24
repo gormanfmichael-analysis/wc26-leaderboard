@@ -7,19 +7,38 @@ workflow in .github/workflows/update.yml) and renders a live leaderboard.
 
 Run locally: streamlit run dashboard.py
 """
+import json
 import os
+import re
+from datetime import datetime
+
 import pandas as pd
 import streamlit as st
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "leaderboard.csv")
+META_PATH = os.path.join(os.path.dirname(__file__), "data", "meta.json")
+
+
+def _parse_last_match(filename: str) -> str:
+    """Turn 'wc2026_argentina_vs_france_2026-07-19_events.csv' into 'Argentina vs France (Jul 19)'."""
+    m = re.match(r"wc2026_(.+?)_(\d{4}-\d{2}-\d{2})_events\.csv", filename)
+    if not m:
+        return filename.replace(".csv", "")
+    teams = m.group(1).replace("_vs_", " vs ").replace("_", " ").title()
+    date  = datetime.strptime(m.group(2), "%Y-%m-%d").strftime("%b %-d")
+    return f"{teams} ({date})"
 
 st.set_page_config(page_title="WC26 Complete Attacker Index", layout="wide")
 
 st.title("World Cup 2026 — Complete Attacker Index")
-st.caption(
-    "Composite ranking across shooting, passing, dribbling, and defensive metrics. "
-    "Auto-refreshed every 8 hours during the tournament."
-)
+st.caption("Composite ranking across shooting, passing, dribbling, and defensive metrics.")
+
+_meta = {}
+if os.path.exists(META_PATH):
+    with open(META_PATH) as _f:
+        _meta = json.load(_f)
+if _meta.get("last_match"):
+    st.info(f"Updated through: **{_parse_last_match(_meta['last_match'])}**")
 
 if not os.path.exists(DATA_PATH):
     st.warning(
@@ -36,11 +55,12 @@ st.caption(f"Data last updated: {pd.Timestamp(mtime, unit='s')}")
 with st.expander("How the Complete Attacker Index (CAI) is calculated"):
     st.markdown(
         """
-        **CAI = 2×z(Goals) + 1.7×z(Dribble%) + 1.4×z(SoT%\*) + 1.4×z(Shots) + 1.1×z(Recoveries/90) + 0.8×z(AT Actions/90) + 0.5×z(Aerial Won%)**
+        **CAI = 2×z(Goals) + 1.8×z(Assists) + 1.7×z(Dribble%) + 1.4×z(SoT%\*) + 1.4×z(Shots) + 1.1×z(Recoveries/90) + 0.8×z(AT Actions/90) + 0.5×z(Aerial Won%)**
 
         | Weight | Metric | What it measures |
         |--------|--------|-----------------|
         | 2.0× | **Goals** | Total goals scored |
+        | 1.8× | **Assists** | Total goal assists |
         | 1.7× | **Dribble%** | Take-on success rate |
         | 1.4× | **SoT%\*** | Shot accuracy — shots on target / shots taken |
         | 1.4× | **Shots** | Total shots taken — rewards getting into shooting positions |
@@ -64,6 +84,7 @@ with col1:
         "Squad":              "Squad",
         "CAI":                "CAI",
         "goals_total":        "Goals",
+        "assists":            "Assists",
         "shots_total":        "Shots",
         "dribble_success_pct":"Dribble%",
         "SoT%":               "SoT%",
