@@ -53,13 +53,13 @@ st.caption(f"Composite ranking across shooting, passing, dribbling, and defensiv
 with st.expander("How the Complete Attacker Index (CAI) is calculated"):
     st.markdown(
         """
-        **CAI = 2×z(Goals) + 1.8×z(Assists) + 1.7×z(Dribble%) + 1.4×z(SoT%\*) + 1.4×z(Shots) + 1.1×z(Recoveries/90) + 0.8×z(AT Actions/90) + 0.5×z(Aerial Won%)**
+        **CAI = 2×z(Goals) + 1.8×z(Assists) + 1.2×z(Dribble%) + 1.4×z(SoT%\*) + 1.4×z(Shots) + 1.1×z(Recoveries/90) + 0.8×z(AT Actions/90) + 0.5×z(Aerial Won%)**
 
         | Weight | Metric | What it measures |
         |--------|--------|-----------------|
         | 2.0× | **Goals** | Total goals scored |
         | 1.8× | **Assists** | Total goal assists |
-        | 1.7× | **Dribble%** | Take-on success rate |
+        | 1.2× | **Dribble%** | Take-on success rate |
         | 1.4× | **SoT%\*** | Shot accuracy — shots on target / shots taken |
         | 1.4× | **Shots** | Total shots taken — rewards getting into shooting positions |
         | 1.1× | **Recoveries/90** | Ball recoveries per 90 minutes |

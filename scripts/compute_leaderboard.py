@@ -4,7 +4,7 @@ WC26 Leaderboard — Composite Attacker Index (CAI)
 
 Reads data/api_football_raw.csv and computes:
 
-    CAI = 2.0×z(Goals) + 1.8×z(Assists) + 1.7×z(Dribble%) + 1.4×z(SoT%†) + 1.4×z(Shots)
+    CAI = 2.0×z(Goals) + 1.8×z(Assists) + 1.2×z(Dribble%) + 1.4×z(SoT%†) + 1.4×z(Shots)
           + 1.1×z(Recoveries/90) + 0.8×z(AT_actions/90) + 0.5×z(Aerial_Won%)
 
     † SoT% uses Bayesian credibility adjustment (K=10 pseudo-shots) so players
@@ -130,7 +130,7 @@ def main():
     df["CAI"] = (
         2.0 * df["z_goals"]
         + 1.8 * df["z_assists"]
-        + 1.7 * df["z_dribble_success"]
+        + 1.2 * df["z_dribble_success"]
         + 1.4 * df["z_sot_adj"]
         + 1.4 * df["z_shots_total"]
         + 1.1 * df["z_recoveries_p90"]
